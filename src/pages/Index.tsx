@@ -79,8 +79,8 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-hero opacity-50" />
-        <div className="container mx-auto px-4 lg:px-8 relative">
+        <div className="absolute inset-0 bg-gradient-hero" />
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6">
               KI, die Ihre Arbeit leichter macht
@@ -110,10 +110,10 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Floating Geometric Elements */}
-        <div className="absolute top-20 left-10 w-8 h-8 bg-brand-yellow rounded-lg rotate-45 animate-float opacity-60" />
-        <div className="absolute top-40 right-16 w-6 h-6 bg-accent rounded-lg rotate-12 animate-float delay-1000 opacity-40" />
-        <div className="absolute bottom-20 left-1/4 w-4 h-4 bg-brand-yellow rounded-full animate-pulse opacity-50" />
+        {/* Subtle Floating Elements */}
+        <div className="absolute top-20 left-10 w-6 h-6 bg-brand-yellow/10 rounded-full animate-pulse opacity-30" />
+        <div className="absolute top-40 right-16 w-4 h-4 bg-accent/10 rounded-full animate-pulse delay-1000 opacity-20" />
+        <div className="absolute bottom-20 left-1/4 w-3 h-3 bg-brand-yellow/10 rounded-full animate-pulse delay-2000 opacity-25" />
       </section>
 
       {/* How We Start Section */}
