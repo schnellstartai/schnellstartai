@@ -74,12 +74,12 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen home-bg relative">
       <Header />
       
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-hero" />
+        <div className="absolute inset-0 home-spotlight" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6">
