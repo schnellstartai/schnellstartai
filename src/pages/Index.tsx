@@ -83,12 +83,10 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8 relative">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6">
-              KI schnell nutzbar machen – ohne{' '}
-              <span className="text-accent">Buzzword-Bingo</span>
+              KI, die Ihre Arbeit leichter macht
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">
-              Workshops, Workflows und Schulung für Schweizer KMU. 
-              Praxisnah. Sicher. Messbar.
+              Wir zeigen Schweizer KMU, wie Künstliche Intelligenz Abläufe vereinfacht, Zeit spart und den Alltag effizienter macht – praxisnah und verständlich.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -100,7 +98,7 @@ const Index = () => {
               </Link>
               <Link to="/services">
                 <Button variant="brandOutline" size="lg" className="text-lg px-8 py-6 h-auto">
-                  Beispiele ansehen
+                  Mehr erfahren
                 </Button>
               </Link>
             </div>
