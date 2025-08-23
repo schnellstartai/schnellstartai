@@ -95,8 +95,15 @@ const Services = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 relative overflow-hidden">
+        {/* Soft background overlay */}
+        <div 
+          className="absolute inset-0 opacity-[0.06] bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/lovable-uploads/240e93e0-5863-4d5b-914f-214d1984c8a8.png)'
+          }}
+        ></div>
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
               „So wird KI zum Helfer in Ihrem Betrieb"
