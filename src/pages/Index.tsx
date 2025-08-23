@@ -82,22 +82,23 @@ const Index = () => {
         <div className="absolute inset-0 home-spotlight" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
-              Sparen Sie bis zu 65% Zeit mit KI – Ist Ihr Alltag bereit dafür?
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
-              Wir zeigen Schweizer KMU, wie Künstliche Intelligenz Abläufe vereinfacht, Prozesse automatisiert und den Alltag effizienter macht. Praxisnah, verständlich und 100% DSG-konform – direkt in der Schweiz.
-            </p>
+             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
+               Sparen Sie bis zu 65% Zeit mit KI
+             </h1>
+             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
+               Entdecken Sie, wie Künstliche Intelligenz Ihren Alltag revolutionieren kann. 
+               Praxisnahe Workshops und Automation für Schweizer KMU.
+             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link to="/contact">
-                <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
+                <Button variant="brand" className="hover-scale">
                   Kostenlosen Workshop anfragen
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
               <Link to="/services">
-                <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
+                <Button variant="brand" className="hover-scale">
                   Mehr erfahren
                 </Button>
               </Link>
@@ -229,7 +230,7 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <Link to="/services">
-              <Button variant="brand" size="lg">
+              <Button variant="brand">
                 Alle Services ansehen
                 <ArrowRight className="ml-2" size={16} />
               </Button>
@@ -263,7 +264,7 @@ const Index = () => {
             
             <div className="text-center">
               <Link to="/faq">
-                <Button variant="brand" size="lg">
+                <Button variant="brand">
                   Alle FAQ ansehen
                   <ArrowRight className="ml-2" size={16} />
                 </Button>
@@ -284,7 +285,7 @@ const Index = () => {
               Kostenloses Erstgespräch mit konkreten Lösungsvorschlägen und messbaren Ergebnissen.
             </p>
             <Link to="/contact">
-              <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
+              <Button variant="brand" className="hover-scale">
                 Jetzt Termin vereinbaren
                 <ArrowRight className="ml-2" size={20} />
               </Button>
