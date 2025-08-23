@@ -99,7 +99,7 @@ const Index = () => {
 
   const faqs = [
     {
-      question: "Ist das DSG/DSGVO-konform?",
+      question: "DSG/DSGVO-konform",
       answer: "Ja – Mit Datensparsamkeit, CH/EU-Hosting und AV-Verträgen für maximale Sicherheit."
     },
     {
@@ -122,26 +122,24 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
-               Sparen Sie bis zu 65% Zeit mit KI
-             </h1>
-             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
-               Entdecken Sie, wie Künstliche Intelligenz Ihren Alltag revolutionieren kann. 
-               Praxisnahe Workshops und Automation für Schweizer KMU.
-             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Link to="/contact">
-                <Button variant="brand" className="hover-scale">
-                  Kostenlosen Workshop anfragen
-                  <ArrowRight className="ml-2" size={20} />
-                </Button>
-              </Link>
-              <Link to="/services">
-                <Button variant="brand" className="hover-scale">
-                  Mehr erfahren
-                </Button>
-              </Link>
-            </div>
+                Sparen Sie bis zu 65% Zeit mit KI – Ist Ihr Alltag bereit dafür?
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
+                FADP/DSG‑konforme KI-Lösungen in Schweizer Azure-Umgebungen – datensparsam, verschlüsselt und auditierbar. Ideal für KMU mit hohen Sicherheitsanforderungen.
+              </p>
+             
+             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+               <Link to="/contact" aria-label="Kostenlosen Workshop anfragen">
+                 <Button variant="brand" className="hover-scale">
+                   Kostenlosen Workshop anfragen →
+                 </Button>
+               </Link>
+               <Link to="/services" aria-label="Mehr über unsere Services erfahren">
+                 <Button variant="brand" className="hover-scale">
+                   Mehr erfahren
+                 </Button>
+               </Link>
+             </div>
 
             <div className="flex items-center justify-center space-x-2 text-muted-foreground">
               <CheckCircle size={16} className="text-accent" />
