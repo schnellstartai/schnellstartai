@@ -98,17 +98,15 @@ const Services = () => {
       <section className="pt-24 pb-16 lg:pt-32 lg:pb-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
               Services – Workshops, Workflows, Coaching
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">
-              Wir starten schlank: 1 Workshop, 1 Prozess, 1 messbarer Gewinn. 
-              Danach skalieren wir nur, was wirkt.
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
+              FADP/DSG‑konforme KI-Lösungen in Schweizer Azure-Umgebungen – datensparsam, verschlüsselt und auditierbar. Ideal für KMU mit hohen Sicherheitsanforderungen.
             </p>
-            <Link to="/contact">
-              <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto">
+            <Link to="/contact" aria-label="Kostenloses Beratungsgespräch anfragen">
+              <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
                 Kostenloses Beratungsgespräch
-                <ArrowRight className="ml-2" size={20} />
               </Button>
             </Link>
           </div>
