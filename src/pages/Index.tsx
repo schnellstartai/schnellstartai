@@ -13,7 +13,13 @@ import {
   GraduationCap, 
   MessageSquare,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  Shield,
+  Database,
+  Cloud,
+  Cpu,
+  Settings,
+  Globe
 } from 'lucide-react';
 
 const Index = () => {
@@ -55,6 +61,39 @@ const Index = () => {
       icon: MessageSquare,
       title: "Webinare",
       description: "CH/EU verfügbar"
+    }
+  ];
+
+  const techStack = [
+    {
+      icon: Cpu,
+      title: "Azure AI & OpenAI",
+      description: "Wir hosten modernste KI-Modelle wie GPT-5, GPT-4.1, GPT-4o (Text, Bild, Audio) sowie spezialisierte Reasoning-Modelle (o-Serie). Über den Azure Model Catalog stehen zudem Llama 3, Mistral, Cohere, DeepSeek, NVIDIA und viele weitere Partner-Modelle zur Verfügung."
+    },
+    {
+      icon: Settings,
+      title: "n8n – sicher gehostet",
+      description: "Unsere Automationsworkflows laufen in einer eigenen Azure-Umgebung. Dadurch bleiben alle Daten innerhalb eines geschützten Systems – FADP-konform, verschlüsselt und skalierbar."
+    },
+    {
+      icon: Database,
+      title: "PostgreSQL / Supabase",
+      description: "Wir setzen auf lokale PostgreSQL-Datenbanken oder Supabase-Cloud-Lösungen – je nach Kundenbedarf, von On-Premises bis skalierbarer SaaS-Architektur."
+    },
+    {
+      icon: TrendingUp,
+      title: "ERP- & Buchhaltungsintegrationen",
+      description: "Bexio, Abacus, Sage und weitere Schweizer Lösungen werden nahtlos angebunden. Damit automatisieren wir Finanzprozesse vom Beleg bis zum Reporting."
+    },
+    {
+      icon: Globe,
+      title: "Shop-Integrationen",
+      description: "Egal ob Shopware, Shopify oder andere Plattformen – wir verbinden Ihr E-Commerce mit Buchhaltung, ERP oder CRM für durchgängige Abläufe."
+    },
+    {
+      icon: Cloud,
+      title: "APIs & Cloud-Services",
+      description: "Microsoft 365, Google Workspace, individuelle APIs – wir integrieren bestehende Systeme sicher und effizient."
     }
   ];
 
@@ -235,6 +274,43 @@ const Index = () => {
                 <ArrowRight className="ml-2" size={16} />
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Tech Stack Section */}
+      <section className="py-16 lg:py-24 bg-muted/50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Unser Tech-Stack</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Nur stabile Technologien – sicher, flexibel und 100% FADP-konform
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {techStack.map((tech, index) => (
+              <Card key={index} className="group hover-scale">
+                <CardHeader>
+                  <div className="w-14 h-14 bg-brand-yellow/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-yellow/20 transition-colors">
+                    <tech.icon className="w-7 h-7 text-brand-black" />
+                  </div>
+                  <CardTitle className="text-xl">{tech.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base leading-relaxed">
+                    {tech.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <div className="flex items-center justify-center space-x-2 text-muted-foreground">
+              <Shield size={16} className="text-accent" />
+              <span className="text-sm font-medium">Schweizer Datenschutz (FADP) und EU-DSGVO konform</span>
+            </div>
           </div>
         </div>
       </section>
