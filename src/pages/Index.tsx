@@ -55,8 +55,8 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">Sparen Sie bis zu 65%
-Zeit mit KI 
- Ist Ihr Alltag bereit dafür?</h1>
+Zeit mit KI   
+Ist Ihr Alltag bereit dafür?</h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
               Wir zeigen Schweizer KMU, wie Künstliche Intelligenz Abläufe vereinfacht, Prozesse automatisiert und den Alltag effizienter macht. Praxisnah, verständlich und 100% DSG-konform – direkt in der Schweiz.
             </p>
