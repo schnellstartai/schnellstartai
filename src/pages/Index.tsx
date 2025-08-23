@@ -63,13 +63,13 @@ Ist Ihr Alltag bereit dafür?</h1>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Link to="/contact">
-                <Button variant="brand" className="hover-scale">
+                <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
                   Kostenlosen Workshop anfragen
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
               <Link to="/services">
-                <Button variant="brand" className="hover-scale">
+                <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
                   Mehr erfahren
                 </Button>
               </Link>
@@ -197,7 +197,7 @@ Ist Ihr Alltag bereit dafür?</h1>
           
           <div className="text-center mt-12">
             <Link to="/services">
-              <Button variant="brand">
+              <Button variant="brand" size="lg">
                 Alle Services ansehen
                 <ArrowRight className="ml-2" size={16} />
               </Button>
@@ -229,7 +229,7 @@ Ist Ihr Alltag bereit dafür?</h1>
             
             <div className="text-center">
               <Link to="/faq">
-                <Button variant="brand">
+                <Button variant="brand" size="lg">
                   Alle FAQ ansehen
                   <ArrowRight className="ml-2" size={16} />
                 </Button>
@@ -250,7 +250,7 @@ Ist Ihr Alltag bereit dafür?</h1>
               Kostenloses Erstgespräch mit konkreten Lösungsvorschlägen und messbaren Ergebnissen.
             </p>
             <Link to="/contact">
-              <Button variant="brand" className="hover-scale">
+              <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
                 Jetzt Termin vereinbaren
                 <ArrowRight className="ml-2" size={20} />
               </Button>
