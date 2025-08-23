@@ -57,7 +57,7 @@ export const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex">
             <Link to="/contact">
-              <Button variant="brand" size="lg">
+              <Button variant="brand">
                 Workshop anfragen
               </Button>
             </Link>
