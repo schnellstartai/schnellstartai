@@ -31,11 +31,12 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl bg-brand-yellow flex items-center justify-center transition-transform group-hover:scale-105">
-              <svg width="24" height="24" viewBox="0 0 48 48" fill="none" className="w-6 h-6 lg:w-7 lg:h-7">
-                <path d="M24 12L32 28H16L24 12Z" fill="currentColor" className="text-brand-black"/>
-                <path d="M20 24L24 16L28 24H20Z" fill="currentColor" className="text-brand-yellow"/>
-              </svg>
+            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl overflow-hidden transition-transform group-hover:scale-105">
+              <img 
+                src="/lovable-uploads/ad0b8697-6b9c-456a-90c1-f84046dce7b3.png" 
+                alt="schnellstart.ai logo" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-xl lg:text-2xl font-bold text-foreground">schnellstart.ai</span>
           </Link>

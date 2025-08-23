@@ -9,8 +9,17 @@ const Impressum = () => {
       
       <section className="pt-24 pb-16 lg:pt-32 lg:pb-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8">Impressum</h1>
+        <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-16 h-16 rounded-xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/ad0b8697-6b9c-456a-90c1-f84046dce7b3.png" 
+                  alt="schnellstart.ai logo" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold">Impressum</h1>
+            </div>
             
             <div className="grid gap-8">
               <Card>
