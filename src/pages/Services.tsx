@@ -99,7 +99,7 @@ const Services = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
-              Services – Workshops, Workflows, Coaching
+              „So wird KI zum Helfer in Ihrem Betrieb"
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
               FADP/DSG‑konforme KI-Lösungen in Schweizer Azure-Umgebungen – datensparsam, verschlüsselt und auditierbar. Ideal für KMU mit hohen Sicherheitsanforderungen.
