@@ -4,77 +4,49 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { MetricChip } from '@/components/MetricChip';
 import { Link } from 'react-router-dom';
-import { 
-  Zap, 
-  Target, 
-  TrendingUp, 
-  Users, 
-  Cog, 
-  GraduationCap, 
-  MessageSquare,
-  ArrowRight,
-  CheckCircle
-} from 'lucide-react';
-
+import { Zap, Target, TrendingUp, Users, Cog, GraduationCap, MessageSquare, ArrowRight, CheckCircle } from 'lucide-react';
 const Index = () => {
-  const startSteps = [
-    {
-      icon: Users,
-      title: "Workshop",
-      description: "2–4 Stunden Einführung mit echten Use Cases aus Schweizer KMU."
-    },
-    {
-      icon: Cog,
-      title: "Prozess",
-      description: "Einen Prozess klar definieren und sauber automatisieren – zugeschnitten auf Ihr Business."
-    },
-    {
-      icon: TrendingUp,
-      title: "Gewinn",
-      description: "Messbare Zeit- oder Kosteneinsparungen, die sich direkt auf Ihren Erfolg auswirken."
-    }
-  ];
-
-  const services = [
-    {
-      icon: GraduationCap,
-      title: "Einführung in KI",
-      description: "Team-Workshop"
-    },
-    {
-      icon: Cog,
-      title: "Workflow-Automation",
-      description: "n8n, Supabase, Bexio, Shopware"
-    },
-    {
-      icon: Users,
-      title: "Coaching & Schulung",
-      description: "Praxisnahe Begleitung"
-    },
-    {
-      icon: MessageSquare,
-      title: "Webinare",
-      description: "CH/EU verfügbar"
-    }
-  ];
-
-  const faqs = [
-    {
-      question: "Ist das DSG/DSGVO-konform?",
-      answer: "Ja – Mit Datensparsamkeit, CH/EU-Hosting und AV-Verträgen für maximale Sicherheit."
-    },
-    {
-      question: "Welche Tools nutzt ihr?",
-      answer: "Nur stabile Lösungen wie n8n, OpenAI/Anthropic, Supabase, Bexio und Shopware."
-    },
-    {
-      question: "Wie starten wir?",
-      answer: "Kurzes Erstgespräch, gefolgt von Workshop, kleinem Pilot, Review und Rollout."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen home-bg relative">
+  const startSteps = [{
+    icon: Users,
+    title: "Workshop",
+    description: "2–4 Stunden Einführung mit echten Use Cases aus Schweizer KMU."
+  }, {
+    icon: Cog,
+    title: "Prozess",
+    description: "Einen Prozess klar definieren und sauber automatisieren – zugeschnitten auf Ihr Business."
+  }, {
+    icon: TrendingUp,
+    title: "Gewinn",
+    description: "Messbare Zeit- oder Kosteneinsparungen, die sich direkt auf Ihren Erfolg auswirken."
+  }];
+  const services = [{
+    icon: GraduationCap,
+    title: "Einführung in KI",
+    description: "Team-Workshop"
+  }, {
+    icon: Cog,
+    title: "Workflow-Automation",
+    description: "n8n, Supabase, Bexio, Shopware"
+  }, {
+    icon: Users,
+    title: "Coaching & Schulung",
+    description: "Praxisnahe Begleitung"
+  }, {
+    icon: MessageSquare,
+    title: "Webinare",
+    description: "CH/EU verfügbar"
+  }];
+  const faqs = [{
+    question: "Ist das DSG/DSGVO-konform?",
+    answer: "Ja – Mit Datensparsamkeit, CH/EU-Hosting und AV-Verträgen für maximale Sicherheit."
+  }, {
+    question: "Welche Tools nutzt ihr?",
+    answer: "Nur stabile Lösungen wie n8n, OpenAI/Anthropic, Supabase, Bexio und Shopware."
+  }, {
+    question: "Wie starten wir?",
+    answer: "Kurzes Erstgespräch, gefolgt von Workshop, kleinem Pilot, Review und Rollout."
+  }];
+  return <div className="min-h-screen home-bg relative">
       <Header />
       
       {/* Hero Section */}
@@ -82,9 +54,9 @@ const Index = () => {
         <div className="absolute inset-0 home-spotlight" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
-              Sparen Sie bis zu 65% Zeit mit KI – Ist Ihr Alltag bereit dafür?
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">Sparen Sie bis zu 65%
+Zeit mit KI 
+ Ist Ihr Alltag bereit dafür?</h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
               Wir zeigen Schweizer KMU, wie Künstliche Intelligenz Abläufe vereinfacht, Prozesse automatisiert und den Alltag effizienter macht. Praxisnah, verständlich und 100% DSG-konform – direkt in der Schweiz.
             </p>
@@ -124,8 +96,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {startSteps.map((step, index) => (
-              <Card key={index} className="text-center hover-scale">
+            {startSteps.map((step, index) => <Card key={index} className="text-center hover-scale">
                 <CardHeader>
                   <div className="w-16 h-16 bg-brand-yellow/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                     <step.icon className="w-8 h-8 text-brand-black" />
@@ -137,8 +108,7 @@ const Index = () => {
                     {step.description}
                   </CardDescription>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
           
           {/* Example Box */}
@@ -212,8 +182,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <Card key={index} className="text-center group hover-scale">
+            {services.map((service, index) => <Card key={index} className="text-center group hover-scale">
                 <CardHeader>
                   <div className="w-12 h-12 bg-brand-yellow/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-yellow/20 transition-colors">
                     <service.icon className="w-6 h-6 text-brand-black" />
@@ -223,8 +192,7 @@ const Index = () => {
                 <CardContent>
                   <CardDescription>{service.description}</CardDescription>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
           
           <div className="text-center mt-12">
@@ -247,8 +215,7 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              {faqs.map((faq, index) => (
-                <Card key={index}>
+              {faqs.map((faq, index) => <Card key={index}>
                   <CardHeader>
                     <CardTitle className="text-lg">{faq.question}</CardTitle>
                   </CardHeader>
@@ -257,8 +224,7 @@ const Index = () => {
                       {faq.answer}
                     </CardDescription>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
             
             <div className="text-center">
@@ -294,8 +260,6 @@ const Index = () => {
       </section>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
