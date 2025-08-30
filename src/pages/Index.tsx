@@ -125,7 +125,7 @@ const Index = () => {
                  Sparen Sie bis zu 65%<br />Zeit mit KI<br />Ist Ihr Alltag bereit dafür?
                </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
-                FADP/DSG‑konforme KI-Lösungen in Schweizer Azure-Umgebungen – datensparsam, verschlüsselt und auditierbar. Ideal für KMU mit hohen Sicherheitsanforderungen.
+                Schweizer KI-Workflows: schnell umgesetzt, klar messbar, datenkonform. Ideal für KMU, die weniger Zeit in Admin und mehr ins Business stecken wollen.
               </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
