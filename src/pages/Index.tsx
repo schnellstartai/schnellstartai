@@ -130,9 +130,9 @@ const Index = () => {
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                <Link to="/contact" aria-label="Kostenlosen Workshop anfragen">
-                 <Button variant="brand" className="hover-scale">
-                   Kostenlosen Workshop anfragen →
-                 </Button>
+                  <Button variant="brand" className="hover-scale">
+                    Kostenlose Beratung anfragen →
+                  </Button>
                </Link>
                <Link to="/services" aria-label="Mehr über unsere Services erfahren">
                  <Button variant="brand" className="hover-scale">
