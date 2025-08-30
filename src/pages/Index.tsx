@@ -117,8 +117,8 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden hero-bg-alps">
-        <div className="absolute inset-0 home-spotlight" />
+      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden" style={{backgroundImage: 'url(/lovable-uploads/f25b2364-087d-4b81-8627-1f285c63a06e.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+        <div className="absolute inset-0 bg-background/80" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
