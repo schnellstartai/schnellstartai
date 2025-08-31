@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { MetricChip } from '@/components/MetricChip';
+import { AIResourceCalculator } from '@/components/AIResourceCalculator';
 import { Link } from 'react-router-dom';
 import { 
   Zap, 
@@ -117,7 +118,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden" style={{backgroundImage: 'url(/lovable-uploads/f25b2364-087d-4b81-8627-1f285c63a06e.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden" style={{backgroundImage: 'url(/lovable-uploads/ad0b8697-6b9c-456a-90c1-f84046dce7b3.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
         <div className="absolute inset-0 bg-background/80" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -389,6 +390,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* AI Resource Calculator */}
+      <AIResourceCalculator />
 
       {/* Services Preview */}
       <section className="py-16 lg:py-24">
