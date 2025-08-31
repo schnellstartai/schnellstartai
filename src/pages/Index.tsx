@@ -207,38 +207,186 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Mini Case Study */}
-      <section className="py-16 bg-muted/50">
+      {/* Detailliertes Case Study */}
+      <section className="py-16 bg-muted/50" id="case-study">
         <div className="container mx-auto px-4 lg:px-8">
-          <Card className="max-w-4xl mx-auto bg-gradient-to-br from-brand-yellow/5 to-accent/5 border-brand-yellow/20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Wie funktioniert Automatisierung konkret?</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Am Beispiel Rechnungsverarbeitung: Von der E-Mail bis zur Buchhaltung – vollautomatisch
+            </p>
+          </div>
+          
+          <Card className="max-w-5xl mx-auto bg-gradient-to-br from-brand-yellow/5 to-accent/5 border-brand-yellow/20 mb-12">
             <CardHeader>
               <div className="flex items-start justify-between">
                 <div>
-                  <CardTitle className="text-2xl mb-2">Rechnungseingang → n8n → Bexio</CardTitle>
+                  <CardTitle className="text-2xl mb-2">Automatische Rechnungsverarbeitung</CardTitle>
                   <CardDescription className="text-base">
-                    65% weniger Klicks und schnellere Freigabe. Stabil und revisionssicher.
+                    Eingehende Rechnungen werden automatisch erkannt, verarbeitet und in Bexio erfasst
                   </CardDescription>
                 </div>
-                <MetricChip metric="−65% Klicks" />
+                <MetricChip metric="−65% Arbeitszeit" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-3 gap-6 text-sm">
-                <div className="flex items-center space-x-2">
-                  <Zap className="w-4 h-4 text-accent" />
-                  <span>Automatische Erkennung</span>
+              <div className="grid md:grid-cols-4 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-brand-yellow/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <span className="text-lg font-bold text-brand-black">1</span>
+                  </div>
+                  <h4 className="font-semibold mb-2">E-Mail empfangen</h4>
+                  <p className="text-sm text-muted-foreground">Rechnung kommt per E-Mail an</p>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Target className="w-4 h-4 text-accent" />
-                  <span>Direkte Bexio-Integration</span>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-brand-yellow/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <span className="text-lg font-bold text-brand-black">2</span>
+                  </div>
+                  <h4 className="font-semibold mb-2">KI analysiert</h4>
+                  <p className="text-sm text-muted-foreground">Automatische Datenextraktion aus PDF</p>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-accent" />
-                  <span>Revisionssicher</span>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-brand-yellow/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <span className="text-lg font-bold text-brand-black">3</span>
+                  </div>
+                  <h4 className="font-semibold mb-2">n8n verarbeitet</h4>
+                  <p className="text-sm text-muted-foreground">Workflow prüft und kategorisiert</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-brand-yellow/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <span className="text-lg font-bold text-brand-black">4</span>
+                  </div>
+                  <h4 className="font-semibold mb-2">Bexio Eintrag</h4>
+                  <p className="text-sm text-muted-foreground">Rechnung wird automatisch erfasst</p>
+                </div>
+              </div>
+              
+              <div className="bg-background/50 rounded-lg p-6">
+                <h4 className="font-semibold mb-4 text-center">Konkrete Vorteile für Ihr Unternehmen</h4>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="flex items-start space-x-3">
+                    <Zap className="w-5 h-5 text-accent mt-1" />
+                    <div>
+                      <h5 className="font-medium">Zeitersparnis</h5>
+                      <p className="text-sm text-muted-foreground">Keine manuelle Dateneingabe mehr</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Target className="w-5 h-5 text-accent mt-1" />
+                    <div>
+                      <h5 className="font-medium">Fehlerreduktion</h5>
+                      <p className="text-sm text-muted-foreground">Tippfehler gehören der Vergangenheit an</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-5 h-5 text-accent mt-1" />
+                    <div>
+                      <h5 className="font-medium">Compliance</h5>
+                      <p className="text-sm text-muted-foreground">Revisionssicher und nachvollziehbar</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Erfolgsgeschichten */}
+      <section className="py-16 lg:py-24" id="erfolgsgeschichten">
+        <div className="container mx-auto px-4 lg:px-8">
+          <header className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Erfolgsgeschichten aus der Praxis</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Schweizer KMU teilen ihre Erfahrungen mit KI-Automatisierung
+            </p>
+          </header>
+          
+          <article className="max-w-5xl mx-auto">
+            <Card className="bg-gradient-to-br from-brand-yellow/5 to-accent/5 border-brand-yellow/20">
+              <CardHeader>
+                <div className="flex items-start gap-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-brand-yellow/20 to-accent/20 rounded-xl flex items-center justify-center">
+                    <Users className="w-8 h-8 text-brand-black" />
+                  </div>
+                  <div className="flex-1">
+                    <CardTitle className="text-2xl mb-2">Selbständige Treuhand-Expertin spart 50% Zeit</CardTitle>
+                    <CardDescription className="text-lg">
+                      Dank KI-Integration: Automatisierte Reports und fehlerfreie Rechnungsstellung
+                    </CardDescription>
+                  </div>
+                  <MetricChip metric="−50% Zeitaufwand" />
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="grid lg:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="font-semibold text-lg mb-4">Die Herausforderung</h4>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      "Als selbständige Treuhänderin war ich täglich mit repetitiven Aufgaben beschäftigt: 
+                      Rechnungen manuell erfassen, Reports zusammenstellen, Daten zwischen verschiedenen 
+                      Systemen übertragen. Das kostete mich wertvolle Zeit, die ich lieber für die Beratung 
+                      meiner Mandanten eingesetzt hätte."
+                    </p>
+                    
+                    <h4 className="font-semibold text-lg mb-4">Die Lösung</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
+                        <span className="text-sm">Automatische Rechnungserkennung und -erfassung</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
+                        <span className="text-sm">KI-gestützte Report-Generierung aus Rohdaten</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
+                        <span className="text-sm">Direkte Integration in bestehende Buchhaltungssoftware</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="font-semibold text-lg mb-4">Die Resultate</h4>
+                    <div className="bg-background/50 rounded-lg p-6 mb-6">
+                      <div className="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                          <div className="text-2xl font-bold text-accent mb-1">50%</div>
+                          <div className="text-sm text-muted-foreground">weniger Zeit für Reports</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-bold text-accent mb-1">0</div>
+                          <div className="text-sm text-muted-foreground">manuelle Eingabefehler</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-bold text-accent mb-1">+30%</div>
+                          <div className="text-sm text-muted-foreground">mehr Zeit für Beratung</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-bold text-accent mb-1">100%</div>
+                          <div className="text-sm text-muted-foreground">nachvollziehbar</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <blockquote className="border-l-4 border-brand-yellow/30 pl-4 italic text-muted-foreground">
+                      "Ich kann mich jetzt auf das konzentrieren, was ich am besten kann: 
+                      meine Mandanten beraten. Die KI übernimmt die Routine – fehlerfrei und zuverlässig."
+                    </blockquote>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </article>
+          
+          <div className="text-center mt-12">
+            <Link to="/contact">
+              <Button variant="brand" className="hover-scale">
+                Ihre Erfolgsgeschichte beginnt hier
+                <ArrowRight className="ml-2" size={16} />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
