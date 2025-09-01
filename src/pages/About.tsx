@@ -79,9 +79,9 @@ const About = () => {
           <div className="max-w-4xl mx-auto mb-16">
             <div className="text-center">
               <img 
-                src="/lovable-uploads/de94620b-9532-49a9-9c3d-f36dbce04fe3.png"
+                src="/lovable-uploads/2425c52f-2e73-4b8a-831e-454abea0da73.png"
                 alt="Unser Team - Florian, David und Lukas"
-                className="mx-auto rounded-2xl shadow-xl max-w-full h-auto"
+                className="mx-auto max-w-full h-auto"
               />
             </div>
           </div>
