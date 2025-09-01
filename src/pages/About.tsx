@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Linkedin, Target, Shield, TrendingUp } from 'lucide-react';
 
+
 const About = () => {
   const team = [
     {
@@ -74,13 +75,22 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-3 gap-8">
+          {/* Team Photo */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="text-center">
+              <img 
+                src="/lovable-uploads/de94620b-9532-49a9-9c3d-f36dbce04fe3.png"
+                alt="Unser Team - Florian, David und Lukas"
+                className="mx-auto rounded-2xl shadow-xl max-w-full h-auto"
+              />
+            </div>
+          </div>
+
+          {/* Team Member Descriptions */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {team.map((member, index) => (
-              <Card key={index} className="text-center group">
+              <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className="w-20 h-20 bg-gradient-brand rounded-full mx-auto mb-4 flex items-center justify-center text-brand-black font-bold text-2xl group-hover:scale-105 transition-transform">
-                    {member.name.charAt(0)}
-                  </div>
                   <CardTitle className="text-2xl">{member.name}</CardTitle>
                   <CardDescription className="text-accent font-semibold text-base">
                     {member.role}
