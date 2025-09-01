@@ -118,41 +118,36 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden" style={{backgroundImage: 'url(/lovable-uploads/ad0b8697-6b9c-456a-90c1-f84046dce7b3.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
-        <div className="absolute inset-0 bg-background/80" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{backgroundImage: 'url(/lovable-uploads/01260b90-8d60-44bb-9796-0cd3cbce3751.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+        <div className="absolute inset-0 bg-black/30" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
+             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in text-white">
                  Sparen Sie bis zu 65%<br />Zeit mit KI<br />Ist Ihr Alltag bereit dafür?
                </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
+              <p className="text-xl md:text-2xl text-white/90 mb-8 text-balance animate-fade-in">
                 Schweizer KI-Workflows: schnell umgesetzt, klar messbar, datenkonform. Ideal für KMU, die weniger Zeit in Admin und mehr ins Business stecken wollen.
               </p>
              
              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                <Link to="/contact" aria-label="Kostenlosen Workshop anfragen">
-                  <Button variant="brand" className="hover-scale">
+                  <Button variant="brand" className="hover-scale bg-brand-yellow text-black hover:bg-brand-yellow/90">
                     Kostenlose Beratung anfragen →
                   </Button>
                </Link>
                <Link to="/services" aria-label="Mehr über unsere Services erfahren">
-                 <Button variant="brand" className="hover-scale">
+                 <Button variant="outline" className="hover-scale border-white text-white hover:bg-white hover:text-black">
                    Mehr erfahren
                  </Button>
                </Link>
              </div>
 
-            <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-              <CheckCircle size={16} className="text-accent" />
+            <div className="flex items-center justify-center space-x-2 text-white/80">
+              <CheckCircle size={16} className="text-brand-yellow" />
               <span className="text-sm font-medium">Webinar oder vor Ort in der Schweiz – Flexible Optionen für Ihr Team.</span>
             </div>
           </div>
         </div>
-        
-        {/* Subtle Floating Elements */}
-        <div className="absolute top-20 left-10 w-6 h-6 bg-brand-yellow/10 rounded-full animate-pulse opacity-30" />
-        <div className="absolute top-40 right-16 w-4 h-4 bg-accent/10 rounded-full animate-pulse delay-1000 opacity-20" />
-        <div className="absolute bottom-20 left-1/4 w-3 h-3 bg-brand-yellow/10 rounded-full animate-pulse delay-2000 opacity-25" />
       </section>
 
       {/* How We Start Section */}
