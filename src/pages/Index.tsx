@@ -129,16 +129,11 @@ const Index = () => {
                 Schweizer KI-Workflows: schnell umgesetzt, klar messbar, datenkonform. Ideal für KMU, die weniger Zeit in Admin und mehr ins Business stecken wollen.
               </p>
              
-             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+             <div className="flex justify-center mb-12">
                <Link to="/contact" aria-label="Kostenlosen Workshop anfragen">
                   <Button variant="brand" className="hover-scale bg-brand-yellow text-black hover:bg-brand-yellow/90">
                     Kostenlose Beratung anfragen →
                   </Button>
-               </Link>
-               <Link to="/services" aria-label="Mehr über unsere Services erfahren">
-                 <Button variant="outline" className="hover-scale border-white text-white hover:bg-white hover:text-black">
-                   Mehr erfahren
-                 </Button>
                </Link>
              </div>
 
