@@ -38,7 +38,7 @@ export const Header = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-xl lg:text-2xl font-bold text-white">schnellstart.ai</span>
+            <span className="text-xl lg:text-2xl font-bold text-foreground">schnellstart.ai</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -47,7 +47,7 @@ export const Header = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className="text-white hover:text-brand-yellow transition-colors font-medium"
+                className="text-foreground hover:text-brand-yellow transition-colors font-medium"
               >
                 {item.label}
               </Link>
@@ -66,7 +66,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-white hover:text-brand-yellow transition-colors"
+            className="lg:hidden p-2 text-foreground hover:text-brand-yellow transition-colors"
             aria-label="Menu öffnen"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
