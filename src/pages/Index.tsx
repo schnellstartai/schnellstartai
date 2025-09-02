@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer';
 import { MetricChip } from '@/components/MetricChip';
 import { AIResourceCalculator } from '@/components/AIResourceCalculator';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { 
   Zap, 
   Target, 
@@ -24,6 +25,14 @@ import {
 } from 'lucide-react';
 
 const Index = () => {
+  const [heroImageLoaded, setHeroImageLoaded] = useState(false);
+  
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/lovable-uploads/01260b90-8d60-44bb-9796-0cd3cbce3751.png';
+    img.onload = () => setHeroImageLoaded(true);
+  }, []);
+
   const startSteps = [
     {
       icon: Users,
@@ -118,7 +127,17 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{backgroundImage: 'url(/lovable-uploads/01260b90-8d60-44bb-9796-0cd3cbce3751.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+      <section className={`relative min-h-screen flex items-center justify-center overflow-hidden transition-all duration-700 ${
+        heroImageLoaded 
+          ? 'hero-bg-loaded' 
+          : 'bg-gradient-to-br from-brand-yellow/20 via-brand-black/5 to-accent/10'
+      }`}>
+        {heroImageLoaded && (
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-fade-in"
+            style={{backgroundImage: 'url(/lovable-uploads/01260b90-8d60-44bb-9796-0cd3cbce3751.png)'}}
+          />
+        )}
         <div className="absolute inset-0 bg-black/30" />
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
