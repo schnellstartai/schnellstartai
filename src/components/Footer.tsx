@@ -49,8 +49,8 @@ export const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
                 <Mail size={16} className="text-muted-foreground" />
-                <a href="mailto:info@swissfinanceai.ch" className="text-muted-foreground hover:text-accent transition-colors">
-                  info@swissfinanceai.ch
+                <a href="mailto:info@schnellstart.ai" className="text-muted-foreground hover:text-accent transition-colors">
+                  info@schnellstart.ai
                 </a>
               </div>
               <div className="flex items-center space-x-2">

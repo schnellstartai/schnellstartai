@@ -39,14 +39,18 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
-            <Link to="/contact">
+            <a 
+              href="https://calendly.com/schnellstart-info/30min" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               <Button 
                 variant="brand" 
                 className="font-medium px-6 py-2.5 text-base"
               >
                 Workshop anfragen
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -73,11 +77,16 @@ export const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <a 
+                href="https://calendly.com/schnellstart-info/30min" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
                 <Button variant="brand" className="w-full">
                   Workshop anfragen
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         )}

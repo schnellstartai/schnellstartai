@@ -116,6 +116,28 @@ const Contact = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             
+            {/* Calendly Booking Section */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">30min Termin buchen</CardTitle>
+                <CardDescription>
+                  Direkt in unseren Kalender - kostenlos und unverbindlich
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="calendly-inline-widget" 
+                     data-url="https://calendly.com/schnellstart-info/30min" 
+                     style={{ minWidth: '320px', height: '630px' }}></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                
+                <div className="mt-6 p-4 bg-brand-yellow/10 rounded-lg">
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Oder kontaktieren Sie uns direkt:</strong> Nutzen Sie gerne auch das Kontaktformular unten oder schreiben Sie direkt an info@schnellstart.ai
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            
             {/* Contact Form */}
             <Card>
               <CardHeader>
@@ -240,11 +262,11 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-accent" />
                     <div>
                       <p className="font-medium">E-Mail</p>
-                      <a 
-                        href="mailto:info@swissfinanceai.ch"
+                       <a 
+                        href="mailto:info@schnellstart.ai"
                         className="text-muted-foreground hover:text-accent transition-colors"
                       >
-                        info@swissfinanceai.ch
+                        info@schnellstart.ai
                       </a>
                     </div>
                   </div>
@@ -280,7 +302,7 @@ const Contact = () => {
                   <CardTitle className="text-xl">Kostenloses Erstgespräch</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-sm">
+                  <ul className="space-y-2 text-sm mb-4">
                     <li className="flex items-start space-x-2">
                       <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
                       <span>30 Minuten unverbindlich</span>
@@ -298,6 +320,15 @@ const Contact = () => {
                       <span>Keine Verkaufs-Tricks</span>
                     </li>
                   </ul>
+                  <a 
+                    href="https://calendly.com/schnellstart-info/30min" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="brand" className="w-full">
+                      Jetzt 30min Termin buchen
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             </div>

@@ -44,7 +44,7 @@ const Impressum = () => {
                   <div>
                     <h3 className="font-semibold mb-2">Kontakt</h3>
                     <p className="text-muted-foreground">
-                      E-Mail: info@swissfinanceai.ch<br />
+                      E-Mail: info@schnellstart.ai<br />
                       Web: schnellstart.ai
                     </p>
                   </div>
@@ -77,7 +77,7 @@ const Impressum = () => {
                     <h3 className="font-semibold mb-2">Inhaltlich Verantwortlich</h3>
                     <p className="text-muted-foreground">
                       Lukas [Nachname]<br />
-                      E-Mail: info@swissfinanceai.ch
+                      E-Mail: info@schnellstart.ai
                     </p>
                   </div>
                 </CardContent>
