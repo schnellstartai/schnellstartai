@@ -61,19 +61,10 @@ export const Header = () => {
           isScrolled ? 'h-12 lg:h-14' : 'h-16 lg:h-20'
         }`}>
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 lg:space-x-3 group">
-            <div className={`rounded-xl overflow-hidden transition-all duration-300 group-hover:scale-105 ${
-              isScrolled ? 'w-8 h-8 lg:w-10 lg:h-10' : 'w-10 h-10 lg:w-12 lg:h-12'
-            }`}>
-              <img 
-                src="/lovable-uploads/ad0b8697-6b9c-456a-90c1-f84046dce7b3.png" 
-                alt="schnellstart.ai logo" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <span className={`font-bold text-white transition-all duration-300 ${
+          <Link to="/" className="group">
+            <span className={`font-bold text-white transition-all duration-300 group-hover:text-brand-yellow ${
               isScrolled ? 'text-lg lg:text-xl' : 'text-xl lg:text-2xl'
-            }`}>schnellstart.ai</span>
+            }`}>Schnellstart.ai</span>
           </Link>
 
           {/* Desktop Navigation */}
