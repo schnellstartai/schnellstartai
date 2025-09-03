@@ -66,16 +66,10 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 lg:py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-8">
-            <p className="text-xl text-muted-foreground text-balance">
-              Drei Experten, eine Vision: KI die funktioniert
-            </p>
-          </div>
-          
           {/* Team Photo */}
-          <div className="max-w-4xl mx-auto mb-16">
+          <div className="max-w-4xl mx-auto mb-6">
             <div className="text-center">
               <img 
                 src="/lovable-uploads/37722d60-7c95-44dc-b3dd-d6c39e19801f.png"
@@ -83,6 +77,12 @@ const About = () => {
                 className="mx-auto max-w-full h-auto"
               />
             </div>
+          </div>
+          
+          <div className="text-center mb-8">
+            <p className="text-xl text-muted-foreground text-balance">
+              Drei Experten, eine Vision: KI die funktioniert
+            </p>
           </div>
 
           {/* Team Member Descriptions */}
