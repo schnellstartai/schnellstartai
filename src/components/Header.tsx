@@ -48,7 +48,7 @@ export const Header = () => {
                 variant="brand" 
                 className="font-medium px-6 py-2.5 text-base"
               >
-                Workshop anfragen
+                Termin buchen
               </Button>
             </a>
           </div>
@@ -84,7 +84,7 @@ export const Header = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Button variant="brand" className="w-full">
-                  Workshop anfragen
+                  Termin buchen
                 </Button>
               </a>
             </div>
