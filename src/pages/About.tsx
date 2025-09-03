@@ -72,9 +72,9 @@ const About = () => {
           <div className="max-w-4xl mx-auto mb-6">
             <div className="text-center">
               <img 
-                src="/lovable-uploads/37722d60-7c95-44dc-b3dd-d6c39e19801f.png"
+                src="/lovable-uploads/9fb46982-914e-427a-8217-1c13109b3807.png"
                 alt="Unser Team - Florian, David und Lukas"
-                className="mx-auto max-w-full h-auto"
+                className="mx-auto w-96 h-auto"
               />
             </div>
           </div>
