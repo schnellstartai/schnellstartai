@@ -74,7 +74,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/9fb46982-914e-427a-8217-1c13109b3807.png"
                 alt="Unser Team - Florian, David und Lukas"
-                className="mx-auto w-96 h-auto"
+                className="mx-auto max-w-3xl w-full h-auto"
               />
             </div>
           </div>
