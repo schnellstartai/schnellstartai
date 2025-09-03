@@ -51,10 +51,10 @@ export const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
-      isScrolled ? 'glass shadow-soft backdrop-blur-md bg-background/80 border-b border-border/20' : 'bg-transparent'
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
+      isScrolled ? 'glass shadow-soft backdrop-blur-md bg-background/80' : 'bg-transparent'
     } ${
-      isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'
+      isVisible ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-full opacity-0'
     }`}>
       <nav className="container mx-auto px-4 lg:px-8">
         <div className={`flex items-center justify-between transition-all duration-300 ${
