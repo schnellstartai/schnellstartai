@@ -114,33 +114,51 @@ const Contact = () => {
       {/* Contact Content */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="max-w-3xl mx-auto space-y-12">
             
-            {/* Calendly Booking Section */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">30min Termin buchen</CardTitle>
-                <CardDescription>
-                  Direkt in unseren Kalender - kostenlos und unverbindlich
+            {/* Kostenloses Erstgespräch - Moved to top */}
+            <Card className="bg-brand-yellow/5 border-brand-yellow/20">
+              <CardHeader className="text-center">
+                <CardTitle className="text-3xl">Kostenloses Erstgespräch</CardTitle>
+                <CardDescription className="text-lg">
+                  30 Minuten unverbindlich - konkrete Lösungsvorschläge
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="calendly-inline-widget" 
-                     data-url="https://calendly.com/schnellstart-info/30min" 
-                     style={{ minWidth: '320px', height: '630px' }}></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                
-                <div className="mt-6 p-4 bg-brand-yellow/10 rounded-lg">
-                  <p className="text-sm text-muted-foreground">
-                    <strong>Oder kontaktieren Sie uns direkt:</strong> Nutzen Sie gerne auch das Kontaktformular unten oder schreiben Sie direkt an info@schnellstart.ai
-                  </p>
-                </div>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-start space-x-3">
+                    <CheckCircle size={20} className="text-accent mt-0.5 flex-shrink-0" />
+                    <span className="text-base">30 Minuten unverbindlich</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <CheckCircle size={20} className="text-accent mt-0.5 flex-shrink-0" />
+                    <span className="text-base">Konkrete Lösungsvorschläge</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <CheckCircle size={20} className="text-accent mt-0.5 flex-shrink-0" />
+                    <span className="text-base">Realistische Einschätzung</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <CheckCircle size={20} className="text-accent mt-0.5 flex-shrink-0" />
+                    <span className="text-base">Keine Verkaufs-Tricks</span>
+                  </li>
+                </ul>
+                <a 
+                  href="https://calendly.com/schnellstart-info/30min" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <Button variant="brand" size="lg" className="w-full">
+                    Jetzt 30min Termin buchen
+                  </Button>
+                </a>
               </CardContent>
             </Card>
             
             {/* Contact Form */}
             <Card>
-              <CardHeader>
+              <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Nachricht senden</CardTitle>
                 <CardDescription>
                   Wir antworten normalerweise binnen 24 Stunden
@@ -252,14 +270,14 @@ const Contact = () => {
             </Card>
 
             {/* Contact Info */}
-            <div className="space-y-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">Direktkontakt</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
+            <Card>
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl">Direktkontakt</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
                   <div className="flex items-center space-x-3">
-                    <Mail className="w-5 h-5 text-accent" />
+                    <Mail className="w-6 h-6 text-accent" />
                     <div>
                       <p className="font-medium">E-Mail</p>
                        <a 
@@ -272,7 +290,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-accent" />
+                    <Phone className="w-6 h-6 text-accent" />
                     <div>
                       <p className="font-medium">Telefon</p>
                       <p className="text-muted-foreground">Nach Terminvereinbarung</p>
@@ -280,7 +298,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-center space-x-3">
-                    <MapPin className="w-5 h-5 text-accent" />
+                    <MapPin className="w-6 h-6 text-accent" />
                     <div>
                       <p className="font-medium">Standort</p>
                       <p className="text-muted-foreground">Frauenfeld, Schweiz</p>
@@ -288,50 +306,15 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-center space-x-3">
-                    <Clock className="w-5 h-5 text-accent" />
+                    <Clock className="w-6 h-6 text-accent" />
                     <div>
                       <p className="font-medium">Verfügbarkeit</p>
                       <p className="text-muted-foreground">Schweizweit vor Ort</p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-brand-yellow/5 border-brand-yellow/20">
-                <CardHeader>
-                  <CardTitle className="text-xl">Kostenloses Erstgespräch</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm mb-4">
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
-                      <span>30 Minuten unverbindlich</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
-                      <span>Konkrete Lösungsvorschläge</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
-                      <span>Realistische Einschätzung</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
-                      <span>Keine Verkaufs-Tricks</span>
-                    </li>
-                  </ul>
-                  <a 
-                    href="https://calendly.com/schnellstart-info/30min" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="brand" className="w-full">
-                      Jetzt 30min Termin buchen
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card>
-            </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
