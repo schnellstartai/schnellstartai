@@ -5,16 +5,35 @@ import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      const currentScrollY = window.scrollY;
+      
+      // Set scrolled state
+      setIsScrolled(currentScrollY > 20);
+      
+      // Handle visibility based on scroll direction
+      if (currentScrollY < 10) {
+        // Always show at top
+        setIsVisible(true);
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up - show header
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down and past threshold - hide header
+        setIsVisible(false);
+      }
+      
+      setLastScrollY(currentScrollY);
     };
     
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const navItems = [
     { label: 'Services', href: '/services' },
@@ -24,30 +43,42 @@ export const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'glass shadow-soft' : 'bg-transparent'
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
+      isScrolled ? 'glass shadow-soft backdrop-blur-md bg-background/80 border-b border-border/20' : 'bg-transparent'
+    } ${
+      isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'
     }`}>
       <nav className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className={`flex items-center justify-between transition-all duration-300 ${
+          isScrolled ? 'h-12 lg:h-14' : 'h-16 lg:h-20'
+        }`}>
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl overflow-hidden transition-transform group-hover:scale-105">
+          <Link to="/" className="flex items-center space-x-2 lg:space-x-3 group">
+            <div className={`rounded-xl overflow-hidden transition-all duration-300 group-hover:scale-105 ${
+              isScrolled ? 'w-8 h-8 lg:w-10 lg:h-10' : 'w-10 h-10 lg:w-12 lg:h-12'
+            }`}>
               <img 
                 src="/lovable-uploads/ad0b8697-6b9c-456a-90c1-f84046dce7b3.png" 
                 alt="schnellstart.ai logo" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-xl lg:text-2xl font-bold text-white">schnellstart.ai</span>
+            <span className={`font-bold text-white transition-all duration-300 ${
+              isScrolled ? 'text-lg lg:text-xl' : 'text-xl lg:text-2xl'
+            }`}>schnellstart.ai</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className={`hidden lg:flex items-center transition-all duration-300 ${
+            isScrolled ? 'space-x-6' : 'space-x-8'
+          }`}>
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
-                className="text-white hover:text-brand-yellow transition-colors font-medium"
+                className={`text-white hover:text-brand-yellow transition-all duration-200 font-medium ${
+                  isScrolled ? 'text-sm' : 'text-base'
+                }`}
               >
                 {item.label}
               </Link>
@@ -57,7 +88,11 @@ export const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex">
             <Link to="/contact">
-              <Button variant="brand" size="lg">
+              <Button 
+                variant="brand" 
+                size={isScrolled ? "default" : "lg"}
+                className="transition-all duration-300"
+              >
                 Workshop anfragen
               </Button>
             </Link>
