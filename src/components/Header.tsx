@@ -58,24 +58,24 @@ export const Header = () => {
     }`}>
       <nav className="container mx-auto px-4 lg:px-8">
         <div className={`flex items-center justify-between transition-all duration-300 ${
-          isScrolled ? 'h-12 lg:h-14' : 'h-16 lg:h-20'
+          isScrolled ? 'h-14 lg:h-16' : 'h-16 lg:h-18'
         }`}>
-          {/* Logo */}
-          <Link to="/" className="group">
-            <span className={`font-bold text-white transition-all duration-300 group-hover:text-brand-yellow ${
-              isScrolled ? 'text-lg lg:text-xl' : 'text-xl lg:text-2xl'
+          {/* Brand */}
+          <Link to="/" className="flex items-center group">
+            <span className={`font-semibold text-white transition-all duration-300 group-hover:text-brand-yellow leading-none ${
+              isScrolled ? 'text-xl lg:text-2xl' : 'text-2xl lg:text-3xl'
             }`}>Schnellstart.ai</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className={`hidden lg:flex items-center transition-all duration-300 ${
-            isScrolled ? 'space-x-6' : 'space-x-8'
+            isScrolled ? 'space-x-7' : 'space-x-8'
           }`}>
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
-                className={`text-white hover:text-brand-yellow transition-all duration-200 font-medium ${
+                className={`text-white/90 hover:text-brand-yellow transition-all duration-200 font-medium leading-none ${
                   isScrolled ? 'text-sm' : 'text-base'
                 }`}
               >
@@ -85,12 +85,14 @@ export const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex">
+          <div className="hidden lg:flex items-center">
             <Link to="/contact">
               <Button 
                 variant="brand" 
-                size={isScrolled ? "default" : "lg"}
-                className="transition-all duration-300"
+                size={isScrolled ? "sm" : "default"}
+                className={`transition-all duration-300 font-medium ${
+                  isScrolled ? 'px-4 py-2 text-sm' : 'px-6 py-2.5 text-base'
+                }`}
               >
                 Workshop anfragen
               </Button>
