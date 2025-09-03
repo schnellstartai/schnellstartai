@@ -3,40 +3,13 @@ import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-type ScrollState = 'top' | 'scrolled-visible' | 'hidden';
-
 export const Header = () => {
-  const [scrollState, setScrollState] = useState<ScrollState>('top');
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    let lastScrollY = 0;
-    let ticking = false;
-
     const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          const currentScrollY = window.scrollY;
-          
-          if (currentScrollY <= 30) {
-            // At top - show full header
-            setScrollState('top');
-          } else {
-            // Past threshold - check scroll direction
-            if (currentScrollY < lastScrollY) {
-              // Scrolling up - show compact header
-              setScrollState('scrolled-visible');
-            } else if (currentScrollY > lastScrollY) {
-              // Scrolling down - hide header
-              setScrollState('hidden');
-            }
-          }
-          
-          lastScrollY = currentScrollY;
-          ticking = false;
-        });
-        ticking = true;
-      }
+      setIsScrolled(window.scrollY > 30);
     };
     
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -50,15 +23,9 @@ export const Header = () => {
     { label: 'Über uns', href: '/about' },
   ];
 
-  // Derived states for cleaner logic
-  const isScrolled = scrollState !== 'top';
-  const isVisible = scrollState !== 'hidden';
-
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
       isScrolled ? 'glass shadow-soft backdrop-blur-md bg-background/80' : 'bg-transparent'
-    } ${
-      isVisible ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-full opacity-0'
     }`}>
       <nav className="container mx-auto px-4 lg:px-8">
         <div className={`flex items-center justify-between transition-all duration-300 ${
