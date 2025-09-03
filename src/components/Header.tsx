@@ -6,34 +6,42 @@ import { Link } from 'react-router-dom';
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let lastScrollY = 0;
+    let ticking = false;
+
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      
-      // Set scrolled state
-      setIsScrolled(currentScrollY > 20);
-      
-      // Handle visibility based on scroll direction
-      if (currentScrollY < 10) {
-        // Always show at top
-        setIsVisible(true);
-      } else if (currentScrollY < lastScrollY) {
-        // Scrolling up - show header
-        setIsVisible(true);
-      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down and past threshold - hide header
-        setIsVisible(false);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+          
+          // Set scrolled state
+          setIsScrolled(currentScrollY > 20);
+          
+          // Handle visibility based on scroll direction
+          if (currentScrollY <= 0) {
+            // Always show at top
+            setIsVisible(true);
+          } else if (currentScrollY < lastScrollY && currentScrollY > 50) {
+            // Scrolling up and past initial threshold - show header
+            setIsVisible(true);
+          } else if (currentScrollY > lastScrollY + 10 && currentScrollY > 150) {
+            // Scrolling down with hysteresis and past threshold - hide header
+            setIsVisible(false);
+          }
+          
+          lastScrollY = currentScrollY;
+          ticking = false;
+        });
+        ticking = true;
       }
-      
-      setLastScrollY(currentScrollY);
     };
     
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   const navItems = [
     { label: 'Services', href: '/services' },
