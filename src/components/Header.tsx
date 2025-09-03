@@ -25,7 +25,7 @@ export const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
-      isScrolled ? 'glass shadow-soft backdrop-blur-md bg-background/80' : 'bg-transparent'
+      isScrolled ? 'glass shadow-soft backdrop-blur-md bg-brand-black/80' : 'bg-transparent'
     }`}>
       <nav className="container mx-auto px-4 lg:px-8">
         <div className={`flex items-center justify-between transition-all duration-300 ${
@@ -82,13 +82,13 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-border/20 bg-background/95 backdrop-blur-sm">
+          <div className="lg:hidden border-t border-white/20 bg-brand-black/95 backdrop-blur-sm">
             <div className="px-4 py-4 space-y-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="block text-foreground hover:text-accent transition-colors font-medium"
+                  className="block text-white/90 hover:text-brand-yellow transition-colors font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
