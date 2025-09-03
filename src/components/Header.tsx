@@ -3,9 +3,10 @@ import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+type ScrollState = 'top' | 'scrolled-visible' | 'hidden';
+
 export const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
+  const [scrollState, setScrollState] = useState<ScrollState>('top');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -17,19 +18,18 @@ export const Header = () => {
         requestAnimationFrame(() => {
           const currentScrollY = window.scrollY;
           
-          // Set scrolled state
-          setIsScrolled(currentScrollY > 20);
-          
-          // Handle visibility based on scroll direction
-          if (currentScrollY <= 0) {
-            // Always show at top
-            setIsVisible(true);
-          } else if (currentScrollY < lastScrollY && currentScrollY > 50) {
-            // Scrolling up and past initial threshold - show header
-            setIsVisible(true);
-          } else if (currentScrollY > lastScrollY + 10 && currentScrollY > 150) {
-            // Scrolling down with hysteresis and past threshold - hide header
-            setIsVisible(false);
+          if (currentScrollY <= 30) {
+            // At top - show full header
+            setScrollState('top');
+          } else {
+            // Past threshold - check scroll direction
+            if (currentScrollY < lastScrollY) {
+              // Scrolling up - show compact header
+              setScrollState('scrolled-visible');
+            } else if (currentScrollY > lastScrollY) {
+              // Scrolling down - hide header
+              setScrollState('hidden');
+            }
           }
           
           lastScrollY = currentScrollY;
@@ -49,6 +49,10 @@ export const Header = () => {
     { label: 'FAQ', href: '/faq' },
     { label: 'Über uns', href: '/about' },
   ];
+
+  // Derived states for cleaner logic
+  const isScrolled = scrollState !== 'top';
+  const isVisible = scrollState !== 'hidden';
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
