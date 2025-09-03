@@ -1,20 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
-    };
-    
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navItems = [
     { label: 'Services', href: '/services' },
@@ -24,31 +14,23 @@ export const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
-      isScrolled ? 'glass shadow-soft backdrop-blur-md bg-brand-black/80' : 'bg-transparent'
-    }`}>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-brand-black shadow-soft">
       <nav className="container mx-auto px-4 lg:px-8">
-        <div className={`flex items-center justify-between transition-all duration-300 ${
-          isScrolled ? 'h-14 lg:h-16' : 'h-16 lg:h-18'
-        }`}>
+        <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <Link to="/" className="flex items-center group">
-            <span className={`font-semibold text-white transition-all duration-300 group-hover:text-brand-yellow leading-none ${
-              isScrolled ? 'text-xl lg:text-2xl' : 'text-2xl lg:text-3xl'
-            }`}>Schnellstart.ai</span>
+            <span className="font-semibold text-white group-hover:text-brand-yellow leading-none text-2xl lg:text-3xl">
+              Schnellstart.ai
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className={`hidden lg:flex items-center transition-all duration-300 ${
-            isScrolled ? 'space-x-7' : 'space-x-8'
-          }`}>
+          <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 to={item.href}
-                className={`text-white/90 hover:text-brand-yellow transition-all duration-200 font-medium leading-none ${
-                  isScrolled ? 'text-sm' : 'text-base'
-                }`}
+                className="text-white/90 hover:text-brand-yellow font-medium leading-none text-base"
               >
                 {item.label}
               </Link>
@@ -60,10 +42,7 @@ export const Header = () => {
             <Link to="/contact">
               <Button 
                 variant="brand" 
-                size={isScrolled ? "sm" : "default"}
-                className={`transition-all duration-300 font-medium ${
-                  isScrolled ? 'px-4 py-2 text-sm' : 'px-6 py-2.5 text-base'
-                }`}
+                className="font-medium px-6 py-2.5 text-base"
               >
                 Workshop anfragen
               </Button>
@@ -73,7 +52,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-white hover:text-brand-yellow transition-colors"
+            className="lg:hidden p-2 text-white hover:text-brand-yellow"
             aria-label="Menu öffnen"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
