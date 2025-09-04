@@ -76,6 +76,13 @@ function getFilePath(route) {
   
   console.log('Found routes to prerender:', allRoutes)
   
+  // Ensure root route is always included
+  if (!allRoutes.includes('/')) {
+    allRoutes.unshift('/')
+  }
+  
+  console.log('Final routes to prerender:', allRoutes)
+  
   for (const route of allRoutes) {
     try {
       const appHtml = render(route)

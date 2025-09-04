@@ -1,14 +1,177 @@
+# Robots.txt - Schnellstart AI
+# Optimized for LLM crawlers and search engines with differentiated access
+
+# Premium AI/LLM bots - Fast access (0.5s delay)
+User-agent: ChatGPT-User
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: GPTBot
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: Claude-Web
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: AnthropicAI
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: Anthropic-ai
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: Google-Extended
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: PhindBot
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: Cohere-ai
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: YouBot
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+User-agent: CCBot
+Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
+
+# Major search engines - Fast access (0.5s delay)
 User-agent: Googlebot
 Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
 
 User-agent: Bingbot
 Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
 
-User-agent: Twitterbot
+User-agent: DuckDuckBot
 Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+Allow: /sitemap.xml
+Crawl-delay: 0.5
 
-User-agent: facebookexternalhit
-Allow: /
-
+# General bot rules - Standard access (2s delay for bandwidth management)
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /services/
+Allow: /about/
+Allow: /faq/
+Allow: /contact/
+Crawl-delay: 2
+
+# Disallow sensitive areas
+Disallow: /auth/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.schnellstart.ai/sitemap.xml
+
+# Additional directives for LLM optimization
+# Cache-friendly for AI crawlers
+# Allow indexing of structured content
