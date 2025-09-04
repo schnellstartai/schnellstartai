@@ -68,6 +68,16 @@ function getFilePath(route) {
   return `dist${route}/index.html`
 }
 
+// Enhanced HTML template with better SEO structure
+function enhanceHtmlForSEO(html, route) {
+  // Ensure proper HTML structure for crawlers
+  if (!html.includes('<main>') && html.includes('<!--app-html-->')) {
+    console.warn(`Route ${route} may not have proper semantic HTML structure`)
+  }
+  
+  return html
+}
+
 ;(async () => {
   // Get all routes to prerender
   const staticRoutes = extractStaticRoutes()
@@ -85,8 +95,16 @@ function getFilePath(route) {
   
   for (const route of allRoutes) {
     try {
+      console.log(`Prerendering route: ${route}`)
       const appHtml = render(route)
-      const html = template.replace(`<!--app-html-->`, appHtml)
+      
+      if (!appHtml || appHtml.trim() === '') {
+        console.warn(`Warning: Empty HTML generated for route ${route}`)
+      }
+      
+      let html = template.replace(`<!--app-html-->`, appHtml)
+      html = enhanceHtmlForSEO(html, route)
+      
       const filePath = getFilePath(route)
       
       // Ensure directory exists
@@ -96,9 +114,10 @@ function getFilePath(route) {
       }
       
       fs.writeFileSync(toAbsolute(filePath), html)
-      console.log('pre-rendered:', filePath)
+      console.log(`✓ Pre-rendered: ${filePath} (${appHtml.length} chars)`)
     } catch (error) {
-      console.error(`Error prerendering ${route}:`, error.message)
+      console.error(`✗ Error prerendering ${route}:`, error.message)
+      console.error(error.stack)
     }
   }
 })()

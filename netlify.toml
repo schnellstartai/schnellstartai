@@ -1,0 +1,96 @@
+[build]
+  publish = "dist"
+  command = "npm run build && npm run prerender"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Serve prerendered HTML files for routes
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/services"
+  to = "/services/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/about"
+  to = "/about/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/faq"
+  to = "/faq/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/impressum"
+  to = "/impressum/index.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/datenschutz"
+  to = "/datenschutz/index.html"
+  status = 200
+  force = false
+
+# Handle blog post routes
+[[redirects]]
+  from = "/blog/*"
+  to = "/blog/:splat/index.html"
+  status = 200
+  force = false
+
+# SPA fallback for any unmatched routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for all HTML files
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+# Headers for static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Headers for sitemap and robots
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain"
+    Cache-Control = "public, max-age=3600"
