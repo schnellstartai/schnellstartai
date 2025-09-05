@@ -1,7 +1,0 @@
-# Force all traffic to https://www.schnellstart.ai
-http://schnellstart.ai/*      https://www.schnellstart.ai/:splat   301!
-https://schnellstart.ai/*     https://www.schnellstart.ai/:splat   301!
-http://www.schnellstart.ai/*  https://www.schnellstart.ai/:splat   301!
-
-# Keep existing Lovable redirect
-https://schnellstartai.loveable.app/*   https://www.schnellstart.ai/:splat   301!

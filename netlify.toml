@@ -1,9 +1,34 @@
 [build]
   publish = "dist"
-  command = "npm run build && npm run prerender"
+  command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
+
+# Domain redirects - MUST come first with force=true
+[[redirects]]
+  from = "http://schnellstart.ai/*"
+  to = "https://www.schnellstart.ai/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://schnellstart.ai/*"
+  to = "https://www.schnellstart.ai/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.schnellstart.ai/*"
+  to = "https://www.schnellstart.ai/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://schnellstartai.loveable.app/*"
+  to = "https://www.schnellstart.ai/:splat"
+  status = 301
+  force = true
 
 # Serve prerendered HTML files for routes
 [[redirects]]
