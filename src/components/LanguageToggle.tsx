@@ -1,19 +1,23 @@
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Globe } from 'lucide-react';
 
 export const LanguageToggle = () => {
   const { language, setLanguage } = useLanguage();
 
+  const handleLanguageChange = (newLang: 'de' | 'en') => {
+    console.log('Language changing from', language, 'to', newLang);
+    setLanguage(newLang);
+  };
+
   return (
-    <div className="flex items-center border border-white/20 rounded-lg bg-white/10 backdrop-blur-sm">
+    <div className="flex items-center rounded-lg border border-white/20 bg-white/10 backdrop-blur-sm">
       <Button
         variant="ghost"
         size="sm"
-        onClick={() => setLanguage('de')}
+        onClick={() => handleLanguageChange('de')}
         className={`px-3 py-1.5 text-sm font-medium rounded-l-lg transition-all ${
           language === 'de'
-            ? 'bg-brand-yellow text-brand-black hover:bg-brand-yellow'
+            ? 'bg-yellow-400 text-gray-900 hover:bg-yellow-400'
             : 'text-white/90 hover:text-white hover:bg-white/10'
         }`}
       >
@@ -23,10 +27,10 @@ export const LanguageToggle = () => {
       <Button
         variant="ghost"
         size="sm"
-        onClick={() => setLanguage('en')}
+        onClick={() => handleLanguageChange('en')}
         className={`px-3 py-1.5 text-sm font-medium rounded-r-lg transition-all ${
           language === 'en'
-            ? 'bg-brand-yellow text-brand-black hover:bg-brand-yellow'
+            ? 'bg-yellow-400 text-gray-900 hover:bg-yellow-400'
             : 'text-white/90 hover:text-white hover:bg-white/10'
         }`}
       >

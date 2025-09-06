@@ -6,6 +6,7 @@ import { MetricChip } from '@/components/MetricChip';
 import { AIResourceCalculator } from '@/components/AIResourceCalculator';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { useTranslation } from '@/hooks/useTranslation';
 import { 
   Zap, 
   Target, 
@@ -25,6 +26,7 @@ import {
 } from 'lucide-react';
 
 const Index = () => {
+  const { t } = useTranslation();
   const [heroImageLoaded, setHeroImageLoaded] = useState(false);
   
   useEffect(() => {
@@ -36,18 +38,18 @@ const Index = () => {
   const startSteps = [
     {
       icon: Users,
-      title: "Workshop",
-      description: "2–4 Stunden Einführung mit echten Use Cases aus Schweizer KMU."
+      title: t('pages.index.steps.workshop.title'),
+      description: t('pages.index.steps.workshop.description')
     },
     {
       icon: Cog,
-      title: "Prozess",
-      description: "Einen Prozess klar definieren und sauber automatisieren – zugeschnitten auf Ihr Business."
+      title: t('pages.index.steps.process.title'),
+      description: t('pages.index.steps.process.description')
     },
     {
       icon: TrendingUp,
-      title: "Gewinn",
-      description: "Messbare Zeit- oder Kosteneinsparungen, die sich direkt auf Ihren Erfolg auswirken."
+      title: t('pages.index.steps.profit.title'),
+      description: t('pages.index.steps.profit.description')
     }
   ];
 
@@ -142,23 +144,23 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in text-white">
-                 Sparen Sie bis zu 65%<br />Zeit mit KI<br />Ist Ihr Alltag bereit dafür?
+                 {t('pages.index.hero.title')}
                </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8 text-balance animate-fade-in">
-                Schweizer KI-Workflows: schnell umgesetzt, klar messbar, datenkonform. Ideal für KMU, die weniger Zeit in Admin und mehr ins Business stecken wollen.
+                {t('pages.index.hero.subtitle')}
               </p>
              
              <div className="flex justify-center mb-12">
-               <Link to="/contact" aria-label="Kostenlosen Workshop anfragen">
+                <Link to="/contact" aria-label={t('pages.index.hero.cta')}>
                   <Button variant="brand" className="hover-scale bg-brand-yellow text-black hover:bg-brand-yellow/90">
-                    Kostenlose Beratung anfragen →
+                    {t('pages.index.hero.cta')} →
                   </Button>
                </Link>
              </div>
 
             <div className="flex items-center justify-center space-x-2 text-white/80">
               <CheckCircle size={16} className="text-brand-yellow" />
-              <span className="text-sm font-medium">Webinar oder vor Ort in der Schweiz – Flexible Optionen für Ihr Team.</span>
+              <span className="text-sm font-medium">{t('pages.index.hero.note')}</span>
             </div>
           </div>
         </div>
@@ -168,7 +170,7 @@ const Index = () => {
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">So starten wir: Drei klare Schritte zum messbaren Erfolg</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.index.steps.title')}</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
