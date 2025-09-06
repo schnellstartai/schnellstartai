@@ -153,7 +153,7 @@ const Index = () => {
              <div className="flex justify-center mb-12">
                 <Link to="/contact" aria-label={t('pages.index.hero.cta')}>
                   <Button variant="brand" className="hover-scale bg-brand-yellow text-black hover:bg-brand-yellow/90">
-                    {t('pages.index.hero.cta')} →
+                    {t('pages.index.hero.cta')}
                   </Button>
                </Link>
              </div>
