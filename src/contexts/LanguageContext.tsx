@@ -10,9 +10,39 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-// Import translation files
-import deTranslations from '@/translations/de.json';
-import enTranslations from '@/translations/en.json';
+// Import translation files with error handling
+let deTranslations: any = {};
+let enTranslations: any = {};
+
+try {
+  deTranslations = require('@/translations/de.json');
+  enTranslations = require('@/translations/en.json');
+} catch (error) {
+  console.error('Translation files not found:', error);
+  // Fallback translations
+  deTranslations = {
+    pages: {
+      index: {
+        hero: {
+          title: "KI-Automatisierung für Unternehmen in Lichtgeschwindigkeit",
+          subtitle: "Schweizer KI-Workflows: schnell umgesetzt, klar messbar, datenkonform.",
+          cta: "Kostenlose Beratung anfragen →"
+        }
+      }
+    }
+  };
+  enTranslations = {
+    pages: {
+      index: {
+        hero: {
+          title: "AI Automation for Companies at Lightspeed",
+          subtitle: "Swiss AI workflows: quickly implemented, clearly measurable, data compliant.",
+          cta: "Request free consultation →"
+        }
+      }
+    }
+  };
+}
 
 const translations = {
   de: deTranslations,
