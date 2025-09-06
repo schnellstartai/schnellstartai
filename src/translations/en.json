@@ -7,38 +7,604 @@
     "contact": "Contact",
     "book_appointment": "Book appointment"
   },
-  "hero": {
-    "title": "AI Automation for Swiss SMEs",
-    "subtitle": "Increase efficiency and reduce costs with tailored AI solutions. For companies that want to lead, not just keep up.",
-    "cta": "Free consultation"
-  },
-  "steps": {
-    "workshop": {
-      "title": "Workshop",
-      "description": "2–4 hours introduction with real use cases from Swiss SMEs."
+  "pages": {
+    "index": {
+      "hero": {
+        "title": "Save up to 65%<br />Time with AI<br />Is your everyday ready for it?",
+        "subtitle": "Swiss AI workflows: quickly implemented, clearly measurable, data compliant. Ideal for SMEs that want to spend less time on admin and more on business.",
+        "cta": "Request free consultation →",
+        "note": "Webinar or on-site in Switzerland – Flexible options for your team."
+      },
+      "steps": {
+        "title": "How we start: Three clear steps to measurable success",
+        "workshop": {
+          "title": "Workshop",
+          "description": "2–4 hours introduction with real use cases from Swiss SMEs."
+        },
+        "process": {
+          "title": "Process",
+          "description": "Clearly define and cleanly automate a process – tailored to your business."
+        },
+        "profit": {
+          "title": "Profit", 
+          "description": "Measurable time or cost savings that directly impact your success."
+        },
+        "example": {
+          "title": "Example: Invoice receipt → n8n → Bexio",
+          "benefits": {
+            "clicks": "−65% Clicks",
+            "recognition": "Automatic recognition",
+            "integration": "Direct Bexio integration",
+            "audit": "Audit-proof"
+          }
+        }
+      },
+      "services": {
+        "introduction": {
+          "title": "Introduction to AI",
+          "description": "Team workshop"
+        },
+        "automation": {
+          "title": "Workflow automation",
+          "description": "n8n, Supabase, Bexio, Shopware"
+        },
+        "coaching": {
+          "title": "Coaching & training",
+          "description": "Practical guidance"
+        },
+        "webinars": {
+          "title": "Webinars",
+          "description": "CH/EU available"
+        }
+      },
+      "case_study": {
+        "title": "How does automation work concretely?",
+        "subtitle": "Using invoice processing as example: From email to accounting – fully automated",
+        "automation": {
+          "title": "Automatic invoice processing",
+          "description": "Incoming invoices are automatically recognized, processed and recorded in Bexio",
+          "metric": "−65% Working time",
+          "steps": {
+            "receive": {
+              "title": "Email received",
+              "description": "Invoice arrives by email"
+            },
+            "analyze": {
+              "title": "AI analyzes",
+              "description": "Automatic data extraction from PDF"
+            },
+            "process": {
+              "title": "n8n processes",
+              "description": "Workflow checks and categorizes"
+            },
+            "record": {
+              "title": "Bexio entry",
+              "description": "Invoice is automatically recorded"
+            }
+          },
+          "benefits": {
+            "title": "Concrete benefits for your company",
+            "time": {
+              "title": "Time savings",
+              "description": "No more manual data entry"
+            },
+            "errors": {
+              "title": "Error reduction",
+              "description": "Typos are a thing of the past"
+            },
+            "compliance": {
+              "title": "Compliance",
+              "description": "Audit-proof and traceable"
+            }
+          }
+        }
+      },
+      "success_stories": {
+        "title": "Success stories from practice",
+        "subtitle": "Swiss SMEs share their experiences with AI automation",
+        "story": {
+          "title": "Independent fiduciary expert saves 50% time",
+          "subtitle": "Thanks to AI integration: Automated reports and error-free invoicing",
+          "metric": "−50% Time investment",
+          "challenge": {
+            "title": "The challenge",
+            "description": "\"As an independent fiduciary, I was busy with repetitive tasks daily: manually entering invoices, compiling reports, transferring data between different systems. This cost me valuable time that I would rather have spent advising my clients.\""
+          },
+          "solution": {
+            "title": "The solution",
+            "items": [
+              "Automatic invoice recognition and entry",
+              "AI-supported report generation from raw data",
+              "Direct integration into existing accounting software"
+            ]
+          },
+          "results": {
+            "title": "The results",
+            "metrics": {
+              "time": {
+                "value": "50%",
+                "label": "less time for reports"
+              },
+              "errors": {
+                "value": "0",
+                "label": "manual input errors"
+              },
+              "consulting": {
+                "value": "+30%",
+                "label": "more time for consulting"
+              },
+              "traceability": {
+                "value": "100%",
+                "label": "traceable"
+              }
+            }
+          },
+          "quote": "\"I can now focus on what I do best: advising my clients. AI takes over the routine – error-free and reliable.\""
+        }
+      },
+      "tech_stack": {
+        "title": "Our technology partners",
+        "subtitle": "Proven tools and platforms for maximum security and reliability",
+        "technologies": {
+          "azure": {
+            "title": "Azure AI & OpenAI",
+            "description": "We host state-of-the-art AI models like GPT-5, GPT-4.1, GPT-4o (text, image, audio) as well as specialized reasoning models (o-series). The Azure Model Catalog also provides Llama 3, Mistral, Cohere, DeepSeek, NVIDIA and many other partner models."
+          },
+          "n8n": {
+            "title": "n8n – securely hosted",
+            "description": "Our automation workflows run in our own Azure environment. This keeps all data within a protected system – FADP compliant, encrypted and scalable."
+          },
+          "database": {
+            "title": "PostgreSQL / Supabase",
+            "description": "We rely on local PostgreSQL databases or Supabase cloud solutions – depending on customer needs, from on-premises to scalable SaaS architecture."
+          },
+          "erp": {
+            "title": "ERP & accounting integrations",
+            "description": "Bexio, Abacus, Sage and other Swiss solutions are seamlessly connected. This allows us to automate financial processes from receipt to reporting."
+          },
+          "ecommerce": {
+            "title": "Shop integrations",
+            "description": "Whether Shopware, Shopify or other platforms – we connect your e-commerce with accounting, ERP or CRM for seamless workflows."
+          },
+          "apis": {
+            "title": "APIs & cloud services",
+            "description": "Microsoft 365, Google Workspace, individual APIs – we integrate existing systems securely and efficiently."
+          }
+        }
+      },
+      "faqs": {
+        "compliance": {
+          "question": "FADP/GDPR compliant",
+          "answer": "Yes – With data minimization, CH/EU hosting and DPA contracts for maximum security."
+        },
+        "tools": {
+          "question": "Which tools do you use?",
+          "answer": "Only stable solutions like n8n, OpenAI/Anthropic, Supabase, Bexio and Shopware."
+        },
+        "start": {
+          "question": "How do we start?",
+          "answer": "Brief initial meeting, followed by workshop, small pilot, review and rollout."
+        }
+      },
+      "calculator": {
+        "title": "AI potential calculator",
+        "subtitle": "Calculate your savings potential through AI automation",
+        "cta": "Book free consultation"
+      },
+      "cta": {
+        "ready_title": "Ready for the next step?",
+        "ready_subtitle": "Let's find out in a free conversation how AI can advance your company.",
+        "ready_button": "Request free consultation"
+      }
     },
-    "process": {
-      "title": "Process",
-      "description": "Clearly define and cleanly automate a process – tailored to your business."
+    "services": {
+      "hero": {
+        "title": "AI simply explained, concretely implemented",
+        "subtitle": "We make AI understandable for your team and automate your processes – without complicated technology. Swiss quality, data protection included.",
+        "cta": "Free consultation →"
+      },
+      "trust_indicators": {
+        "hosting": {
+          "value": "100%",
+          "label": "Swiss hosting"
+        },
+        "compliance": {
+          "value": "FADP",
+          "label": "Data protection compliant"
+        },
+        "savings": {
+          "value": "50%",
+          "label": "Typical time savings"
+        },
+        "clients": {
+          "value": "30+",
+          "label": "Satisfied SMEs"
+        }
+      },
+      "service_list": {
+        "understanding": {
+          "title": "Understand & use AI",
+          "duration": "2–4 hours",
+          "description": "Workshop for teams and executives – without technical jargon",
+          "features": [
+            "AI basics explained in simple language",
+            "Swiss data protection (FADP/DPA) made understandable",
+            "Live examples from your business everyday",
+            "Immediately applicable tips for your team"
+          ],
+          "price": "CHF 1'200 (fixed price)",
+          "benefit": "Your team understands AI and can use it safely"
+        },
+        "automation": {
+          "title": "Automate processes",
+          "duration": "Project-based",
+          "description": "Recurring tasks are taken over by AI – you have more time for the essentials",
+          "features": [
+            "Automatically process and forward invoices",
+            "Synchronize customer data between systems",
+            "Sort emails and suggest responses",
+            "Automatically generate reports",
+            "Maintenance and support included"
+          ],
+          "price": "From CHF 3'000 (package)",
+          "benefit": "Save 5-10 hours per week for more important tasks"
+        },
+        "coaching": {
+          "title": "Ongoing support",
+          "duration": "Monthly",
+          "description": "Your personal AI coach – so everything runs smoothly",
+          "features": [
+            "Monthly optimizations of your processes",
+            "Quick help with questions or problems",
+            "New AI opportunities for your company",
+            "Training for new employees"
+          ],
+          "price": "CHF 800/month",
+          "benefit": "Continuous improvement without your own IT department"
+        },
+        "webinars": {
+          "title": "Webinars & on-site appointments",
+          "duration": "Flexible",
+          "description": "Available throughout Switzerland – online or at your business",
+          "features": [
+            "Tailored to your industry",
+            "Interactive workshops with real examples",
+            "All materials to take away",
+            "Recording for later use"
+          ],
+          "price": "From CHF 800",
+          "benefit": "Flexible training exactly when you have time"
+        }
+      },
+      "success_story": {
+        "title": "How Swiss SMEs already benefit",
+        "subtitle": "Real results from real companies",
+        "testimonial": {
+          "name": "Sandra M., Fiduciary Office Zurich",
+          "company": "15 employees, 60+ clients",
+          "quote": "I used to spend hours on invoice reports and manual entry. Now AI does it automatically – and without errors.",
+          "metrics": {
+            "reports": {
+              "value": "50%",
+              "label": "less time for reports"
+            },
+            "errors": {
+              "value": "0",
+              "label": "manual errors"
+            }
+          },
+          "automated": {
+            "title": "Concretely automated:",
+            "items": [
+              "• Scan invoices and enter in Bexio",
+              "• Automatically create monthly reports",
+              "• Send client updates by email"
+            ]
+          }
+        },
+        "why_trust": {
+          "title": "Why Swiss SMEs trust us",
+          "values": [
+            {
+              "title": "Swiss values",
+              "description": "Reliability and quality are at the center"
+            },
+            {
+              "title": "Understandable explanations",
+              "description": "No technical jargon, but clear communication"
+            },
+            {
+              "title": "Long-term partnership",
+              "description": "We accompany you even after implementation"
+            },
+            {
+              "title": "Transparent prices",
+              "description": "Fixed prices without hidden costs"
+            }
+          ]
+        }
+      },
+      "included": {
+        "title": "What you can expect from us",
+        "subtitle": "Comprehensive support – from the first idea to the finished solution",
+        "during": {
+          "title": "This is included for you",
+          "items": [
+            "Preparation and analysis",
+            "All workshop materials", 
+            "Practical exercises"
+          ]
+        },
+        "after": {
+          "title": "Also there for you afterwards",
+          "items": [
+            "Follow-up documentation",
+            "30 days email support",
+            "Recording (for webinars)"
+          ]
+        }
+      },
+      "tech_stack": {
+        "title": "The technology behind it",
+        "subtitle": "Proven Swiss and international standards – secure and reliable",
+        "tools": [
+          { "name": "n8n", "description": "Low-code automation platform" },
+          { "name": "OpenAI/Anthropic", "description": "Enterprise-grade AI APIs" },
+          { "name": "Supabase", "description": "Modern PostgreSQL database" },
+          { "name": "Bexio", "description": "Swiss business software" },
+          { "name": "Shopware", "description": "E-commerce integration" }
+        ]
+      },
+      "cta": {
+        "title": "Let's start your AI project",
+        "subtitle": "30 minutes are often enough to define concrete next steps.",
+        "button": "Schedule free conversation"
+      }
     },
-    "profit": {
-      "title": "Profit", 
-      "description": "Measurable time or cost savings that directly impact your success."
-    }
-  },
-  "services": {
-    "title": "Our Services",
-    "ai_automation": {
-      "title": "AI Automation",
-      "description": "Intelligent automation of recurring tasks"
+    "about": {
+      "hero": {
+        "title": "About us – Team & attitude",
+        "subtitle": "We are a small team with a clear mission: making AI practical and secure for Swiss SMEs."
+      },
+      "team": {
+        "subtitle": "Three experts, one vision: AI that works",
+        "members": {
+          "florian": {
+            "name": "Florian",
+            "role": "Workflows & implementation",
+            "description": "10+ years experience in process optimization and automation. Specialist for n8n, Supabase and seamless system integrations."
+          },
+          "david": {
+            "name": "David",
+            "role": "LLMs & automation pipelines",
+            "description": "AI developer focused on productive LLM applications. Expert for OpenAI/Anthropic integration and secure AI workflows."
+          },
+          "lukas": {
+            "name": "Lukas",
+            "role": "Strategy, finance & consulting",
+            "description": "Business strategist with finance background. 15+ years SME consulting, specialized in ROI-oriented AI implementation."
+          }
+        }
+      },
+      "values": {
+        "title": "Our values",
+        "subtitle": "How we work and what is important to us",
+        "list": {
+          "clarity": {
+            "title": "Clarity",
+            "description": "No buzzwords. No exaggerated promises. We speak clearly about possibilities and limitations of AI."
+          },
+          "security": {
+            "title": "Security",
+            "description": "Data protection and compliance are not optional. Swiss standards, European values, transparent processes."
+          },
+          "value": {
+            "title": "Measurable benefit",
+            "description": "Every project must pay off. We define clear KPIs and measure success together with you."
+          }
+        }
+      },
+      "switzerland": {
+        "title": "Why Switzerland?",
+        "focus": {
+          "understanding": {
+            "title": "SME understanding",
+            "description": "We know the Swiss SME landscape. Regulatory requirements, industry specifics and the mentality \"think first, then act\" are familiar to us."
+          },
+          "presence": {
+            "title": "Local presence",
+            "description": "Workshops on-site, personal support and direct contact. We travel throughout Switzerland – from Basel to Chur, from Geneva to St. Gallen."
+          },
+          "standards": {
+            "title": "Swiss standards",
+            "description": "Quality, precision and reliability. We build solutions that work – today and in five years. No quick fixes, but solid foundations."
+          },
+          "finance": {
+            "title": "Finance focus",
+            "description": "Our background in finance and controlling helps us evaluate AI projects economically and implement them ROI-oriented."
+          }
+        }
+      },
+      "cta": {
+        "title": "Let's get to know each other",
+        "subtitle": "A short conversation quickly shows whether the chemistry is right and we can help you.",
+        "button": "Get in touch"
+      }
     },
-    "consulting": {
-      "title": "AI Consulting",
-      "description": "Strategic consulting for optimal AI implementation"
+    "faq": {
+      "hero": {
+        "title": "Frequently asked questions",
+        "subtitle": "Direct answers to the most important points"
+      },
+      "categories": {
+        "privacy": {
+          "title": "Data protection & compliance",
+          "questions": {
+            "compliant": {
+              "question": "Is this FADP/GDPR compliant?",
+              "answer": "Yes, absolutely. We only work with providers that offer FADP/GDPR compliant solutions. All data is processed in Switzerland or the EU. We create a data protection impact assessment for each project and offer DPA contracts."
+            },
+            "data_location": {
+              "question": "Where is the data processed?",
+              "answer": "By default, we use servers in Switzerland (Supabase) or EU (OpenAI Europe). For particularly sensitive data, we can also implement on-premise solutions."
+            },
+            "data_access": {
+              "question": "Who has access to our data?",
+              "answer": "Only authorized persons from your company. We implement role-based access control and encrypted transmission. Our technicians only have temporary access for maintenance work."
+            }
+          }
+        },
+        "technology": {
+          "title": "Technology & tools",
+          "questions": {
+            "tools": {
+              "question": "Which tools do you use?",
+              "answer": "We rely on proven tools: n8n for workflow automation, OpenAI/Anthropic for AI features, Supabase as database, plus integrations to Bexio, Shopware and other Swiss business tools. Everything enterprise-ready and maintainable."
+            },
+            "scalable": {
+              "question": "Are the solutions scalable?",
+              "answer": "Yes, we build scalable from the start. n8n and Supabase grow with your company. For larger volumes, we can switch to dedicated servers."
+            },
+            "availability": {
+              "question": "What happens if a tool is no longer available?",
+              "answer": "We only rely on tools with strong market position. Should a tool still be discontinued, we migrate your workflows to alternative solutions – this is included in our support."
+            }
+          }
+        },
+        "process": {
+          "title": "Process & collaboration",
+          "questions": {
+            "start": {
+              "question": "How do we start?",
+              "answer": "Very simple: 1) Free 30-min conversation, 2) Workshop to get to know each other and identify first use case, 3) Small pilot process, 4) Review and rollout. We always start small."
+            },
+            "duration": {
+              "question": "How long does an implementation take?",
+              "answer": "A first pilot process usually 1-2 weeks. More complex workflows 4-8 weeks. We work iteratively – you see first results quickly."
+            },
+            "expertise": {
+              "question": "Do we have to become AI experts beforehand?",
+              "answer": "No, that's our job. We explain everything understandably and train your team as much as necessary. You remain experts for your business, we take care of the technology."
+            },
+            "self_service": {
+              "question": "Can we adjust the workflows ourselves later?",
+              "answer": "Yes, that's the goal. n8n is user-friendly and we document everything. After the initial setup, technically savvy employees can make minor adjustments themselves."
+            }
+          }
+        },
+        "support": {
+          "title": "Support & maintenance",
+          "questions": {
+            "support": {
+              "question": "What about support?",
+              "answer": "We accompany you until it works in everyday life. This includes: 30 days email support after each workshop, monthly check-ins in the first 3 months, and available maintenance contracts for ongoing support."
+            },
+            "support_cost": {
+              "question": "What does ongoing support cost?",
+              "answer": "That depends on the scope. Basic monitoring and minor adjustments from CHF 200/month. For complex setups or SLA guarantees correspondingly more. Everything transparently calculated."
+            },
+            "training": {
+              "question": "Do you also offer training?",
+              "answer": "Yes, both one-time workshops and ongoing training. From AI basics for executives to technical deep dives for IT teams. Online or on-site throughout Switzerland."
+            }
+          }
+        }
+      },
+      "cta": {
+        "title": "Question not answered?",
+        "subtitle": "Let's talk personally. Free and non-binding.",
+        "button": "Personal conversation"
+      }
     },
-    "implementation": {
-      "title": "Implementation", 
-      "description": "Professional implementation of your AI projects"
+    "contact": {
+      "hero": {
+        "title": "Contact",
+        "subtitle": "Let's talk. Free, non-binding and concrete."
+      },
+      "consultation": {
+        "title": "Free initial consultation",
+        "subtitle": "30 minutes non-binding - concrete solution suggestions",
+        "benefits": [
+          "30 minutes non-binding",
+          "Concrete solution suggestions",
+          "Realistic assessment",
+          "No sales tricks"
+        ],
+        "button": "Book 30min appointment now"
+      },
+      "form": {
+        "title": "Send message",
+        "subtitle": "We usually respond within 24 hours",
+        "fields": {
+          "name": {
+            "label": "Name *",
+            "placeholder": "Your name"
+          },
+          "company": {
+            "label": "Company",
+            "placeholder": "Company name"
+          },
+          "email": {
+            "label": "Email *",
+            "placeholder": "your.email@company.ch"
+          },
+          "phone": {
+            "label": "Phone",
+            "placeholder": "+41 xx xxx xx xx"
+          },
+          "topic": {
+            "label": "Topic *",
+            "placeholder": "Choose a topic",
+            "options": [
+              "Request AI workshop",
+              "Workflow automation", 
+              "Coaching & training",
+              "Book webinar",
+              "General inquiry"
+            ]
+          },
+          "message": {
+            "label": "Message *",
+            "placeholder": "Describe your request..."
+          },
+          "privacy": {
+            "label": "I agree to the processing of my data according to the privacy policy. *"
+          }
+        },
+        "button": "Send message",
+        "success": {
+          "title": "Thank you!",
+          "message": "Your message has been sent successfully. We will contact you within 24 hours.",
+          "button": "Send another message"
+        },
+        "privacy_error": {
+          "title": "Confirm privacy",
+          "message": "Please confirm the privacy policy."
+        },
+        "success_toast": {
+          "title": "Message sent!",
+          "message": "We will contact you within 24 hours."
+        }
+      },
+      "direct": {
+        "title": "Direct contact",
+        "email": {
+          "label": "Email",
+          "value": "info@schnellstart.ai"
+        },
+        "phone": {
+          "label": "Phone",
+          "value": "By appointment"
+        },
+        "location": {
+          "label": "Location",
+          "value": "Frauenfeld, Switzerland"
+        },
+        "availability": {
+          "label": "Availability",
+          "value": "On-site throughout Switzerland"
+        }
+      }
     }
   },
   "footer": {
@@ -47,7 +613,7 @@
     "legal": "Legal",
     "contact": "Contact",
     "impressum": "Imprint",
-    "privacy": "Privacy Policy", 
+    "privacy": "Privacy policy", 
     "email": "Email",
     "phone_hours": "Phone: Mon-Fri 9-17",
     "linkedin": "LinkedIn",
@@ -60,6 +626,9 @@
     "back_to_top": "Back to top",
     "loading": "Loading...",
     "error": "Error",
-    "success": "Success"
+    "success": "Success",
+    "duration": "Duration",
+    "price": "Price",
+    "benefit": "Your benefit"
   }
 }
