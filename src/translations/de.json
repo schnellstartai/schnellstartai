@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "services": "Services",
+    "blog": "Blog", 
+    "faq": "FAQ",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "book_appointment": "Termin buchen"
+  },
+  "hero": {
+    "title": "KI-Automatisierung für Schweizer KMU",
+    "subtitle": "Steigern Sie Effizienz und reduzieren Sie Kosten mit massgeschneiderten AI-Lösungen. Für Unternehmen, die nicht nur mithalten, sondern vorangehen wollen.",
+    "cta": "Kostenloses Beratungsgespräch"
+  },
+  "steps": {
+    "workshop": {
+      "title": "Workshop",
+      "description": "2–4 Stunden Einführung mit echten Use Cases aus Schweizer KMU."
+    },
+    "process": {
+      "title": "Prozess", 
+      "description": "Einen Prozess klar definieren und sauber automatisieren – zugeschnitten auf Ihr Business."
+    },
+    "profit": {
+      "title": "Gewinn",
+      "description": "Messbare Zeit- oder Kosteneinsparungen, die sich direkt auf Ihren Erfolg auswirken."
+    }
+  },
+  "services": {
+    "title": "Unsere Services",
+    "ai_automation": {
+      "title": "KI-Automatisierung",
+      "description": "Intelligente Automatisierung wiederkehrender Aufgaben"
+    },
+    "consulting": {
+      "title": "AI-Beratung",
+      "description": "Strategische Beratung für den optimalen AI-Einsatz"
+    },
+    "implementation": {
+      "title": "Implementierung",
+      "description": "Professionelle Umsetzung Ihrer AI-Projekte"
+    }
+  },
+  "footer": {
+    "company_description": "Ihr Partner für KI-Automatisierung in der Schweiz",
+    "navigation": "Navigation",
+    "legal": "Rechtliches",
+    "contact": "Kontakt",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "email": "E-Mail",
+    "phone_hours": "Telefon: Mo-Fr 9-17 Uhr",
+    "linkedin": "LinkedIn",
+    "copyright": "© 2024 Schnellstart.ai. Alle Rechte vorbehalten."
+  },
+  "common": {
+    "read_more": "Mehr erfahren",
+    "learn_more": "Mehr erfahren", 
+    "contact_us": "Kontakt aufnehmen",
+    "back_to_top": "Nach oben",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolgreich"
+  }
+}

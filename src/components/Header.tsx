@@ -2,15 +2,18 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { LanguageToggle } from '@/components/LanguageToggle';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navItems = [
-    { label: 'Services', href: '/services' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'FAQ', href: '/faq' },
-    { label: 'Über uns', href: '/about' },
+    { label: t('nav.services'), href: '/services' },
+    { label: t('nav.blog'), href: '/blog' },
+    { label: t('nav.faq'), href: '/faq' },
+    { label: t('nav.about'), href: '/about' },
   ];
 
   return (
@@ -25,7 +28,7 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -35,6 +38,9 @@ export const Header = () => {
                 {item.label}
               </Link>
             ))}
+            
+            {/* Language Toggle */}
+            <LanguageToggle />
           </div>
 
           {/* CTA Button */}
@@ -48,7 +54,7 @@ export const Header = () => {
                 variant="brand" 
                 className="font-medium px-6 py-2.5 text-base"
               >
-                Termin buchen
+                {t('nav.book_appointment')}
               </Button>
             </a>
           </div>
@@ -77,6 +83,12 @@ export const Header = () => {
                   {item.label}
                 </Link>
               ))}
+              
+              {/* Mobile Language Toggle */}
+              <div className="pt-2 pb-2">
+                <LanguageToggle />
+              </div>
+              
               <a 
                 href="https://calendly.com/schnellstart-info/30min" 
                 target="_blank" 
@@ -84,7 +96,7 @@ export const Header = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Button variant="brand" className="w-full">
-                  Termin buchen
+                  {t('nav.book_appointment')}
                 </Button>
               </a>
             </div>

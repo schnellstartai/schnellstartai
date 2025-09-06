@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "services": "Services",
+    "blog": "Blog",
+    "faq": "FAQ", 
+    "about": "About us",
+    "contact": "Contact",
+    "book_appointment": "Book appointment"
+  },
+  "hero": {
+    "title": "AI Automation for Swiss SMEs",
+    "subtitle": "Increase efficiency and reduce costs with tailored AI solutions. For companies that want to lead, not just keep up.",
+    "cta": "Free consultation"
+  },
+  "steps": {
+    "workshop": {
+      "title": "Workshop",
+      "description": "2–4 hours introduction with real use cases from Swiss SMEs."
+    },
+    "process": {
+      "title": "Process",
+      "description": "Clearly define and cleanly automate a process – tailored to your business."
+    },
+    "profit": {
+      "title": "Profit", 
+      "description": "Measurable time or cost savings that directly impact your success."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "ai_automation": {
+      "title": "AI Automation",
+      "description": "Intelligent automation of recurring tasks"
+    },
+    "consulting": {
+      "title": "AI Consulting",
+      "description": "Strategic consulting for optimal AI implementation"
+    },
+    "implementation": {
+      "title": "Implementation", 
+      "description": "Professional implementation of your AI projects"
+    }
+  },
+  "footer": {
+    "company_description": "Your partner for AI automation in Switzerland",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "contact": "Contact",
+    "impressum": "Imprint",
+    "privacy": "Privacy Policy", 
+    "email": "Email",
+    "phone_hours": "Phone: Mon-Fri 9-17",
+    "linkedin": "LinkedIn",
+    "copyright": "© 2024 Schnellstart.ai. All rights reserved."
+  },
+  "common": {
+    "read_more": "Read more",
+    "learn_more": "Learn more",
+    "contact_us": "Contact us", 
+    "back_to_top": "Back to top",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  }
+}
