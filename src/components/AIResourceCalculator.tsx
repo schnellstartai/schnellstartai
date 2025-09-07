@@ -50,17 +50,17 @@ export const AIResourceCalculator = () => {
   const isCalculateDisabled = !formData.industry || !formData.employees || !formData.manualHours;
 
   const industries = [
-    t('pages.index.calculator.form.industry.options.0'),
-    t('pages.index.calculator.form.industry.options.1'),
-    t('pages.index.calculator.form.industry.options.2'),
-    t('pages.index.calculator.form.industry.options.3'),
-    t('pages.index.calculator.form.industry.options.4'),
-    t('pages.index.calculator.form.industry.options.5'),
-    t('pages.index.calculator.form.industry.options.6'),
-    t('pages.index.calculator.form.industry.options.7'),
-    t('pages.index.calculator.form.industry.options.8'),
-    t('pages.index.calculator.form.industry.options.9')
-  ];
+    'Treuhand / Buchhaltung',
+    'Rechtsberatung',
+    'Unternehmensberatung',
+    'IT-Services',
+    'Personalwesen',
+    'Marketing / Vertrieb',
+    'Immobilien',
+    'Gesundheitswesen',
+    'Bildung',
+    'Andere'
+  ].map(industry => t(`pages.index.calculator.form.industry.options.${industry}`) || industry).filter(Boolean);
 
   return (
     <section className="py-16 lg:py-24 bg-gradient-to-br from-brand-yellow/5 to-accent/5" id="potential-rechner">
