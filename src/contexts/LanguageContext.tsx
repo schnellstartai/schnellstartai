@@ -21,6 +21,14 @@ try {
   console.error('Translation files not found:', error);
   // Fallback translations
   deTranslations = {
+    nav: {
+      services: "Services",
+      blog: "Blog",
+      faq: "FAQ",
+      about: "Über uns",
+      contact: "Kontakt",
+      book_appointment: "Termin buchen"
+    },
     pages: {
       index: {
         hero: {
@@ -32,6 +40,14 @@ try {
     }
   };
   enTranslations = {
+    nav: {
+      services: "Services",
+      blog: "Blog",
+      faq: "FAQ",
+      about: "About us",
+      contact: "Contact",
+      book_appointment: "Book appointment"
+    },
     pages: {
       index: {
         hero: {
