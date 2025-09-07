@@ -179,7 +179,62 @@
             }
           },
           "quote": "\"Ich kann mich jetzt auf das konzentrieren, was ich am besten kann: meine Mandanten beraten. Die KI übernimmt die Routine – fehlerfrei und zuverlässig.\""
-        }
+        },
+        "cta": "Ihre Erfolgsgeschichte beginnt hier"
+      },
+      "calculator": {
+        "title": "KI-Potential Rechner",
+        "subtitle": "Entdecken Sie in 2 Minuten, wie viel Zeit und Geld KI-Automatisierung in Ihrem Unternehmen einsparen kann",
+        "form": {
+          "title": "Beschreiben Sie Ihr Unternehmen",
+          "description": "Alle Angaben sind vertraulich und werden nicht gespeichert",
+          "industry": {
+            "label": "Branche",
+            "placeholder": "Wählen Sie Ihre Branche",
+            "options": [
+              "Treuhand & Buchhaltung",
+              "Handel & E-Commerce",
+              "Dienstleistung",
+              "Handwerk & Bau",
+              "Gesundheitswesen",
+              "Beratung",
+              "IT & Software",
+              "Gastronomie",
+              "Immobilien",
+              "Andere"
+            ]
+          },
+          "employees": {
+            "label": "Anzahl Mitarbeiter",
+            "placeholder": "z.B. 5"
+          },
+          "manual_hours": {
+            "label": "Stunden pro Woche für manuelle Admin-Aufgaben",
+            "placeholder": "z.B. 8",
+            "help": "Rechnungen erfassen, Reports erstellen, Daten übertragen, etc."
+          },
+          "hourly_rate": {
+            "label": "Durchschnittlicher Stundenlohn (CHF)",
+            "placeholder": "z.B. 65"
+          },
+          "calculate_button": "Potential berechnen"
+        },
+        "results": {
+          "title": "Ihr KI-Automatisierung Potential",
+          "description": "Basierend auf konservativen 50% Automatisierungsrate",
+          "empty_state": "Füllen Sie das Formular aus, um Ihr Potential zu sehen",
+          "time_saved": "Zeit pro Woche gespart",
+          "weekly_savings": "Wöchentliche Einsparung",
+          "yearly_title": "Ihr Jahres-Einsparpotential",
+          "yearly_subtitle": "Diese Ressourcen können Sie produktiver einsetzen",
+          "features": [
+            "Automatisierung von Rechnungsverarbeitung",
+            "KI-gestützte Report-Generierung",
+            "Workflow-Automatisierung mit n8n"
+          ],
+          "cta": "Kostenloses Beratungsgespräch vereinbaren"
+        },
+        "disclaimer": "Wichtiger Hinweis: Die Berechnungen basieren auf Durchschnittswerten und dienen der groben Orientierung. In einem kostenlosen Beratungsgespräch analysieren wir gemeinsam Ihre spezifischen Prozesse und erstellen eine massgeschneiderte Lösung für Ihr Unternehmen."
       },
       "tech_stack": {
         "title": "Unsere Technologie-Partner",

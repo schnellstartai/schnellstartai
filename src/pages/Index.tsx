@@ -308,9 +308,9 @@ const Index = () => {
       <section className="py-16 lg:py-24" id="erfolgsgeschichten">
         <div className="container mx-auto px-4 lg:px-8">
           <header className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Erfolgsgeschichten aus der Praxis</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.index.success_stories.title')}</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Schweizer KMU teilen ihre Erfahrungen mit KI-Automatisierung
+              {t('pages.index.success_stories.subtitle')}
             </p>
           </header>
           
@@ -322,68 +322,62 @@ const Index = () => {
                     <Users className="w-8 h-8 text-brand-black" />
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="text-2xl mb-2">Selbständige Treuhand-Expertin spart 50% Zeit</CardTitle>
+                    <CardTitle className="text-2xl mb-2">{t('pages.index.success_stories.story.title')}</CardTitle>
                     <CardDescription className="text-lg">
-                      Dank KI-Integration: Automatisierte Reports und fehlerfreie Rechnungsstellung
+                      {t('pages.index.success_stories.story.subtitle')}
                     </CardDescription>
                   </div>
-                  <MetricChip metric="−50% Zeitaufwand" />
+                  <MetricChip metric={t('pages.index.success_stories.story.metric')} />
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="grid lg:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-semibold text-lg mb-4">Die Herausforderung</h4>
+                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.success_stories.story.challenge.title')}</h4>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
-                      "Als selbständige Treuhänderin war ich täglich mit repetitiven Aufgaben beschäftigt: 
-                      Rechnungen manuell erfassen, Reports zusammenstellen, Daten zwischen verschiedenen 
-                      Systemen übertragen. Das kostete mich wertvolle Zeit, die ich lieber für die Beratung 
-                      meiner Mandanten eingesetzt hätte."
+                      {t('pages.index.success_stories.story.challenge.description')}
                     </p>
                     
-                    <h4 className="font-semibold text-lg mb-4">Die Lösung</h4>
+                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.success_stories.story.solution.title')}</h4>
                     <div className="space-y-3">
-                      <div className="flex items-start space-x-3">
-                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
-                        <span className="text-sm">Automatische Rechnungserkennung und -erfassung</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
-                        <span className="text-sm">KI-gestützte Report-Generierung aus Rohdaten</span>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
-                        <span className="text-sm">Direkte Integration in bestehende Buchhaltungssoftware</span>
-                      </div>
+                      {[
+                        t('pages.index.success_stories.story.solution.items.0'),
+                        t('pages.index.success_stories.story.solution.items.1'),
+                        t('pages.index.success_stories.story.solution.items.2')
+                      ].map((item: string, index: number) => (
+                        <div key={index} className="flex items-start space-x-3">
+                          <CheckCircle className="w-5 h-5 text-accent mt-1" />
+                          <span className="text-sm">{item}</span>
+                        </div>
+                      ))}
                     </div>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-lg mb-4">Die Resultate</h4>
+                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.success_stories.story.results.title')}</h4>
                     <div className="bg-background/50 rounded-lg p-6 mb-6">
                       <div className="grid grid-cols-2 gap-4 text-center">
                         <div>
-                          <div className="text-2xl font-bold text-accent mb-1">50%</div>
-                          <div className="text-sm text-muted-foreground">weniger Zeit für Reports</div>
+                          <div className="text-2xl font-bold text-accent mb-1">{t('pages.index.success_stories.story.results.metrics.time.value')}</div>
+                          <div className="text-sm text-muted-foreground">{t('pages.index.success_stories.story.results.metrics.time.label')}</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-accent mb-1">0</div>
-                          <div className="text-sm text-muted-foreground">manuelle Eingabefehler</div>
+                          <div className="text-2xl font-bold text-accent mb-1">{t('pages.index.success_stories.story.results.metrics.errors.value')}</div>
+                          <div className="text-sm text-muted-foreground">{t('pages.index.success_stories.story.results.metrics.errors.label')}</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-accent mb-1">+30%</div>
-                          <div className="text-sm text-muted-foreground">mehr Zeit für Beratung</div>
+                          <div className="text-2xl font-bold text-accent mb-1">{t('pages.index.success_stories.story.results.metrics.consulting.value')}</div>
+                          <div className="text-sm text-muted-foreground">{t('pages.index.success_stories.story.results.metrics.consulting.label')}</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-accent mb-1">100%</div>
-                          <div className="text-sm text-muted-foreground">nachvollziehbar</div>
+                          <div className="text-2xl font-bold text-accent mb-1">{t('pages.index.success_stories.story.results.metrics.traceability.value')}</div>
+                          <div className="text-sm text-muted-foreground">{t('pages.index.success_stories.story.results.metrics.traceability.label')}</div>
                         </div>
                       </div>
                     </div>
                     
                     <blockquote className="border-l-4 border-brand-yellow/30 pl-4 italic text-muted-foreground">
-                      "Ich kann mich jetzt auf das konzentrieren, was ich am besten kann: 
-                      meine Mandanten beraten. Die KI übernimmt die Routine – fehlerfrei und zuverlässig."
+                      {t('pages.index.success_stories.story.quote')}
                     </blockquote>
                   </div>
                 </div>
@@ -394,7 +388,7 @@ const Index = () => {
           <div className="text-center mt-12">
             <Link to="/contact">
               <Button variant="brand" className="hover-scale">
-                Ihre Erfolgsgeschichte beginnt hier
+                {t('pages.index.success_stories.cta')}
                 <ArrowRight className="ml-2" size={16} />
               </Button>
             </Link>

@@ -6,8 +6,10 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Calculator, TrendingUp, Clock, DollarSign, Zap, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export const AIResourceCalculator = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     industry: '',
     employees: '',
@@ -48,16 +50,16 @@ export const AIResourceCalculator = () => {
   const isCalculateDisabled = !formData.industry || !formData.employees || !formData.manualHours;
 
   const industries = [
-    'Treuhand & Buchhaltung',
-    'Handel & E-Commerce',
-    'Dienstleistung',
-    'Handwerk & Bau',
-    'Gesundheitswesen',
-    'Beratung',
-    'IT & Software',
-    'Gastronomie',
-    'Immobilien',
-    'Andere'
+    t('pages.index.calculator.form.industry.options.0'),
+    t('pages.index.calculator.form.industry.options.1'),
+    t('pages.index.calculator.form.industry.options.2'),
+    t('pages.index.calculator.form.industry.options.3'),
+    t('pages.index.calculator.form.industry.options.4'),
+    t('pages.index.calculator.form.industry.options.5'),
+    t('pages.index.calculator.form.industry.options.6'),
+    t('pages.index.calculator.form.industry.options.7'),
+    t('pages.index.calculator.form.industry.options.8'),
+    t('pages.index.calculator.form.industry.options.9')
   ];
 
   return (
@@ -67,9 +69,9 @@ export const AIResourceCalculator = () => {
           <div className="w-16 h-16 bg-brand-yellow/10 rounded-xl flex items-center justify-center mx-auto mb-6">
             <Calculator className="w-8 h-8 text-brand-black" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">KI-Potential Rechner</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.index.calculator.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Entdecken Sie in 2 Minuten, wie viel Zeit und Geld KI-Automatisierung in Ihrem Unternehmen einsparen kann
+            {t('pages.index.calculator.subtitle')}
           </p>
         </div>
 
@@ -78,20 +80,20 @@ export const AIResourceCalculator = () => {
             {/* Input Form */}
             <Card className="border-brand-yellow/20">
               <CardHeader>
-                <CardTitle className="text-xl">Beschreiben Sie Ihr Unternehmen</CardTitle>
+                <CardTitle className="text-xl">{t('pages.index.calculator.form.title')}</CardTitle>
                 <CardDescription>
-                  Alle Angaben sind vertraulich und werden nicht gespeichert
+                  {t('pages.index.calculator.form.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <Label htmlFor="industry">Branche</Label>
+                  <Label htmlFor="industry">{t('pages.index.calculator.form.industry.label')}</Label>
                   <Select value={formData.industry} onValueChange={(value) => setFormData(prev => ({ ...prev, industry: value }))}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Wählen Sie Ihre Branche" />
+                      <SelectValue placeholder={t('pages.index.calculator.form.industry.placeholder')} />
                     </SelectTrigger>
                     <SelectContent>
-                      {industries.map((industry) => (
+                      {industries.map((industry: string) => (
                         <SelectItem key={industry} value={industry}>
                           {industry}
                         </SelectItem>
@@ -101,43 +103,43 @@ export const AIResourceCalculator = () => {
                 </div>
 
                 <div>
-                  <Label htmlFor="employees">Anzahl Mitarbeiter</Label>
+                  <Label htmlFor="employees">{t('pages.index.calculator.form.employees.label')}</Label>
                   <Input
                     id="employees"
                     type="number"
                     min="1"
                     max="500"
-                    placeholder="z.B. 5"
+                    placeholder={t('pages.index.calculator.form.employees.placeholder')}
                     value={formData.employees}
                     onChange={(e) => setFormData(prev => ({ ...prev, employees: e.target.value }))}
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="manualHours">Stunden pro Woche für manuelle Admin-Aufgaben</Label>
+                  <Label htmlFor="manualHours">{t('pages.index.calculator.form.manual_hours.label')}</Label>
                   <Input
                     id="manualHours"
                     type="number"
                     min="1"
                     max="40"
                     step="0.5"
-                    placeholder="z.B. 8"
+                    placeholder={t('pages.index.calculator.form.manual_hours.placeholder')}
                     value={formData.manualHours}
                     onChange={(e) => setFormData(prev => ({ ...prev, manualHours: e.target.value }))}
                   />
                   <p className="text-sm text-muted-foreground mt-1">
-                    Rechnungen erfassen, Reports erstellen, Daten übertragen, etc.
+                    {t('pages.index.calculator.form.manual_hours.help')}
                   </p>
                 </div>
 
                 <div>
-                  <Label htmlFor="hourlyRate">Durchschnittlicher Stundenlohn (CHF)</Label>
+                  <Label htmlFor="hourlyRate">{t('pages.index.calculator.form.hourly_rate.label')}</Label>
                   <Input
                     id="hourlyRate"
                     type="number"
                     min="20"
                     max="200"
-                    placeholder="z.B. 65"
+                    placeholder={t('pages.index.calculator.form.hourly_rate.placeholder')}
                     value={formData.hourlyRate}
                     onChange={(e) => setFormData(prev => ({ ...prev, hourlyRate: e.target.value }))}
                   />
@@ -150,7 +152,7 @@ export const AIResourceCalculator = () => {
                   variant="brand"
                 >
                   <Calculator className="mr-2 h-4 w-4" />
-                  Potential berechnen
+                  {t('pages.index.calculator.form.calculate_button')}
                 </Button>
               </CardContent>
             </Card>
@@ -158,9 +160,9 @@ export const AIResourceCalculator = () => {
             {/* Results */}
             <Card className="border-accent/20">
               <CardHeader>
-                <CardTitle className="text-xl">Ihr KI-Automatisierung Potential</CardTitle>
+                <CardTitle className="text-xl">{t('pages.index.calculator.results.title')}</CardTitle>
                 <CardDescription>
-                  Basierend auf konservativen 50% Automatisierungsrate
+                  {t('pages.index.calculator.results.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -168,7 +170,7 @@ export const AIResourceCalculator = () => {
                   <div className="flex items-center justify-center h-64 text-muted-foreground">
                     <div className="text-center">
                       <TrendingUp className="w-12 h-12 mx-auto mb-4 opacity-50" />
-                      <p>Füllen Sie das Formular aus, um Ihr Potential zu sehen</p>
+                      <p>{t('pages.index.calculator.results.empty_state')}</p>
                     </div>
                   </div>
                 ) : (
@@ -177,46 +179,44 @@ export const AIResourceCalculator = () => {
                       <div className="bg-background/50 rounded-lg p-4 text-center">
                         <Clock className="w-6 h-6 text-accent mx-auto mb-2" />
                         <div className="text-2xl font-bold text-accent">{results.timeSaved.toFixed(1)}h</div>
-                        <div className="text-sm text-muted-foreground">Zeit pro Woche gespart</div>
+                        <div className="text-sm text-muted-foreground">{t('pages.index.calculator.results.time_saved')}</div>
                       </div>
                       <div className="bg-background/50 rounded-lg p-4 text-center">
                         <DollarSign className="w-6 h-6 text-accent mx-auto mb-2" />
                         <div className="text-2xl font-bold text-accent">CHF {results.potentialSavings.toLocaleString()}</div>
-                        <div className="text-sm text-muted-foreground">Wöchentliche Einsparung</div>
+                        <div className="text-sm text-muted-foreground">{t('pages.index.calculator.results.weekly_savings')}</div>
                       </div>
                     </div>
 
                     <div className="bg-gradient-to-br from-brand-yellow/10 to-accent/10 rounded-lg p-6">
-                      <h4 className="font-semibold mb-4 text-center">Ihr Jahres-Einsparpotential</h4>
+                      <h4 className="font-semibold mb-4 text-center">{t('pages.index.calculator.results.yearly_title')}</h4>
                       <div className="text-center">
                         <div className="text-3xl font-bold text-brand-black mb-2">
                           CHF {(results.potentialSavings * 52).toLocaleString()}
                         </div>
                         <div className="text-sm text-muted-foreground mb-4">
-                          Diese Ressourcen können Sie produktiver einsetzen
+                          {t('pages.index.calculator.results.yearly_subtitle')}
                         </div>
                       </div>
                     </div>
 
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-3">
-                        <Zap className="w-5 h-5 text-accent" />
-                        <span className="text-sm">Automatisierung von Rechnungsverarbeitung</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <Zap className="w-5 h-5 text-accent" />
-                        <span className="text-sm">KI-gestützte Report-Generierung</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <Zap className="w-5 h-5 text-accent" />
-                        <span className="text-sm">Workflow-Automatisierung mit n8n</span>
-                      </div>
+                      <div className="space-y-3">
+                      {[
+                        t('pages.index.calculator.results.features.0'),
+                        t('pages.index.calculator.results.features.1'),
+                        t('pages.index.calculator.results.features.2')
+                      ].map((feature: string, index: number) => (
+                        <div key={index} className="flex items-center space-x-3">
+                          <Zap className="w-5 h-5 text-accent" />
+                          <span className="text-sm">{feature}</span>
+                        </div>
+                      ))}
                     </div>
 
                     <div className="pt-4">
                       <Link to="/contact">
                         <Button variant="brand" className="w-full hover-scale">
-                          Kostenloses Beratungsgespräch vereinbaren
+                          {t('pages.index.calculator.results.cta')}
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                       </Link>
@@ -230,9 +230,7 @@ export const AIResourceCalculator = () => {
           {results && (
             <div className="mt-12 text-center">
               <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-                <strong>Wichtiger Hinweis:</strong> Die Berechnungen basieren auf Durchschnittswerten und dienen der groben Orientierung. 
-                In einem kostenlosen Beratungsgespräch analysieren wir gemeinsam Ihre spezifischen Prozesse und erstellen 
-                eine massgeschneiderte Lösung für Ihr Unternehmen.
+                {t('pages.index.calculator.disclaimer')}
               </p>
             </div>
           )}

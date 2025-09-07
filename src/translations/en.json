@@ -154,7 +154,61 @@
           },
           "quote": "\"I can now focus on what I do best: advising my clients. AI takes over the routine – error-free and reliable.\""
         },
-        "cta": "More success stories"
+        "cta": "Your success story starts here"
+      },
+      "calculator": {
+        "title": "AI Potential Calculator",
+        "subtitle": "Discover in 2 minutes how much time and money AI automation can save in your company",
+        "form": {
+          "title": "Describe your company",
+          "description": "All information is confidential and will not be stored",
+          "industry": {
+            "label": "Industry",
+            "placeholder": "Select your industry",
+            "options": [
+              "Accounting & Bookkeeping",
+              "Retail & E-commerce",
+              "Services",
+              "Crafts & Construction",
+              "Healthcare",
+              "Consulting",
+              "IT & Software",
+              "Hospitality",
+              "Real Estate",
+              "Other"
+            ]
+          },
+          "employees": {
+            "label": "Number of employees",
+            "placeholder": "e.g. 5"
+          },
+          "manual_hours": {
+            "label": "Hours per week for manual admin tasks",
+            "placeholder": "e.g. 8",
+            "help": "Recording invoices, creating reports, transferring data, etc."
+          },
+          "hourly_rate": {
+            "label": "Average hourly wage (CHF)",
+            "placeholder": "e.g. 65"
+          },
+          "calculate_button": "Calculate potential"
+        },
+        "results": {
+          "title": "Your AI automation potential",
+          "description": "Based on conservative 50% automation rate",
+          "empty_state": "Fill out the form to see your potential",
+          "time_saved": "Time saved per week",
+          "weekly_savings": "Weekly savings",
+          "yearly_title": "Your annual savings potential",
+          "yearly_subtitle": "You can use these resources more productively",
+          "features": [
+            "Automation of invoice processing",
+            "AI-powered report generation",
+            "Workflow automation with n8n"
+          ],
+          "cta": "Schedule a free consultation"
+        },
+        "disclaimer": "Important note: The calculations are based on average values and serve as a rough guide. In a free consultation, we analyze your specific processes together and create a customized solution for your company."
       },
       "tech_stack": {
         "title": "Our technology partners",
