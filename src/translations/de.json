@@ -60,44 +60,87 @@
       "case_study": {
         "title": "Wie funktioniert Automatisierung konkret?",
         "subtitle": "Am Beispiel Rechnungsverarbeitung: Von der E-Mail bis zur Buchhaltung – vollautomatisch",
-        "automation": {
+        "process": {
           "title": "Automatische Rechnungsverarbeitung",
           "description": "Eingehende Rechnungen werden automatisch erkannt, verarbeitet und in Bexio erfasst",
-          "metric": "−65% Arbeitszeit",
-          "steps": {
-            "receive": {
-              "title": "E-Mail empfangen",
-              "description": "Rechnung kommt per E-Mail an"
-            },
-            "analyze": {
-              "title": "KI analysiert",
-              "description": "Automatische Datenextraktion aus PDF"
-            },
-            "process": {
-              "title": "n8n verarbeitet",
-              "description": "Workflow prüft und kategorisiert"
-            },
-            "record": {
-              "title": "Bexio Eintrag",
-              "description": "Rechnung wird automatisch erfasst"
-            }
+          "metric": "−65% Arbeitszeit"
+        },
+        "steps": {
+          "email": {
+            "title": "E-Mail empfangen",
+            "description": "Rechnung kommt per E-Mail an"
           },
-          "benefits": {
-            "title": "Konkrete Vorteile für Ihr Unternehmen",
-            "time": {
-              "title": "Zeitersparnis",
-              "description": "Keine manuelle Dateneingabe mehr"
-            },
-            "errors": {
-              "title": "Fehlerreduktion",
-              "description": "Tippfehler gehören der Vergangenheit an"
-            },
-            "compliance": {
-              "title": "Compliance",
-              "description": "Revisionssicher und nachvollziehbar"
-            }
+          "ai": {
+            "title": "KI analysiert",
+            "description": "Automatische Datenextraktion aus PDF"
+          },
+          "n8n": {
+            "title": "n8n verarbeitet",
+            "description": "Workflow prüft und kategorisiert"
+          },
+          "bexio": {
+            "title": "Bexio Eintrag",
+            "description": "Rechnung wird automatisch erfasst"
+          }
+        },
+        "benefits": {
+          "title": "Konkrete Vorteile für Ihr Unternehmen",
+          "time_saving": {
+            "title": "Zeitersparnis",
+            "description": "Keine manuelle Dateneingabe mehr"
+          },
+          "error_reduction": {
+            "title": "Fehlerreduktion",
+            "description": "Tippfehler gehören der Vergangenheit an"
+          },
+          "compliance": {
+            "title": "Compliance",
+            "description": "Revisionssicher und nachvollziehbar"
           }
         }
+      },
+      "services_preview": {
+        "title": "Praxiserprobte Lösungen für Schweizer KMU",
+        "cta": "Alle Services ansehen"
+      },
+      "tech_stack": {
+        "title": "Unser Tech-Stack",
+        "subtitle": "Nur stabile Technologien – sicher, flexibel und 100% FADP-konform",
+        "compliance": "Schweizer Datenschutz (FADP) und EU-DSGVO konform",
+        "technologies": {
+          "azure": {
+            "title": "Azure AI & OpenAI",
+            "description": "Wir hosten modernste KI-Modelle wie GPT-5, GPT-4.1, GPT-4o (Text, Bild, Audio) sowie spezialisierte Reasoning-Modelle (o-Serie). Über den Azure Model Catalog stehen zudem Llama 3, Mistral, Cohere, DeepSeek, NVIDIA und viele weitere Partner-Modelle zur Verfügung."
+          },
+          "n8n": {
+            "title": "n8n – sicher gehostet",
+            "description": "Unsere Automationsworkflows laufen in einer eigenen Azure-Umgebung. Dadurch bleiben alle Daten innerhalb eines geschützten Systems – FADP-konform, verschlüsselt und skalierbar."
+          },
+          "database": {
+            "title": "PostgreSQL / Supabase",
+            "description": "Wir setzen auf lokale PostgreSQL-Datenbanken oder Supabase-Cloud-Lösungen – je nach Kundenbedarf, von On-Premises bis skalierbarer SaaS-Architektur."
+          },
+          "erp": {
+            "title": "ERP- & Buchhaltungsintegrationen",
+            "description": "Bexio, Abacus, Sage und weitere Schweizer Lösungen werden nahtlos angebunden. Damit automatisieren wir Finanzprozesse vom Beleg bis zum Reporting."
+          },
+          "ecommerce": {
+            "title": "Shop-Integrationen",
+            "description": "Egal ob Shopware, Shopify oder andere Plattformen – wir verbinden Ihr E-Commerce mit Buchhaltung, ERP oder CRM für durchgängige Abläufe."
+          },
+          "apis": {
+            "title": "APIs & Cloud-Services",
+            "description": "Microsoft 365, Google Workspace, individuelle APIs – wir integrieren bestehende Systeme sicher und effizient."
+          }
+        }
+      },
+      "faq_teaser": {
+        "title": "Häufige Fragen: Direkte Antworten auf die wichtigsten Punkte",
+        "cta": "Alle FAQ ansehen"
+      },
+      "success_stories": {
+        "cta": "Mehr Erfolgsgeschichten"
+      }
       },
       "success_stories": {
         "title": "Erfolgsgeschichten aus der Praxis",

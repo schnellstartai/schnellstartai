@@ -58,46 +58,59 @@
         }
       },
       "case_study": {
-        "title": "How does automation work concretely?",
-        "subtitle": "Using invoice processing as example: From email to accounting – fully automated",
-        "automation": {
+        "title": "How does automation work in practice?",
+        "subtitle": "Example of invoice processing: From email to accounting – fully automatic",
+        "process": {
           "title": "Automatic invoice processing",
-          "description": "Incoming invoices are automatically recognized, processed and recorded in Bexio",
-          "metric": "−65% Working time",
-          "steps": {
-            "receive": {
-              "title": "Email received",
-              "description": "Invoice arrives by email"
-            },
-            "analyze": {
-              "title": "AI analyzes",
-              "description": "Automatic data extraction from PDF"
-            },
-            "process": {
-              "title": "n8n processes",
-              "description": "Workflow checks and categorizes"
-            },
-            "record": {
-              "title": "Bexio entry",
-              "description": "Invoice is automatically recorded"
-            }
+          "description": "Incoming invoices are automatically recognized, processed and entered in Bexio",
+          "metric": "−65% Working time"
+        },
+        "steps": {
+          "email": {
+            "title": "Receive email",
+            "description": "Invoice arrives by email"
           },
-          "benefits": {
-            "title": "Concrete benefits for your company",
-            "time": {
-              "title": "Time savings",
-              "description": "No more manual data entry"
-            },
-            "errors": {
-              "title": "Error reduction",
-              "description": "Typos are a thing of the past"
-            },
-            "compliance": {
-              "title": "Compliance",
-              "description": "Audit-proof and traceable"
-            }
+          "ai": {
+            "title": "AI analyzes",
+            "description": "Automatic data extraction from PDF"
+          },
+          "n8n": {
+            "title": "n8n processes",
+            "description": "Workflow checks and categorizes"
+          },
+          "bexio": {
+            "title": "Bexio entry",
+            "description": "Invoice is automatically recorded"
+          }
+        },
+        "benefits": {
+          "title": "Concrete benefits for your company",
+          "time_saving": {
+            "title": "Time saving",
+            "description": "No more manual data entry"
+          },
+          "error_reduction": {
+            "title": "Error reduction",
+            "description": "Typing errors are a thing of the past"
+          },
+          "compliance": {
+            "title": "Compliance",
+            "description": "Audit-proof and traceable"
           }
         }
+      },
+      "services_preview": {
+        "title": "Proven solutions for Swiss SMEs",
+        "cta": "View all services"
+      },
+      "tech_stack": {
+        "title": "Our tech stack",
+        "subtitle": "Only stable technologies – secure, flexible and 100% FADP compliant",
+        "compliance": "Swiss data protection (FADP) and EU GDPR compliant"
+      },
+      "faq_teaser": {
+        "title": "Frequently asked questions: Direct answers to the most important points",
+        "cta": "View all FAQ"
       },
       "success_stories": {
         "title": "Success stories from practice",
@@ -140,7 +153,8 @@
             }
           },
           "quote": "\"I can now focus on what I do best: advising my clients. AI takes over the routine – error-free and reliable.\""
-        }
+        },
+        "cta": "More success stories"
       },
       "tech_stack": {
         "title": "Our technology partners",
