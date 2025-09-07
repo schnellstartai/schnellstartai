@@ -1,4 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import deTranslations from '@/translations/de.json';
+import enTranslations from '@/translations/en.json';
 
 type Language = 'de' | 'en';
 
@@ -9,56 +11,6 @@ interface LanguageContextType {
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
-
-// Import translation files with error handling
-let deTranslations: any = {};
-let enTranslations: any = {};
-
-try {
-  deTranslations = require('@/translations/de.json');
-  enTranslations = require('@/translations/en.json');
-} catch (error) {
-  console.error('Translation files not found:', error);
-  // Fallback translations
-  deTranslations = {
-    nav: {
-      services: "Services",
-      blog: "Blog",
-      faq: "FAQ",
-      about: "Über uns",
-      contact: "Kontakt",
-      book_appointment: "Termin buchen"
-    },
-    pages: {
-      index: {
-        hero: {
-          title: "KI-Automatisierung für Unternehmen in Lichtgeschwindigkeit",
-          subtitle: "Schweizer KI-Workflows: schnell umgesetzt, klar messbar, datenkonform.",
-          cta: "Kostenlose Beratung anfragen →"
-        }
-      }
-    }
-  };
-  enTranslations = {
-    nav: {
-      services: "Services",
-      blog: "Blog",
-      faq: "FAQ",
-      about: "About us",
-      contact: "Contact",
-      book_appointment: "Book appointment"
-    },
-    pages: {
-      index: {
-        hero: {
-          title: "AI Automation for Companies at Lightspeed",
-          subtitle: "Swiss AI workflows: quickly implemented, clearly measurable, data compliant.",
-          cta: "Request free consultation →"
-        }
-      }
-    }
-  };
-}
 
 const translations = {
   de: deTranslations,
