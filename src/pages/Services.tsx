@@ -123,7 +123,7 @@ const Services = () => {
               Schweizer Qualität, Datenschutz inbegriffen.
             </p>
             <Link to="/contact" aria-label="Kostenloses Beratungsgespräch anfragen">
-              <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
+              <Button variant="consultation" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
                 Kostenloses Beratungsgespräch →
               </Button>
             </Link>

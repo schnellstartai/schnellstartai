@@ -26,6 +26,7 @@ export default {
 				'brand-yellow': 'hsl(var(--brand-yellow))',
 				'brand-black': 'hsl(var(--brand-black))',
 				'brand-blue': 'hsl(var(--brand-blue))',
+				'brand-pink': 'hsl(var(--brand-pink))',
 				
 				// Semantic Colors
 				border: 'hsl(var(--border))',

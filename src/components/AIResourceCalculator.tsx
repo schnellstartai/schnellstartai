@@ -215,7 +215,7 @@ export const AIResourceCalculator = () => {
 
                     <div className="pt-4">
                       <Link to="/contact">
-                        <Button variant="brand" className="w-full hover-scale">
+                        <Button variant="consultation" className="w-full hover-scale">
                           {t('pages.index.calculator.results.cta')}
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>

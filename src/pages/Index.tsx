@@ -152,7 +152,7 @@ const Index = () => {
              
              <div className="flex justify-center mb-12">
                 <Link to="/contact" aria-label={t('pages.index.hero.cta')}>
-                  <Button variant="brand" className="hover-scale bg-brand-yellow text-black hover:bg-brand-yellow/90">
+                  <Button variant="consultation" className="hover-scale">
                     {t('pages.index.hero.cta')}
                   </Button>
                </Link>
@@ -387,7 +387,7 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <Link to="/contact">
-              <Button variant="brand" className="hover-scale">
+              <Button variant="consultation" className="hover-scale">
                 {t('pages.index.success_stories.cta')}
                 <ArrowRight className="ml-2" size={16} />
               </Button>
@@ -516,7 +516,7 @@ const Index = () => {
               {t('pages.index.cta.ready_subtitle')}
             </p>
             <Link to="/contact">
-              <Button variant="brand" className="hover-scale">
+              <Button variant="consultation" className="hover-scale">
                 {t('pages.index.cta.ready_button')}
                 <ArrowRight className="ml-2" size={20} />
               </Button>
