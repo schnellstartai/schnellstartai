@@ -76,6 +76,17 @@ export const Footer = () => {
           <p className="text-sm text-muted-foreground">
             © 2025 schnellstart.ai · Frauenfeld, Schweiz · Made with 💛 for Swiss KMU
           </p>
+          <p className="text-xs text-muted-foreground/70 mt-2">
+            Website developed by{' '}
+            <a 
+              href="https://otterino.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors"
+            >
+              Otterino
+            </a>
+          </p>
         </div>
       </div>
     </footer>
