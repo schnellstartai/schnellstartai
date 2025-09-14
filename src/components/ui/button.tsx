@@ -21,7 +21,7 @@ const buttonVariants = cva(
         brand: "bg-brand-yellow text-brand-black hover:bg-brand-yellow/90 shadow-soft hover:shadow-glow font-semibold",
         brandOutline: "border-2 border-brand-yellow text-brand-yellow bg-transparent hover:bg-brand-yellow hover:text-brand-black",
         accent: "bg-accent text-accent-foreground hover:bg-accent/90",
-        consultation: "bg-brand-pink text-white hover:bg-brand-pink/90 shadow-soft hover:shadow-glow font-semibold",
+        consultation: "bg-brand-yellow/20 backdrop-blur-lg border border-brand-yellow/30 text-brand-yellow hover:bg-brand-yellow/30 hover:border-brand-yellow/50 shadow-soft hover:shadow-glow font-semibold transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
