@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { MetricChip } from '@/components/MetricChip';
-import { AIResourceCalculator } from '@/components/AIResourceCalculator';
+
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -396,8 +396,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* AI Resource Calculator */}
-      <AIResourceCalculator />
+      {/* Services Overview */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            {t('pages.index.services_overview.title')}
+          </h2>
+        </div>
+      </section>
 
       {/* Services Preview */}
       <section className="py-16 lg:py-24">
