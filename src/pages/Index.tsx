@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { MetricChip } from '@/components/MetricChip';
+import ctaBackground from '@/assets/cta-background.png';
 
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -403,13 +404,18 @@ const Index = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-brand-yellow/5 to-accent/5">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="relative py-16 lg:py-24 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{backgroundImage: `url(${ctaBackground})`}}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-black/60 via-brand-black/40 to-brand-yellow/20" />
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance text-white">
               {t('pages.index.cta.ready_title')}
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 text-balance">
+            <p className="text-xl text-white/90 mb-8 text-balance">
               {t('pages.index.cta.ready_subtitle')}
             </p>
             <Link to="/contact">
