@@ -167,6 +167,58 @@ const Index = () => {
         </div>
       </section>
 
+      {/* How We Start Section */}
+      <section className="py-12 sm:py-16 lg:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{t('pages.index.steps.title')}</h2>
+          </div>
+          
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+            {startSteps.map((step, index) => (
+              <Card key={index} className="text-center hover-scale">
+                <CardHeader>
+                  <div className="w-16 h-16 bg-brand-yellow/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <step.icon className="w-8 h-8 text-brand-black" />
+                  </div>
+                  <CardTitle className="text-xl">{step.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base leading-relaxed">
+                    {step.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          {/* Example Box */}
+          <Card className="max-w-2xl mx-auto bg-gradient-to-br from-brand-yellow/5 to-accent/5 border-brand-yellow/20">
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-lg sm:text-xl">{t('pages.index.steps.example.title')}</CardTitle>
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-accent animate-pulse" />
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 text-xs sm:text-sm">
+                <div className="flex items-center space-x-2">
+                  <span className="font-medium">{t('pages.index.steps.example.benefits.clicks')}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span>{t('pages.index.steps.example.benefits.recognition')}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span>{t('pages.index.steps.example.benefits.integration')}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span>{t('pages.index.steps.example.benefits.audit')}</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
 
       {/* Detailliertes Case Study */}
       <section className="py-12 sm:py-16 bg-muted/50" id="case-study">
