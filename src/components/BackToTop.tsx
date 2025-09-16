@@ -6,11 +6,19 @@ export const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+    
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          if (window.scrollY > 300) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
