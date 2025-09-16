@@ -18,16 +18,16 @@
       "steps": {
         "title": "So starten wir: Drei klare Schritte zum messbaren Erfolg",
         "workshop": {
-          "title": "Workshop",
-          "description": "2–4 Stunden Einführung mit echten Use Cases aus Schweizer KMU."
+          "title": "Problem-Analyse",
+          "description": "Zuerst verstehen wir Ihre spezifischen Herausforderungen durch Analyse bestehender Workflows, Identifikation von Schmerzpunkten und Mapping realer Use Cases aus Ihrem Arbeitsalltag."
         },
         "process": {
-          "title": "Prozess", 
-          "description": "Einen Prozess klar definieren und sauber automatisieren – zugeschnitten auf Ihr Business."
+          "title": "Problem-Definition", 
+          "description": "Wir zerlegen komplexe Geschäftsprobleme systematisch in handhabbare Komponenten, definieren klare Automatisierungsziele und entwerfen maßgeschneiderte Workflows für Ihre Use Cases."
         },
         "profit": {
-          "title": "Gewinn",
-          "description": "Messbare Zeit- oder Kosteneinsparungen, die sich direkt auf Ihren Erfolg auswirken."
+          "title": "Lösungs-Umsetzung",
+          "description": "Bewährte Automatisierungslösungen mit messbaren Ergebnissen, kontinuierlichem Monitoring und iterativen Verbesserungen basierend auf realen Leistungsdaten."
         },
         "example": {
           "title": "Beispiel: Rechnungseingang → n8n → Bexio",

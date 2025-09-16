@@ -18,16 +18,16 @@
       "steps": {
         "title": "How we start: Three clear steps to measurable success",
         "workshop": {
-          "title": "Workshop",
-          "description": "2–4 hours introduction with real use cases from Swiss SMEs."
+          "title": "Issue Analysis",
+          "description": "First, we understand your specific challenges by analyzing your current workflows, identifying pain points, and mapping real use cases from your daily operations to ensure targeted solutions."
         },
         "process": {
-          "title": "Process",
-          "description": "Clearly define and cleanly automate a process – tailored to your business."
+          "title": "Problem Definition",
+          "description": "We systematically break down complex business problems into manageable components, define clear automation goals, and design tailored workflows that address your specific use cases."
         },
         "profit": {
-          "title": "Profit", 
-          "description": "Measurable time or cost savings that directly impact your success."
+          "title": "Solution Implementation", 
+          "description": "Deploy proven automation solutions with measurable outcomes, continuous monitoring, and iterative improvements based on real-world performance data."
         },
         "example": {
           "title": "Example: Invoice receipt → n8n → Bexio",
