@@ -105,20 +105,20 @@ const Services = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24 relative overflow-hidden">
-        {/* Soft background overlay */}
-        <div 
-          className="absolute inset-0 opacity-[0.08] bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/lovable-uploads/165c17fc-1508-4c0d-8dd0-80ff58edee85.png)'
-          }}
-        ></div>
+      <section 
+        className="pt-24 pb-16 lg:pt-32 lg:pb-24 relative bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/assets/services-header-background.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 text-white">
               KI einfach erklärt, konkret umgesetzt
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance animate-fade-in">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 text-balance">
               Wir machen KI verständlich für Ihr Team und automatisieren Ihre Abläufe – ohne komplizierte Technik. 
               Schweizer Qualität, Datenschutz inbegriffen.
             </p>
