@@ -63,20 +63,20 @@ export const AIResourceCalculator = () => {
   ].map(industry => t(`pages.index.calculator.form.industry.options.${industry}`) || industry).filter(Boolean);
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-brand-yellow/5 to-accent/5" id="potential-rechner">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-12">
-          <div className="w-16 h-16 bg-brand-yellow/10 rounded-xl flex items-center justify-center mx-auto mb-6">
-            <Calculator className="w-8 h-8 text-brand-black" />
+    <section className="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-brand-yellow/5 to-accent/5" id="potential-rechner">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="w-12 h-12 sm:w-16 sm:h-16 bg-brand-yellow/10 rounded-xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+            <Calculator className="w-6 h-6 sm:w-8 sm:h-8 text-brand-black" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.index.calculator.title')}</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{t('pages.index.calculator.title')}</h2>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
             {t('pages.index.calculator.subtitle')}
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
             {/* Input Form */}
             <Card className="border-brand-yellow/20">
               <CardHeader>
@@ -85,7 +85,7 @@ export const AIResourceCalculator = () => {
                   {t('pages.index.calculator.form.description')}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-4 sm:space-y-6">
                 <div>
                   <Label htmlFor="industry">{t('pages.index.calculator.form.industry.label')}</Label>
                   <Select value={formData.industry} onValueChange={(value) => setFormData(prev => ({ ...prev, industry: value }))}>
@@ -148,7 +148,7 @@ export const AIResourceCalculator = () => {
                 <Button 
                   onClick={handleCalculate}
                   disabled={isCalculateDisabled}
-                  className="w-full"
+                  className="w-full text-sm sm:text-base py-3 sm:py-4"
                   variant="brand"
                 >
                   <Calculator className="mr-2 h-4 w-4" />
@@ -174,48 +174,48 @@ export const AIResourceCalculator = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-background/50 rounded-lg p-4 text-center">
-                        <Clock className="w-6 h-6 text-accent mx-auto mb-2" />
-                        <div className="text-2xl font-bold text-accent">{results.timeSaved.toFixed(1)}h</div>
-                        <div className="text-sm text-muted-foreground">{t('pages.index.calculator.results.time_saved')}</div>
+                  <div className="space-y-4 sm:space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                      <div className="bg-background/50 rounded-lg p-3 sm:p-4 text-center">
+                        <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-accent mx-auto mb-2" />
+                        <div className="text-xl sm:text-2xl font-bold text-accent">{results.timeSaved.toFixed(1)}h</div>
+                        <div className="text-xs sm:text-sm text-muted-foreground">{t('pages.index.calculator.results.time_saved')}</div>
                       </div>
-                      <div className="bg-background/50 rounded-lg p-4 text-center">
-                        <DollarSign className="w-6 h-6 text-accent mx-auto mb-2" />
-                        <div className="text-2xl font-bold text-accent">CHF {results.potentialSavings.toLocaleString()}</div>
-                        <div className="text-sm text-muted-foreground">{t('pages.index.calculator.results.weekly_savings')}</div>
+                      <div className="bg-background/50 rounded-lg p-3 sm:p-4 text-center">
+                        <DollarSign className="w-5 h-5 sm:w-6 sm:h-6 text-accent mx-auto mb-2" />
+                        <div className="text-xl sm:text-2xl font-bold text-accent">CHF {results.potentialSavings.toLocaleString()}</div>
+                        <div className="text-xs sm:text-sm text-muted-foreground">{t('pages.index.calculator.results.weekly_savings')}</div>
                       </div>
                     </div>
 
-                    <div className="bg-gradient-to-br from-brand-yellow/10 to-accent/10 rounded-lg p-6">
-                      <h4 className="font-semibold mb-4 text-center">{t('pages.index.calculator.results.yearly_title')}</h4>
+                    <div className="bg-gradient-to-br from-brand-yellow/10 to-accent/10 rounded-lg p-4 sm:p-6">
+                      <h4 className="font-semibold mb-3 sm:mb-4 text-center text-sm sm:text-base">{t('pages.index.calculator.results.yearly_title')}</h4>
                       <div className="text-center">
-                        <div className="text-3xl font-bold text-brand-black mb-2">
+                        <div className="text-2xl sm:text-3xl font-bold text-brand-black mb-2">
                           CHF {(results.potentialSavings * 52).toLocaleString()}
                         </div>
-                        <div className="text-sm text-muted-foreground mb-4">
+                        <div className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 px-2">
                           {t('pages.index.calculator.results.yearly_subtitle')}
                         </div>
                       </div>
                     </div>
 
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3">
                       {[
                         t('pages.index.calculator.results.features.0'),
                         t('pages.index.calculator.results.features.1'),
                         t('pages.index.calculator.results.features.2')
                       ].map((feature: string, index: number) => (
-                        <div key={index} className="flex items-center space-x-3">
-                          <Zap className="w-5 h-5 text-accent" />
-                          <span className="text-sm">{feature}</span>
+                        <div key={index} className="flex items-start space-x-2 sm:space-x-3">
+                          <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-accent mt-0.5" />
+                          <span className="text-xs sm:text-sm leading-relaxed">{feature}</span>
                         </div>
                       ))}
                     </div>
 
-                    <div className="pt-4">
+                    <div className="pt-3 sm:pt-4">
                       <Link to="/contact">
-                        <Button variant="consultation" className="w-full hover-scale">
+                        <Button variant="consultation" className="w-full hover-scale text-sm sm:text-base py-3 sm:py-4">
                           {t('pages.index.calculator.results.cta')}
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>

@@ -129,7 +129,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className={`relative min-h-screen flex items-center justify-center overflow-hidden transition-all duration-700 ${
+      <section className={`relative min-h-screen flex items-center justify-center overflow-hidden transition-all duration-700 pt-16 ${
         heroImageLoaded 
           ? 'hero-bg-loaded' 
           : 'bg-gradient-to-br from-brand-yellow/20 via-brand-black/5 to-accent/10'
@@ -141,39 +141,39 @@ const Index = () => {
           />
         )}
         <div className="absolute inset-0 bg-black/30" />
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 animate-fade-in text-white">
+             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-4 sm:mb-6 animate-fade-in text-white leading-tight">
                  {t('pages.index.hero.title')}
                </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 text-balance animate-fade-in">
+              <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 text-balance animate-fade-in leading-relaxed px-2">
                 {t('pages.index.hero.subtitle')}
               </p>
              
-             <div className="flex justify-center mb-12">
+             <div className="flex justify-center mb-8 sm:mb-12 px-4">
                 <Link to="/contact" aria-label={t('pages.index.hero.cta')}>
-                  <Button variant="consultation" className="hover-scale">
+                  <Button variant="consultation" className="hover-scale text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
                     {t('pages.index.hero.cta')}
                   </Button>
-               </Link>
+                </Link>
              </div>
 
-            <div className="flex items-center justify-center space-x-2 text-white/80">
-              <CheckCircle size={16} className="text-brand-yellow" />
-              <span className="text-sm font-medium">{t('pages.index.hero.note')}</span>
+            <div className="flex items-center justify-center space-x-2 text-white/80 px-4">
+              <CheckCircle size={14} className="text-brand-yellow sm:w-4 sm:h-4" />
+              <span className="text-xs sm:text-sm font-medium text-center">{t('pages.index.hero.note')}</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* How We Start Section */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.index.steps.title')}</h2>
+      <section className="py-12 sm:py-16 lg:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{t('pages.index.steps.title')}</h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
             {startSteps.map((step, index) => (
               <Card key={index} className="text-center hover-scale">
                 <CardHeader>
@@ -195,12 +195,12 @@ const Index = () => {
           <Card className="max-w-2xl mx-auto bg-gradient-to-br from-brand-yellow/5 to-accent/5 border-brand-yellow/20">
             <CardHeader>
               <div className="flex items-center justify-between">
-                <CardTitle className="text-xl">{t('pages.index.steps.example.title')}</CardTitle>
-                <ArrowRight className="w-5 h-5 text-accent animate-pulse" />
+                <CardTitle className="text-lg sm:text-xl">{t('pages.index.steps.example.title')}</CardTitle>
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-accent animate-pulse" />
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 text-xs sm:text-sm">
                 <div className="flex items-center space-x-2">
                   <span className="font-medium">{t('pages.index.steps.example.benefits.clicks')}</span>
                 </div>
@@ -220,11 +220,11 @@ const Index = () => {
       </section>
 
       {/* Detailliertes Case Study */}
-      <section className="py-16 bg-muted/50" id="case-study">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.index.case_study.title')}</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+      <section className="py-12 sm:py-16 bg-muted/50" id="case-study">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{t('pages.index.case_study.title')}</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
               {t('pages.index.case_study.subtitle')}
             </p>
           </div>
@@ -242,7 +242,7 @@ const Index = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-4 gap-6 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
                 <div className="text-center">
                   <div className="w-12 h-12 bg-brand-yellow/10 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <span className="text-lg font-bold text-brand-black">1</span>
@@ -275,7 +275,7 @@ const Index = () => {
               
               <div className="bg-background/50 rounded-lg p-6">
                 <h4 className="font-semibold mb-4 text-center">{t('pages.index.case_study.benefits.title')}</h4>
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
                   <div className="flex items-start space-x-3">
                     <Zap className="w-5 h-5 text-accent mt-1" />
                     <div>
