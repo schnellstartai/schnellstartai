@@ -95,13 +95,20 @@ const FAQ = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section 
+        className="pt-24 pb-16 lg:pt-32 lg:pb-24 relative bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/assets/faq-background.webp')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 text-white">
               Häufige Fragen
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 text-balance">
               Direkte Antworten auf die wichtigsten Punkte
             </p>
           </div>
