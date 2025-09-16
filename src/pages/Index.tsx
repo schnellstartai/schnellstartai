@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 
 const Index = () => {
+  // Fixed: Removed AIResourceCalculator component completely
   const { t } = useTranslation();
   const [heroImageLoaded, setHeroImageLoaded] = useState(false);
   
