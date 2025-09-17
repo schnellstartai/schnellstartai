@@ -51,13 +51,20 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 lg:pt-32 lg:pb-24">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section 
+        className="pt-24 pb-16 lg:pt-32 lg:pb-24 relative bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/assets/about-header-background.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 text-white">
               Über uns – Team & Haltung
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 text-balance">
               Wir sind ein kleines Team mit einer klaren Mission: 
               KI praktisch und sicher für Schweizer KMU nutzbar machen.
             </p>
@@ -65,10 +72,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Team Photo Section */}
       <section className="py-12 lg:py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          {/* Team Photo */}
           <div className="max-w-4xl mx-auto mb-6">
             <div className="text-center">
               <img 
@@ -84,8 +90,13 @@ const About = () => {
               Drei Experten, eine Vision: KI die funktioniert
             </p>
           </div>
+        </div>
+      </section>
 
-          {/* Team Member Descriptions */}
+      {/* Team Descriptions Section */}
+      <section className="py-12 lg:py-16">
+        <div className="container mx-auto px-4 lg:px-8">
+
           <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {team.map((member, index) => (
               <Card key={index} className="text-center">
