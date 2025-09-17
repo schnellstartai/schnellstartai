@@ -414,12 +414,19 @@ const Services = () => {
 
       {/* CTA Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-primary/5 to-accent/5 relative overflow-hidden">
-        <div 
-          className="absolute inset-0 opacity-[0.08] bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/lovable-uploads/d8acca43-46df-4e42-bd1e-6e4d1d1875e3.png)'
-          }}
-        ></div>
+        {/* Real Content Elements Instead of Background */}
+        <div className="absolute top-10 right-10 w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center animate-pulse">
+          <Star className="w-10 h-10 text-primary" />
+        </div>
+        <div className="absolute bottom-10 left-10 w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center animate-bounce">
+          <Target className="w-8 h-8 text-accent" />
+        </div>
+        <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-brand-yellow/20 rounded-full flex items-center justify-center">
+          <Lightbulb className="w-6 h-6 text-brand-yellow" />
+        </div>
+        <div className="absolute top-1/3 right-1/4 w-14 h-14 bg-primary/15 rounded-full flex items-center justify-center">
+          <Award className="w-7 h-7 text-primary" />
+        </div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
