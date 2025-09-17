@@ -67,8 +67,11 @@ const Services = () => {
   const includedItems = t('pages.services.what_expect.included_items');
   const afterItems = t('pages.services.what_expect.after_items');
 
-  const tools = t('pages.services.tech_stack.tools');
-  const achievements = t('pages.services.test_phase.achievements');
+  const toolsData = t('pages.services.tech_stack.tools');
+  const tools = Array.isArray(toolsData) ? toolsData : [];
+  
+  const achievementsData = t('pages.services.test_phase.achievements');
+  const achievements = Array.isArray(achievementsData) ? achievementsData : [];
 
   return (
     <div className="min-h-screen subpage-bg">
