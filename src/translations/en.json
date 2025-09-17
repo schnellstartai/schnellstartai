@@ -262,6 +262,34 @@
         "subtitle": "Calculate your savings potential through AI automation",
         "cta": "Book free consultation"
       },
+      "testphase": {
+        "title": "Currently in Test Phase",
+        "subtitle": "We work closely with Swiss companies and conduct workshops to perfect our AI solutions",
+        "card": {
+          "title": "Workshops & Collaboration",
+          "description": "Together we develop practical AI solutions for Swiss SMEs"
+        },
+        "achievements": {
+          "title": "What we have already accomplished",
+          "workshops": "AI workshops for various industries",
+          "pilots": "Pilot projects with Swiss companies",
+          "automation": "Developed privacy-compliant automation"
+        },
+        "focus": {
+          "title": "Our Focus",
+          "description": "We focus on making AI technologies understandable and developing practical solutions that really work. Every workshop and collaboration helps us improve our methods."
+        },
+        "success": {
+          "title": "Current Successes"
+        },
+        "metrics": {
+          "workshops": "Workshops conducted",
+          "partners": "Partner companies",
+          "compliance": "FADP Compliance",
+          "hosting": "Hosting & Support"
+        },
+        "quote": "We learn from every company and continuously improve our approaches. This creates solutions that are truly practical."
+      },
       "cta": {
         "ready_title": "Ready for the next step?",
         "ready_subtitle": "Let's find out in a free conversation how AI can advance your company.",

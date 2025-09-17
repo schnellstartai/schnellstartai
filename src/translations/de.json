@@ -288,6 +288,34 @@
         "subtitle": "Berechnen Sie Ihr Einsparpotenzial durch KI-Automatisierung",
         "cta": "Kostenloses Beratungsgespräch buchen"
       },
+      "testphase": {
+        "title": "Derzeit in der Testphase",
+        "subtitle": "Wir arbeiten eng mit Schweizer Unternehmen zusammen und führen Workshops durch, um unsere KI-Lösungen zu perfektionieren",
+        "card": {
+          "title": "Workshops & Zusammenarbeit",
+          "description": "Gemeinsam entwickeln wir praxisnahe KI-Lösungen für Schweizer KMU"
+        },
+        "achievements": {
+          "title": "Was wir bereits durchgeführt haben",
+          "workshops": "KI-Workshops für verschiedene Branchen",
+          "pilots": "Pilotprojekte mit Schweizer Unternehmen",
+          "automation": "Datenschutz-konforme Automatisierungen entwickelt"
+        },
+        "focus": {
+          "title": "Unser Fokus",
+          "description": "Wir konzentrieren uns darauf, KI-Technologien verständlich zu machen und praktische Lösungen zu entwickeln, die wirklich funktionieren. Jeder Workshop und jede Zusammenarbeit hilft uns, unsere Methoden zu verbessern."
+        },
+        "success": {
+          "title": "Aktuelle Erfolge"
+        },
+        "metrics": {
+          "workshops": "Workshops durchgeführt",
+          "partners": "Partnerunternehmen",
+          "compliance": "FADP Konformität",
+          "hosting": "Hosting & Support"
+        },
+        "quote": "Wir lernen von jedem Unternehmen und verbessern kontinuierlich unsere Ansätze. So entstehen Lösungen, die wirklich praxistauglich sind."
+      },
       "cta": {
         "ready_title": "Bereit für den nächsten Schritt?",
         "ready_subtitle": "Lassen Sie uns in einem kostenlosen Gespräch herausfinden, wie KI Ihr Unternehmen voranbringen kann.",

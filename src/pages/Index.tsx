@@ -196,13 +196,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Unsere Testphase */}
+      {/* Testphase Section */}
       <section className="py-16 lg:py-24" id="testphase">
         <div className="container mx-auto px-4 lg:px-8">
           <header className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Derzeit in der Testphase</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.index.testphase.title')}</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Wir arbeiten eng mit Schweizer Unternehmen zusammen und führen Workshops durch, um unsere KI-Lösungen zu perfektionieren
+              {t('pages.index.testphase.subtitle')}
             </p>
           </header>
           
@@ -214,9 +214,9 @@ const Index = () => {
                     <GraduationCap className="w-8 h-8 text-brand-black" />
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="text-2xl mb-2">Workshops & Zusammenarbeit</CardTitle>
+                    <CardTitle className="text-2xl mb-2">{t('pages.index.testphase.card.title')}</CardTitle>
                     <CardDescription className="text-lg">
-                      Gemeinsam entwickeln wir praxisnahe KI-Lösungen für Schweizer KMU
+                      {t('pages.index.testphase.card.description')}
                     </CardDescription>
                   </div>
                 </div>
@@ -224,55 +224,53 @@ const Index = () => {
               <CardContent>
                 <div className="grid lg:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-semibold text-lg mb-4">Was wir bereits durchgeführt haben</h4>
+                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.testphase.achievements.title')}</h4>
                     <div className="space-y-3 mb-6">
                       <div className="flex items-start space-x-3">
                         <CheckCircle className="w-5 h-5 text-accent mt-1" />
-                        <span className="text-sm">KI-Workshops für verschiedene Branchen</span>
+                        <span className="text-sm">{t('pages.index.testphase.achievements.workshops')}</span>
                       </div>
                       <div className="flex items-start space-x-3">
                         <CheckCircle className="w-5 h-5 text-accent mt-1" />
-                        <span className="text-sm">Pilotprojekte mit Schweizer Unternehmen</span>
+                        <span className="text-sm">{t('pages.index.testphase.achievements.pilots')}</span>
                       </div>
                       <div className="flex items-start space-x-3">
                         <CheckCircle className="w-5 h-5 text-accent mt-1" />
-                        <span className="text-sm">Datenschutz-konforme Automatisierungen entwickelt</span>
+                        <span className="text-sm">{t('pages.index.testphase.achievements.automation')}</span>
                       </div>
                     </div>
                     
-                    <h4 className="font-semibold text-lg mb-4">Unser Fokus</h4>
+                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.testphase.focus.title')}</h4>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
-                      Wir konzentrieren uns darauf, KI-Technologien verständlich zu machen und praktische Lösungen zu entwickeln, 
-                      die wirklich funktionieren. Jeder Workshop und jede Zusammenarbeit hilft uns, unsere Methoden zu verbessern.
+                      {t('pages.index.testphase.focus.description')}
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-lg mb-4">Aktuelle Erfolge</h4>
+                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.testphase.success.title')}</h4>
                     <div className="bg-background/50 rounded-lg p-6 mb-6">
                       <div className="grid grid-cols-2 gap-4 text-center">
                         <div>
                           <div className="text-2xl font-bold text-accent mb-1">15+</div>
-                          <div className="text-sm text-muted-foreground">Workshops durchgeführt</div>
+                          <div className="text-sm text-muted-foreground">{t('pages.index.testphase.metrics.workshops')}</div>
                         </div>
                         <div>
                           <div className="text-2xl font-bold text-accent mb-1">8</div>
-                          <div className="text-sm text-muted-foreground">Partnerunternehmen</div>
+                          <div className="text-sm text-muted-foreground">{t('pages.index.testphase.metrics.partners')}</div>
                         </div>
                         <div>
                           <div className="text-2xl font-bold text-accent mb-1">100%</div>
-                          <div className="text-sm text-muted-foreground">FADP Konformität</div>
+                          <div className="text-sm text-muted-foreground">{t('pages.index.testphase.metrics.compliance')}</div>
                         </div>
                         <div>
                           <div className="text-2xl font-bold text-accent mb-1">Schweiz</div>
-                          <div className="text-sm text-muted-foreground">Hosting & Support</div>
+                          <div className="text-sm text-muted-foreground">{t('pages.index.testphase.metrics.hosting')}</div>
                         </div>
                       </div>
                     </div>
                     
                     <blockquote className="border-l-4 border-brand-yellow/30 pl-4 italic text-muted-foreground">
-                      "Wir lernen von jedem Unternehmen und verbessern kontinuierlich unsere Ansätze. 
-                      So entstehen Lösungen, die wirklich praxistauglich sind."
+                      "{t('pages.index.testphase.quote')}"
                     </blockquote>
                   </div>
                 </div>
