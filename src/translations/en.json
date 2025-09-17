@@ -303,25 +303,13 @@
         "cta": "Free consultation →"
       },
       "trust_indicators": {
-        "hosting": {
-          "value": "100%",
-          "label": "Swiss hosting"
-        },
-        "compliance": {
-          "value": "FADP",
-          "label": "Data protection compliant"
-        },
-        "savings": {
-          "value": "50%",
-          "label": "Typical time savings"
-        },
-        "clients": {
-          "value": "30+",
-          "label": "Satisfied SMEs"
-        }
+        "swiss_hosting": "Swiss hosting",
+        "data_protection": "Data protection compliant",
+        "time_savings": "Typical time savings",
+        "satisfied_sme": "Satisfied SMEs"
       },
-      "service_list": {
-        "understanding": {
+      "service_cards": {
+        "ai_understand": {
           "title": "Understand & use AI",
           "duration": "2–4 hours",
           "description": "Workshop for teams and executives – without technical jargon",
@@ -334,7 +322,7 @@
           "price": "CHF 1'200 (fixed price)",
           "benefit": "Your team understands AI and can use it safely"
         },
-        "automation": {
+        "automate_processes": {
           "title": "Automate processes",
           "duration": "Project-based",
           "description": "Recurring tasks are taken over by AI – you have more time for the essentials",
@@ -348,7 +336,7 @@
           "price": "From CHF 3'000 (package)",
           "benefit": "Save 5-10 hours per week for more important tasks"
         },
-        "coaching": {
+        "ongoing_support": {
           "title": "Ongoing support",
           "duration": "Monthly",
           "description": "Your personal AI coach – so everything runs smoothly",
@@ -361,7 +349,7 @@
           "price": "CHF 800/month",
           "benefit": "Continuous improvement without your own IT department"
         },
-        "webinars": {
+        "webinars_onsite": {
           "title": "Webinars & on-site appointments",
           "duration": "Flexible",
           "description": "Available throughout Switzerland – online or at your business",
@@ -374,6 +362,30 @@
           "price": "From CHF 800",
           "benefit": "Flexible training exactly when you have time"
         }
+      },
+      "test_phase": {
+        "title": "Currently in test phase",
+        "subtitle": "We work closely with Swiss companies and conduct workshops to perfect our AI solutions",
+        "workshop_title": "Workshops & Collaboration",
+        "workshop_subtitle": "Together we develop practical AI solutions for Swiss SMEs",
+        "quote": "We learn from every company and continuously improve our approaches. This creates solutions that are truly practical.",
+        "workshops_conducted": "Workshops conducted",
+        "partner_companies": "Partner companies",
+        "what_developed": "What we have already accomplished",
+        "benefits": {
+          "co_creation": "Co-creation",
+          "co_creation_desc": "Direct input in product development",
+          "discounted_rates": "Special rates",
+          "discounted_rates_desc": "Preferential pricing for test participants",
+          "swiss_quality": "Swiss quality",
+          "swiss_quality_desc": "Highest standards for data protection and reliability"
+        }
+      },
+      "what_expect": {
+        "title": "What you can expect from us",
+        "subtitle": "Comprehensive support – from the first idea to the finished solution",
+        "included_title": "This is included for you",
+        "after_title": "Also there for you afterwards"
       },
       "success_story": {
         "title": "How Swiss SMEs already benefit",
