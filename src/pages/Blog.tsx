@@ -110,9 +110,8 @@ const Blog = () => {
                 </CardHeader>
                 <CardContent>
                   <Link to={`/blog/${blogPosts[0].slug}`}>
-                    <Button variant="brand" size="lg">
-                      Artikel lesen
-                      <ArrowRight className="ml-2" size={16} />
+                    <Button variant="consultation" size="lg">
+                      Artikel lesen →
                     </Button>
                   </Link>
                 </CardContent>

@@ -282,9 +282,8 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <Link to="/contact">
-              <Button variant="consultation" className="hover-scale">
-                Teil unserer Testphase werden
-                <ArrowRight className="ml-2" size={16} />
+              <Button variant="consultation" className="hover-scale text-lg px-8 py-6 h-auto">
+                Kostenlose Beratung anfragen →
               </Button>
             </Link>
           </div>

@@ -161,9 +161,8 @@ const FAQ = () => {
               Lassen Sie uns persönlich sprechen. Kostenlos und unverbindlich.
             </p>
             <Link to="/contact">
-              <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto">
-                Persönliches Gespräch
-                <ArrowRight className="ml-2" size={20} />
+              <Button variant="consultation" className="text-lg px-8 py-6 h-auto">
+                Kostenlose Beratung anfragen →
               </Button>
             </Link>
           </div>
