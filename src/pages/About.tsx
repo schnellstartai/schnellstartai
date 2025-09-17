@@ -28,7 +28,8 @@ const About = () => {
       name: "Lukas",
       role: "Strategie, Finance & Beratung", 
       description: "Business-Stratege mit Finance-Hintergrund. 15+ Jahre KMU-Beratung, spezialisiert auf ROI-orientierte KI-Implementierung.",
-      linkedin: "https://www.linkedin.com/in/financeai"
+      linkedin: "https://www.linkedin.com/in/financeai",
+      website: "https://www.swissfinanceai.ch/"
     }
   ];
 
