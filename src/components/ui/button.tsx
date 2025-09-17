@@ -18,10 +18,10 @@ const buttonVariants = cva(
           "bg-secondary/60 backdrop-blur-lg border border-secondary/30 text-secondary-foreground hover:bg-secondary/80 hover:border-secondary/50 shadow-soft",
         ghost: "bg-transparent backdrop-blur-lg border border-transparent hover:bg-accent/20 hover:text-accent-foreground hover:border-accent/30",
         link: "text-primary underline-offset-4 hover:underline bg-transparent border-transparent backdrop-blur-none",
-        brand: "bg-brand-yellow/20 backdrop-blur-lg border border-brand-yellow/30 text-brand-yellow hover:bg-brand-yellow/30 hover:border-brand-yellow/50 shadow-soft hover:shadow-glow font-semibold",
+        brand: "bg-brand-yellow/90 backdrop-blur-lg border border-brand-yellow text-brand-black hover:bg-brand-yellow hover:border-brand-yellow/80 shadow-soft hover:shadow-glow font-semibold",
         brandOutline: "bg-transparent backdrop-blur-lg border-2 border-brand-yellow/50 text-brand-yellow hover:bg-brand-yellow/20 hover:text-brand-yellow hover:border-brand-yellow/70 shadow-soft",
         accent: "bg-accent/20 backdrop-blur-lg border border-accent/30 text-accent hover:bg-accent/30 hover:border-accent/50 shadow-soft hover:shadow-glow",
-        consultation: "bg-brand-yellow/20 backdrop-blur-lg border border-brand-yellow/30 text-brand-yellow hover:bg-brand-yellow/30 hover:border-brand-yellow/50 shadow-soft hover:shadow-glow font-semibold",
+        consultation: "bg-brand-yellow/90 backdrop-blur-lg border border-brand-yellow text-brand-black hover:bg-brand-yellow hover:border-brand-yellow/80 shadow-soft hover:shadow-glow font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
