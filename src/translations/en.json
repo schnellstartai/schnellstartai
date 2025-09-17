@@ -405,8 +405,10 @@
       "tech_stack": {
         "title": "The technology behind it",
         "subtitle": "Proven Swiss and international standards – secure and reliable",
-        "swiss_data_protection": "100% Swiss data protection",
-        "transparent_pricing": "Transparent pricing",
+        "swiss_data_protection": "100% Swiss Data Protection",
+        "swiss_data_protection_desc": "FADP-compliant and secure",
+        "transparent_pricing": "Transparent Pricing",
+        "transparent_pricing_desc": "Fixed prices without hidden costs",
         "tools": [
           { "name": "n8n", "description": "Low-Code Automation Platform" },
           { "name": "OpenAI/Anthropic", "description": "Enterprise-grade AI APIs" },
@@ -416,16 +418,16 @@
         ]
       },
       "final_cta": {
-        "title": "Let's start your AI project",
-        "subtitle": "30 minutes are often enough to define concrete next steps.",
-        "step1_title": "Initial consultation",
-        "step1_desc": "Free 30-minute conversation",
-        "step2_title": "Workshop",
-        "step2_desc": "Hands-on AI introduction for your team",
-        "step3_title": "Implementation",
-        "step3_desc": "Pilot project with real data",
-        "benefits": "No hidden costs • Swiss quality standards • Personal support",
-        "button": "Schedule free consultation"
+        "title": "Ready to Automate Your Business?",
+        "subtitle": "Join Swiss SMEs who save 5-10 hours per week with AI automation. Get started with a free consultation.",
+        "step1_title": "Free Analysis",
+        "step1_desc": "We analyze your current workflows and identify automation opportunities",
+        "step2_title": "Custom Solution",
+        "step2_desc": "We build your AI automation using proven Swiss-hosted tools",
+        "step3_title": "Go Live",
+        "step3_desc": "Launch your automation and start saving time immediately",
+        "benefits": "No setup fees • 30-day money-back guarantee • Swiss hosting & support",
+        "button": "Start Free Analysis →"
       },
       "success_story": {
         "title": "How Swiss SMEs already benefit",
