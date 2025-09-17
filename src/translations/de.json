@@ -8,6 +8,136 @@
     "book_appointment": "Termin buchen"
   },
   "pages": {
+    "index": {
+      "hero": {
+        "title": "KI-Automatisierung für Unternehmen in Lichtgeschwindigkeit",
+        "subtitle": "Schweizer KI-Workflows: schnell umgesetzt, klar messbar, datenkonform. Ideal für KMU, die weniger Zeit in Admin und mehr ins Business stecken wollen.",
+        "cta": "Kostenlose Beratung anfragen →",
+        "note": "Webinar oder vor Ort in der Schweiz – Flexible Optionen für Ihr Team."
+      },
+      "steps": {
+        "title": "So starten wir: Drei klare Schritte zum messbaren Erfolg",
+        "workshop": {
+          "title": "Problem-Analyse",
+          "description": "Zuerst verstehen wir Ihre spezifischen Herausforderungen durch Analyse bestehender Workflows, Identifikation von Schmerzpunkten und Mapping realer Use Cases aus Ihrem Arbeitsalltag."
+        },
+        "process": {
+          "title": "Problem-Definition",
+          "description": "Wir zerlegen komplexe Geschäftsprobleme systematisch in handhabbare Komponenten, definieren klare Automatisierungsziele und entwerfen maßgeschneiderte Workflows für Ihre Use Cases."
+        },
+        "profit": {
+          "title": "Lösungs-Umsetzung",
+          "description": "Bewährte Automatisierungslösungen mit messbaren Ergebnissen, kontinuierlichem Monitoring und iterativen Verbesserungen basierend auf realen Leistungsdaten."
+        }
+      },
+      "services": {
+        "introduction": {
+          "title": "Einführung in KI",
+          "description": "Team-Workshop"
+        },
+        "automation": {
+          "title": "Workflow-Automation",
+          "description": "n8n, Supabase, Bexio, Shopware"
+        },
+        "coaching": {
+          "title": "Laufende Begleitung",
+          "description": "Monatlicher Support"
+        },
+        "webinars": {
+          "title": "Webinare & Vor-Ort",
+          "description": "Schweizweit verfügbar"
+        }
+      },
+      "services_overview": {
+        "title": "Unsere Services im Überblick"
+      },
+      "services_preview": {
+        "title": "Services",
+        "cta": "Alle Services ansehen"
+      },
+      "testphase": {
+        "title": "Aktuell in der Testphase",
+        "subtitle": "Wir arbeiten eng mit Schweizer Unternehmen zusammen und führen Workshops durch, um unsere KI-Lösungen zu perfektionieren",
+        "card": {
+          "title": "Workshops & Zusammenarbeit",
+          "description": "Gemeinsam entwickeln wir praxisnahe KI-Lösungen für Schweizer KMU"
+        },
+        "achievements": {
+          "title": "Was wir bereits erreicht haben",
+          "workshops": "KI-Workshops für verschiedene Branchen",
+          "pilots": "Pilotprojekte mit Schweizer Unternehmen", 
+          "automation": "Datenschutz-konforme Automatisierungen entwickelt"
+        },
+        "focus": {
+          "title": "Unser Fokus",
+          "description": "Wir konzentrieren uns darauf, KI-Technologien verständlich zu machen und praktische Lösungen zu entwickeln, die wirklich funktionieren. Jeder Workshop und jede Zusammenarbeit hilft uns, unsere Methoden zu verbessern."
+        },
+        "success": {
+          "title": "Aktuelle Erfolge"
+        },
+        "metrics": {
+          "workshops": "Workshops durchgeführt",
+          "partners": "Partnerunternehmen",
+          "compliance": "FADP Konformität", 
+          "hosting": "Hosting & Support"
+        },
+        "quote": "Wir lernen von jedem Unternehmen und verbessern kontinuierlich unsere Ansätze. So entstehen Lösungen, die wirklich praxistauglich sind."
+      },
+      "tech_stack": {
+        "title": "Technologie-Stack",
+        "subtitle": "Bewährte Tools und Plattformen für sichere, skalierbare KI-Automatisierung",
+        "technologies": {
+          "azure": {
+            "title": "Azure OpenAI",
+            "description": "Enterprise-grade KI-APIs"
+          },
+          "n8n": {
+            "title": "n8n Workflows",
+            "description": "Low-Code Automation"
+          },
+          "database": {
+            "title": "Supabase",
+            "description": "Moderne Datenbank"
+          },
+          "erp": {
+            "title": "Bexio Integration",
+            "description": "Schweizer ERP-System"
+          },
+          "ecommerce": {
+            "title": "Shopware",
+            "description": "E-Commerce Platform"
+          },
+          "apis": {
+            "title": "REST APIs",
+            "description": "Nahtlose Integrationen"
+          }
+        },
+        "compliance": "100% Schweizer Datenschutz & FADP-konform"
+      },
+      "faq_teaser": {
+        "title": "Häufige Fragen",
+        "cta": "Alle FAQ ansehen"
+      },
+      "faqs": {
+        "compliance": {
+          "question": "Ist das DSG/DSGVO-konform?",
+          "answer": "Ja, absolut. Wir arbeiten nur mit Anbietern, die DSG/DSGVO-konforme Lösungen anbieten. Alle Daten werden in der Schweiz oder EU verarbeitet."
+        },
+        "tools": {
+          "question": "Welche Tools nutzt ihr?",
+          "answer": "Wir setzen auf bewährte Tools: n8n für Workflow-Automation, OpenAI/Anthropic für KI-Features, Supabase als Datenbank, plus Integrationen zu Bexio, Shopware und anderen Schweizer Business-Tools."
+        },
+        "start": {
+          "question": "Wie starten wir?",
+          "answer": "Ganz einfach: 1) Kostenloses 30-Min-Gespräch, 2) Workshop zum Kennenlernen und ersten Use Case identifizieren, 3) Kleiner Pilot-Prozess, 4) Review und Rollout."
+        }
+      },
+      "cta": {
+        "ready_title": "Bereit für den nächsten Schritt?",
+        "ready_subtitle": "Lassen Sie uns in einem kostenlosen Gespräch herausfinden, wie KI Ihr Unternehmen voranbringen kann.",
+        "ready_button": "Kostenlose Beratung anfragen"
+      }
+    },
     "services": {
       "hero": {
         "title": "KI einfach erklärt, konkret umgesetzt",
@@ -107,8 +237,51 @@
         "step3_desc": "Starten Sie Ihre Automatisierung und sparen Sie sofort Zeit",
         "benefits": "Keine Einrichtungsgebühren • 30 Tage Geld-zurück-Garantie • Schweizer Hosting & Support",
         "button": "Kostenlose Analyse starten →"
+  },
+  "footer": {
+    "company_description": "KI-Workshops und Automation für Schweizer KMU. Praxisnah, sicher, messbar.",
+    "navigation": "Navigation",
+    "legal": "Rechtliches",
+    "contact": "Kontakt",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "email": "info@schnellstart.ai",
+    "phone_hours": "Schweizweit verfügbar",
+    "linkedin": "LinkedIn",
+    "copyright": "© 2025 schnellstart.ai · Frauenfeld, Schweiz · Made with 💛 for Swiss KMU"
+  },
+  "common": {
+    "read_more": "Mehr erfahren",
+    "learn_more": "Mehr erfahren", 
+    "contact_us": "Kontakt aufnehmen",
+    "back_to_top": "Nach oben",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolgreich",
+    "duration": "Dauer",
+    "price": "Preis",
+    "benefit": "Ihr Nutzen",
+    "your_benefit": "Ihr Nutzen",
+    "free_consultation_cta": "Kostenlose Beratung anfragen →"
+  },
+  "cta_sections": {
+    "about": {
+      "title": "Lernen wir uns kennen",
+      "description": "Ein kurzes Gespräch zeigt schnell, ob die Chemie stimmt und wir Ihnen helfen können."
+    },
+    "faq": {
+      "title": "Frage nicht beantwortet?",
+      "description": "Lassen Sie uns persönlich sprechen. Kostenlos und unverbindlich."
+    },
+    "services": {
+      "test_phase": {
+        "title": "Teil unserer Testphase werden",
+        "exclusive_access": "Exklusiver Zugang",
+        "exclusive_description": "Früher Zugang zu neuen KI-Lösungen"
       }
     }
+  }
+}
   },
   "footer": {
     "company_description": "Ihr Partner für KI-Automatisierung in der Schweiz",
