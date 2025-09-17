@@ -196,13 +196,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Erfolgsgeschichten */}
-      <section className="py-16 lg:py-24" id="erfolgsgeschichten">
+      {/* Unsere Testphase */}
+      <section className="py-16 lg:py-24" id="testphase">
         <div className="container mx-auto px-4 lg:px-8">
           <header className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.index.success_stories.title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Derzeit in der Testphase</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {t('pages.index.success_stories.subtitle')}
+              Wir arbeiten eng mit Schweizer Unternehmen zusammen und führen Workshops durch, um unsere KI-Lösungen zu perfektionieren
             </p>
           </header>
           
@@ -211,65 +211,68 @@ const Index = () => {
               <CardHeader>
                 <div className="flex items-start gap-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-brand-yellow/20 to-accent/20 rounded-xl flex items-center justify-center">
-                    <Users className="w-8 h-8 text-brand-black" />
+                    <GraduationCap className="w-8 h-8 text-brand-black" />
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="text-2xl mb-2">{t('pages.index.success_stories.story.title')}</CardTitle>
+                    <CardTitle className="text-2xl mb-2">Workshops & Zusammenarbeit</CardTitle>
                     <CardDescription className="text-lg">
-                      {t('pages.index.success_stories.story.subtitle')}
+                      Gemeinsam entwickeln wir praxisnahe KI-Lösungen für Schweizer KMU
                     </CardDescription>
                   </div>
-                  <MetricChip metric={t('pages.index.success_stories.story.metric')} />
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="grid lg:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.success_stories.story.challenge.title')}</h4>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
-                      {t('pages.index.success_stories.story.challenge.description')}
-                    </p>
-                    
-                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.success_stories.story.solution.title')}</h4>
-                    <div className="space-y-3">
-                      {[
-                        t('pages.index.success_stories.story.solution.items.0'),
-                        t('pages.index.success_stories.story.solution.items.1'),
-                        t('pages.index.success_stories.story.solution.items.2')
-                      ].map((item: string, index: number) => (
-                        <div key={index} className="flex items-start space-x-3">
-                          <CheckCircle className="w-5 h-5 text-accent mt-1" />
-                          <span className="text-sm">{item}</span>
-                        </div>
-                      ))}
+                    <h4 className="font-semibold text-lg mb-4">Was wir bereits durchgeführt haben</h4>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
+                        <span className="text-sm">KI-Workshops für verschiedene Branchen</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
+                        <span className="text-sm">Pilotprojekte mit Schweizer Unternehmen</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <CheckCircle className="w-5 h-5 text-accent mt-1" />
+                        <span className="text-sm">Datenschutz-konforme Automatisierungen entwickelt</span>
+                      </div>
                     </div>
+                    
+                    <h4 className="font-semibold text-lg mb-4">Unser Fokus</h4>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Wir konzentrieren uns darauf, KI-Technologien verständlich zu machen und praktische Lösungen zu entwickeln, 
+                      die wirklich funktionieren. Jeder Workshop und jede Zusammenarbeit hilft uns, unsere Methoden zu verbessern.
+                    </p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-lg mb-4">{t('pages.index.success_stories.story.results.title')}</h4>
+                    <h4 className="font-semibold text-lg mb-4">Aktuelle Erfolge</h4>
                     <div className="bg-background/50 rounded-lg p-6 mb-6">
                       <div className="grid grid-cols-2 gap-4 text-center">
                         <div>
-                          <div className="text-2xl font-bold text-accent mb-1">{t('pages.index.success_stories.story.results.metrics.time.value')}</div>
-                          <div className="text-sm text-muted-foreground">{t('pages.index.success_stories.story.results.metrics.time.label')}</div>
+                          <div className="text-2xl font-bold text-accent mb-1">15+</div>
+                          <div className="text-sm text-muted-foreground">Workshops durchgeführt</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-accent mb-1">{t('pages.index.success_stories.story.results.metrics.errors.value')}</div>
-                          <div className="text-sm text-muted-foreground">{t('pages.index.success_stories.story.results.metrics.errors.label')}</div>
+                          <div className="text-2xl font-bold text-accent mb-1">8</div>
+                          <div className="text-sm text-muted-foreground">Partnerunternehmen</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-accent mb-1">{t('pages.index.success_stories.story.results.metrics.consulting.value')}</div>
-                          <div className="text-sm text-muted-foreground">{t('pages.index.success_stories.story.results.metrics.consulting.label')}</div>
+                          <div className="text-2xl font-bold text-accent mb-1">100%</div>
+                          <div className="text-sm text-muted-foreground">FADP Konformität</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-accent mb-1">{t('pages.index.success_stories.story.results.metrics.traceability.value')}</div>
-                          <div className="text-sm text-muted-foreground">{t('pages.index.success_stories.story.results.metrics.traceability.label')}</div>
+                          <div className="text-2xl font-bold text-accent mb-1">Schweiz</div>
+                          <div className="text-sm text-muted-foreground">Hosting & Support</div>
                         </div>
                       </div>
                     </div>
                     
                     <blockquote className="border-l-4 border-brand-yellow/30 pl-4 italic text-muted-foreground">
-                      {t('pages.index.success_stories.story.quote')}
+                      "Wir lernen von jedem Unternehmen und verbessern kontinuierlich unsere Ansätze. 
+                      So entstehen Lösungen, die wirklich praxistauglich sind."
                     </blockquote>
                   </div>
                 </div>
@@ -280,7 +283,7 @@ const Index = () => {
           <div className="text-center mt-12">
             <Link to="/contact">
               <Button variant="consultation" className="hover-scale">
-                {t('pages.index.success_stories.cta')}
+                Teil unserer Testphase werden
                 <ArrowRight className="ml-2" size={16} />
               </Button>
             </Link>

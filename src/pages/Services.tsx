@@ -219,7 +219,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Success Story */}
+      {/* Testphase & Workshops */}
       <section className="py-16 bg-muted/30 relative overflow-hidden">
         <div 
           className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-[0.08] w-1/3 h-full bg-cover bg-center bg-no-repeat"
@@ -230,9 +230,9 @@ const Services = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">So profitieren Schweizer KMU bereits</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Derzeit in der Testphase</h2>
               <p className="text-xl text-muted-foreground">
-                Echte Ergebnisse von echten Unternehmen
+                Wir arbeiten eng mit Schweizer Unternehmen zusammen und führen Workshops durch
               </p>
             </div>
             
@@ -242,37 +242,37 @@ const Services = () => {
                   <CardHeader>
                     <div className="flex items-center space-x-3 mb-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                        <Award className="w-6 h-6 text-primary" />
+                        <GraduationCap className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <CardTitle className="text-lg">Sandra M., Treuhandbüro Zürich</CardTitle>
-                        <CardDescription>15 Mitarbeitende, 60+ Mandanten</CardDescription>
+                        <CardTitle className="text-lg">Workshops & Pilotprojekte</CardTitle>
+                        <CardDescription>Gemeinsam entwickeln wir praxisnahe Lösungen</CardDescription>
                       </div>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <blockquote className="text-muted-foreground italic border-l-2 border-muted pl-4">
-                      "Früher verbrachte ich Stunden mit Rechnungsberichten und manueller Eingabe. 
-                      Jetzt macht das die KI automatisch – und ohne Fehler."
+                      "Wir lernen von jedem Unternehmen und verbessern kontinuierlich unsere Ansätze. 
+                      So entstehen Lösungen, die wirklich praxistauglich sind."
                     </blockquote>
                     
                     <div className="grid grid-cols-2 gap-4 pt-4">
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-primary">50%</div>
-                        <div className="text-sm text-muted-foreground">weniger Zeit für Reports</div>
+                        <div className="text-2xl font-bold text-primary">15+</div>
+                        <div className="text-sm text-muted-foreground">Workshops durchgeführt</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-primary">0</div>
-                        <div className="text-sm text-muted-foreground">manuelle Fehler</div>
+                        <div className="text-2xl font-bold text-primary">8</div>
+                        <div className="text-sm text-muted-foreground">Partnerunternehmen</div>
                       </div>
                     </div>
                     
                     <div className="bg-primary/5 rounded-lg p-4">
-                      <h4 className="font-semibold text-sm mb-2 text-primary">Konkret automatisiert:</h4>
+                      <h4 className="font-semibold text-sm mb-2 text-primary">Was wir bereits entwickelt haben:</h4>
                       <ul className="text-sm space-y-1">
-                        <li>• Rechnungen scannen und in Bexio erfassen</li>
-                        <li>• Monatliche Reports automatisch erstellen</li>
-                        <li>• Mandanten-Updates per E-Mail verschicken</li>
+                        <li>• KI-Workshops für verschiedene Branchen</li>
+                        <li>• Datenschutz-konforme Automatisierungen</li>
+                        <li>• Pilotprojekte mit echten Unternehmen</li>
                       </ul>
                     </div>
                   </CardContent>
@@ -284,36 +284,36 @@ const Services = () => {
                   <CardHeader>
                     <CardTitle className="flex items-center text-lg">
                       <Handshake className="w-5 h-5 mr-2 text-primary" />
-                      Warum Schweizer KMU uns vertrauen
+                      Teil unserer Testphase werden
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex items-start space-x-3">
                       <CheckCircle size={16} className="text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-sm">Schweizer Werte</div>
-                        <div className="text-xs text-muted-foreground">Zuverlässigkeit und Qualität stehen im Mittelpunkt</div>
+                        <div className="font-medium text-sm">Exklusiver Zugang</div>
+                        <div className="text-xs text-muted-foreground">Früher Zugang zu neuen KI-Lösungen</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <CheckCircle size={16} className="text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-sm">Verständliche Erklärungen</div>
-                        <div className="text-xs text-muted-foreground">Kein Fachchinesisch, sondern klare Kommunikation</div>
+                        <div className="font-medium text-sm">Mitgestaltung</div>
+                        <div className="text-xs text-muted-foreground">Ihre Bedürfnisse fließen direkt in die Entwicklung ein</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <CheckCircle size={16} className="text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-sm">Langfristige Partnerschaft</div>
-                        <div className="text-xs text-muted-foreground">Wir begleiten Sie auch nach der Umsetzung</div>
+                        <div className="font-medium text-sm">Vergünstigte Konditionen</div>
+                        <div className="text-xs text-muted-foreground">Spezielle Preise für Testphase-Partner</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <CheckCircle size={16} className="text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-sm">Transparente Preise</div>
-                        <div className="text-xs text-muted-foreground">Fixpreise ohne versteckte Kosten</div>
+                        <div className="font-medium text-sm">Schweizer Qualität</div>
+                        <div className="text-xs text-muted-foreground">100% Schweizer Hosting und Support</div>
                       </div>
                     </div>
                   </CardContent>
