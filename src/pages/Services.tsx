@@ -28,60 +28,39 @@ const Services = () => {
   const services = [
     {
       icon: GraduationCap,
-      title: "KI verstehen & nutzen",
-      duration: "2–4 Stunden",
-      description: "Workshop für Teams und Führungskräfte – ohne Fachchinesisch",
-      features: [
-        "KI-Basics in einfacher Sprache erklärt",
-        "Schweizer Datenschutz (FADP/DSG) verständlich gemacht",
-        "Live-Beispiele aus dem Alltag Ihres Betriebs",
-        "Sofort anwendbare Tipps für Ihr Team"
-      ],
-      price: "CHF 1'200 (Fixpreis)",
-      realBenefit: "Ihr Team versteht KI und kann sie sicher nutzen"
+      title: t('pages.services.service_cards.ai_understand.title'),
+      duration: t('pages.services.service_cards.ai_understand.duration'),
+      description: t('pages.services.service_cards.ai_understand.description'),
+      features: t('pages.services.service_cards.ai_understand.features'),
+      price: t('pages.services.service_cards.ai_understand.price'),
+      realBenefit: t('pages.services.service_cards.ai_understand.benefit')
     },
     {
       icon: Cog,
-      title: "Abläufe automatisieren",
-      duration: "Projekt-basiert",
-      description: "Wiederkehrende Aufgaben übernimmt die KI – Sie haben mehr Zeit fürs Wesentliche",
-      features: [
-        "Rechnungen automatisch verarbeiten und weiterleiten",
-        "Kundendaten zwischen Systemen synchronisieren",
-        "E-Mails sortieren und Antworten vorschlagen",
-        "Berichte automatisch erstellen lassen",
-        "Wartung und Support inbegriffen"
-      ],
-      price: "Ab CHF 3'000 (Paket)",
-      realBenefit: "Sparen Sie 5-10 Stunden pro Woche für wichtigere Aufgaben"
+      title: t('pages.services.service_cards.automate_processes.title'),
+      duration: t('pages.services.service_cards.automate_processes.duration'),
+      description: t('pages.services.service_cards.automate_processes.description'),
+      features: t('pages.services.service_cards.automate_processes.features'),
+      price: t('pages.services.service_cards.automate_processes.price'),
+      realBenefit: t('pages.services.service_cards.automate_processes.benefit')
     },
     {
       icon: Users,
-      title: "Laufende Begleitung",
-      duration: "Monatlich",
-      description: "Ihr persönlicher KI-Coach – damit alles reibungslos läuft",
-      features: [
-        "Monatliche Optimierungen Ihrer Abläufe",
-        "Schnelle Hilfe bei Fragen oder Problemen",
-        "Neue KI-Möglichkeiten für Ihr Unternehmen",
-        "Schulungen für neue Mitarbeitende"
-      ],
-      price: "CHF 800/Monat",
-      realBenefit: "Kontinuierliche Verbesserung ohne eigene IT-Abteilung"
+      title: t('pages.services.service_cards.ongoing_support.title'),
+      duration: t('pages.services.service_cards.ongoing_support.duration'),
+      description: t('pages.services.service_cards.ongoing_support.description'),
+      features: t('pages.services.service_cards.ongoing_support.features'),
+      price: t('pages.services.service_cards.ongoing_support.price'),
+      realBenefit: t('pages.services.service_cards.ongoing_support.benefit')
     },
     {
       icon: MessageSquare,
-      title: "Webinare & Vor-Ort Termine",
-      duration: "Flexibel",
-      description: "Schweizweit verfügbar – Online oder bei Ihnen im Betrieb",
-      features: [
-        "Massgeschneidert für Ihre Branche",
-        "Interaktive Workshops mit echten Beispielen",
-        "Alle Unterlagen zum Mitnehmen",
-        "Aufzeichnung für spätere Verwendung"
-      ],
-      price: "Ab CHF 800",
-      realBenefit: "Flexible Weiterbildung genau dann, wenn Sie Zeit haben"
+      title: t('pages.services.service_cards.webinars_onsite.title'),
+      duration: t('pages.services.service_cards.webinars_onsite.duration'),
+      description: t('pages.services.service_cards.webinars_onsite.description'),
+      features: t('pages.services.service_cards.webinars_onsite.features'),
+      price: t('pages.services.service_cards.webinars_onsite.price'),
+      realBenefit: t('pages.services.service_cards.webinars_onsite.benefit')
     }
   ];
 
@@ -118,15 +97,14 @@ const Services = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-6 text-white">
-              KI einfach erklärt, konkret umgesetzt
+              {t('pages.services.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 text-balance">
-              Wir machen KI verständlich für Ihr Team und automatisieren Ihre Abläufe – ohne komplizierte Technik. 
-              Schweizer Qualität, Datenschutz inbegriffen.
+              {t('pages.services.hero.subtitle')}
             </p>
             <Link to="/contact" aria-label="Kostenloses Beratungsgespräch anfragen">
               <Button variant="consultation" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
-                Kostenloses Beratungsgespräch →
+                {t('pages.services.hero.cta_button')}
               </Button>
             </Link>
           </div>
@@ -143,28 +121,28 @@ const Services = () => {
                   <MapPin className="w-8 h-8 text-primary" />
                 </div>
                 <div className="text-2xl font-bold">100%</div>
-                <div className="text-sm text-muted-foreground">Schweizer Hosting</div>
+                <div className="text-sm text-muted-foreground">{t('pages.services.trust_indicators.swiss_hosting')}</div>
               </div>
               <div className="flex flex-col items-center space-y-2">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-2">
                   <Shield className="w-8 h-8 text-primary" />
                 </div>
                 <div className="text-2xl font-bold">FADP</div>
-                <div className="text-sm text-muted-foreground">Datenschutz konform</div>
+                <div className="text-sm text-muted-foreground">{t('pages.services.trust_indicators.data_protection')}</div>
               </div>
               <div className="flex flex-col items-center space-y-2">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-2">
                   <TrendingUp className="w-8 h-8 text-primary" />
                 </div>
                 <div className="text-2xl font-bold">50%</div>
-                <div className="text-sm text-muted-foreground">Zeitersparnis typisch</div>
+                <div className="text-sm text-muted-foreground">{t('pages.services.trust_indicators.time_savings')}</div>
               </div>
               <div className="flex flex-col items-center space-y-2">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-2">
                   <Heart className="w-8 h-8 text-primary" />
                 </div>
                 <div className="text-2xl font-bold">30+</div>
-                <div className="text-sm text-muted-foreground">Zufriedene KMU</div>
+                <div className="text-sm text-muted-foreground">{t('pages.services.trust_indicators.satisfied_sme')}</div>
               </div>
             </div>
           </div>
@@ -196,7 +174,7 @@ const Services = () => {
                     <div className="flex items-start space-x-2">
                       <TrendingUp className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm font-medium text-primary">
-                        Ihr Nutzen: {service.realBenefit}
+                        {t('common.your_benefit')}: {service.realBenefit}
                       </span>
                     </div>
                   </div>
@@ -207,7 +185,7 @@ const Services = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {service.features.map((feature, featureIndex) => (
+                    {Array.isArray(service.features) && service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start space-x-3">
                         <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
                         <span className="text-sm">{feature}</span>
@@ -232,9 +210,9 @@ const Services = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Derzeit in der Testphase</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.services.test_phase.title')}</h2>
               <p className="text-xl text-muted-foreground">
-                Wir arbeiten eng mit Schweizer Unternehmen zusammen und führen Workshops durch
+                {t('pages.services.test_phase.subtitle')}
               </p>
             </div>
             
@@ -247,30 +225,29 @@ const Services = () => {
                         <GraduationCap className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <CardTitle className="text-lg">Workshops & Pilotprojekte</CardTitle>
-                        <CardDescription>Gemeinsam entwickeln wir praxisnahe Lösungen</CardDescription>
+                        <CardTitle className="text-lg">{t('pages.services.test_phase.workshop_title')}</CardTitle>
+                        <CardDescription>{t('pages.services.test_phase.workshop_subtitle')}</CardDescription>
                       </div>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <blockquote className="text-muted-foreground italic border-l-2 border-muted pl-4">
-                      "Wir lernen von jedem Unternehmen und verbessern kontinuierlich unsere Ansätze. 
-                      So entstehen Lösungen, die wirklich praxistauglich sind."
+                      "{t('pages.services.test_phase.quote')}"
                     </blockquote>
                     
                     <div className="grid grid-cols-2 gap-4 pt-4">
                       <div className="text-center">
                         <div className="text-2xl font-bold text-primary">15+</div>
-                        <div className="text-sm text-muted-foreground">Workshops durchgeführt</div>
+                        <div className="text-sm text-muted-foreground">{t('pages.services.test_phase.workshops_conducted')}</div>
                       </div>
                       <div className="text-center">
                         <div className="text-2xl font-bold text-primary">8</div>
-                        <div className="text-sm text-muted-foreground">Partnerunternehmen</div>
+                        <div className="text-sm text-muted-foreground">{t('pages.services.test_phase.partner_companies')}</div>
                       </div>
                     </div>
                     
                     <div className="bg-primary/5 rounded-lg p-4">
-                      <h4 className="font-semibold text-sm mb-2 text-primary">Was wir bereits entwickelt haben:</h4>
+                      <h4 className="font-semibold text-sm mb-2 text-primary">{t('pages.services.test_phase.what_developed')}</h4>
                       <ul className="text-sm space-y-1">
                         <li>• KI-Workshops für verschiedene Branchen</li>
                         <li>• Datenschutz-konforme Automatisierungen</li>
@@ -300,22 +277,22 @@ const Services = () => {
                     <div className="flex items-start space-x-3">
                       <CheckCircle size={16} className="text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-sm">Mitgestaltung</div>
-                        <div className="text-xs text-muted-foreground">Ihre Bedürfnisse fließen direkt in die Entwicklung ein</div>
+                        <div className="font-medium text-sm">{t('pages.services.test_phase.benefits.co_creation')}</div>
+                        <div className="text-xs text-muted-foreground">{t('pages.services.test_phase.benefits.co_creation_desc')}</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <CheckCircle size={16} className="text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-sm">Vergünstigte Konditionen</div>
-                        <div className="text-xs text-muted-foreground">Spezielle Preise für Testphase-Partner</div>
+                        <div className="font-medium text-sm">{t('pages.services.test_phase.benefits.discounted_rates')}</div>
+                        <div className="text-xs text-muted-foreground">{t('pages.services.test_phase.benefits.discounted_rates_desc')}</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <CheckCircle size={16} className="text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-sm">Schweizer Qualität</div>
-                        <div className="text-xs text-muted-foreground">100% Schweizer Hosting und Support</div>
+                        <div className="font-medium text-sm">{t('pages.services.test_phase.benefits.swiss_quality')}</div>
+                        <div className="text-xs text-muted-foreground">{t('pages.services.test_phase.benefits.swiss_quality_desc')}</div>
                       </div>
                     </div>
                   </CardContent>
@@ -331,9 +308,9 @@ const Services = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Was Sie von uns erwarten können</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.services.what_expect.title')}</h2>
               <p className="text-xl text-muted-foreground">
-                Vollumfängliche Betreuung – von der ersten Idee bis zur fertigen Lösung
+                {t('pages.services.what_expect.subtitle')}
               </p>
             </div>
             
@@ -342,12 +319,12 @@ const Services = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Shield className="w-5 h-5 mr-2 text-accent" />
-                    Das ist für Sie inklusive
+                    {t('pages.services.what_expect.included_title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {included.slice(0, 3).map((item, index) => (
+                    {Array.isArray(included) && included.slice(0, 3).map((item, index) => (
                       <li key={index} className="flex items-start space-x-3">
                         <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
                         <span className="text-sm">{item}</span>
@@ -361,12 +338,12 @@ const Services = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Target className="w-5 h-5 mr-2 text-accent" />
-                    Auch danach für Sie da
+                    {t('pages.services.what_expect.after_title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {included.slice(3).map((item, index) => (
+                    {Array.isArray(included) && included.slice(3).map((item, index) => (
                       <li key={index} className="flex items-start space-x-3">
                         <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
                         <span className="text-sm">{item}</span>
@@ -391,9 +368,9 @@ const Services = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Die Technik dahinter</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('pages.services.tech_stack.title')}</h2>
               <p className="text-xl text-muted-foreground">
-                Bewährte Schweizer und internationale Standards – sicher und zuverlässig
+                {t('pages.services.tech_stack.subtitle')}
               </p>
             </div>
             
@@ -416,10 +393,9 @@ const Services = () => {
                   <div className="flex items-start space-x-3">
                     <Shield className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">Schweizer Datenschutz garantiert</h3>
+                      <h3 className="font-semibold text-lg mb-2">{t('pages.services.tech_stack.swiss_data_protection')}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        Alle Daten bleiben in der Schweiz. FADP/DSG-konform, verschlüsselt und auditierbar. 
-                        Ihre Geschäftsdaten sind bei uns sicher.
+                        {t('pages.services.tech_stack.swiss_data_protection_desc')}
                       </p>
                     </div>
                   </div>
@@ -431,10 +407,9 @@ const Services = () => {
                   <div className="flex items-start space-x-3">
                     <Lightbulb className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">Transparente Preisgestaltung</h3>
+                      <h3 className="font-semibold text-lg mb-2">{t('pages.services.tech_stack.transparent_pricing')}</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        Workshops ab CHF 1'200 (Fixpreis). Automation-Projekte als Paket ab CHF 3'000. 
-                        Monatliche Betreuung ab CHF 800. Alle Preise exkl. MwSt.
+                        {t('pages.services.tech_stack.transparent_pricing_desc')}
                       </p>
                     </div>
                   </div>
@@ -456,11 +431,10 @@ const Services = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-              Lassen Sie uns gemeinsam Ihr Potenzial entdecken
+              {t('pages.services.final_cta.title')}
             </h2>
             <p className="text-xl text-muted-foreground mb-8 text-balance">
-              Kostenloses 30-Minuten Gespräch – wir schauen uns Ihre aktuellen Abläufe an 
-              und zeigen Ihnen konkrete Möglichkeiten auf.
+              {t('pages.services.final_cta.subtitle')}
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -468,36 +442,36 @@ const Services = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <MessageSquare className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">1. Kennenlernen</h3>
-                <p className="text-sm text-muted-foreground">Erzählen Sie uns von Ihren täglichen Herausforderungen</p>
+                <h3 className="font-semibold mb-2">{t('pages.services.final_cta.step1_title')}</h3>
+                <p className="text-sm text-muted-foreground">{t('pages.services.final_cta.step1_desc')}</p>
               </div>
               
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Lightbulb className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">2. Potenzial aufzeigen</h3>
-                <p className="text-sm text-muted-foreground">Wir zeigen konkrete Automatisierungsmöglichkeiten</p>
+                <h3 className="font-semibold mb-2">{t('pages.services.final_cta.step2_title')}</h3>
+                <p className="text-sm text-muted-foreground">{t('pages.services.final_cta.step2_desc')}</p>
               </div>
               
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Target className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">3. Nächste Schritte</h3>
-                <p className="text-sm text-muted-foreground">Gemeinsam definieren wir den optimalen Weg</p>
+                <h3 className="font-semibold mb-2">{t('pages.services.final_cta.step3_title')}</h3>
+                <p className="text-sm text-muted-foreground">{t('pages.services.final_cta.step3_desc')}</p>
               </div>
             </div>
             
             <Link to="/contact">
               <Button variant="brand" size="lg" className="text-lg px-8 py-6 h-auto hover-scale">
-                Jetzt kostenloses Gespräch buchen
+                {t('pages.services.final_cta.button')}
                 <ArrowRight className="ml-2" size={20} />
               </Button>
             </Link>
             
             <p className="text-sm text-muted-foreground mt-4">
-              ✓ Keine Verpflichtungen ✓ Konkrete Tipps inklusive ✓ Schweizweit verfügbar
+              {t('pages.services.final_cta.benefits')}
             </p>
           </div>
         </div>

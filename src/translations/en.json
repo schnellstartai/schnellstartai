@@ -701,6 +701,7 @@
     "duration": "Duration",
     "price": "Price",
     "benefit": "Your benefit",
+    "your_benefit": "Your benefit",
     "free_consultation_cta": "Request free consultation →"
   },
   "cta_sections": {
