@@ -21,7 +21,8 @@ const About = () => {
       name: "David", 
       role: "LLMs & Automation Pipelines",
       description: "KI-Entwickler mit Fokus auf produktive LLM-Anwendungen. Experte für OpenAI/Anthropic Integration und sichere AI-Workflows.",
-      linkedin: "https://www.linkedin.com/in/financeai"
+      linkedin: "https://www.linkedin.com/in/david-intelligence/",
+      website: "https://runfish.net"
     },
     {
       name: "Lukas",
