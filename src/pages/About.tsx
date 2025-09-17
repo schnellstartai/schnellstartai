@@ -4,9 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Linkedin, Target, Shield, TrendingUp } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 
 const About = () => {
+  const { t } = useTranslation();
   const team = [
     {
       name: "Florian",
@@ -210,15 +212,14 @@ const About = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-              Lernen wir uns kennen
+              {t('cta_sections.about.title')}
             </h2>
             <p className="text-xl text-muted-foreground mb-8 text-balance">
-              Ein kurzes Gespräch zeigt schnell, ob die Chemie stimmt und 
-              wir Ihnen helfen können.
+              {t('cta_sections.about.description')}
             </p>
             <Link to="/contact">
               <Button variant="consultation" className="text-lg px-8 py-6 h-auto">
-                Kostenlose Beratung anfragen →
+                {t('common.free_consultation_cta')}
               </Button>
             </Link>
           </div>

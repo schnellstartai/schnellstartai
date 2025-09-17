@@ -9,8 +9,10 @@ import {
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Settings, Users, Headphones } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const FAQ = () => {
+  const { t } = useTranslation();
   const faqs = [
     {
       category: "Datenschutz & Compliance",
@@ -155,14 +157,14 @@ const FAQ = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-              Frage nicht beantwortet?
+              {t('cta_sections.faq.title')}
             </h2>
             <p className="text-xl text-muted-foreground mb-8 text-balance">
-              Lassen Sie uns persönlich sprechen. Kostenlos und unverbindlich.
+              {t('cta_sections.faq.description')}
             </p>
             <Link to="/contact">
               <Button variant="consultation" className="text-lg px-8 py-6 h-auto">
-                Kostenlose Beratung anfragen →
+                {t('common.free_consultation_cta')}
               </Button>
             </Link>
           </div>

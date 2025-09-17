@@ -726,6 +726,24 @@
     "success": "Erfolgreich",
     "duration": "Dauer",
     "price": "Preis",
-    "benefit": "Ihr Nutzen"
+    "benefit": "Ihr Nutzen",
+    "free_consultation_cta": "Kostenlose Beratung anfragen →"
+  },
+  "cta_sections": {
+    "about": {
+      "title": "Lernen wir uns kennen",
+      "description": "Ein kurzes Gespräch zeigt schnell, ob die Chemie stimmt und wir Ihnen helfen können."
+    },
+    "faq": {
+      "title": "Frage nicht beantwortet?",
+      "description": "Lassen Sie uns persönlich sprechen. Kostenlos und unverbindlich."
+    },
+    "services": {
+      "test_phase": {
+        "title": "Teil unserer Testphase werden",
+        "exclusive_access": "Exklusiver Zugang",
+        "exclusive_description": "Früher Zugang zu neuen KI-Lösungen"
+      }
+    }
   }
 }

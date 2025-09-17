@@ -700,6 +700,24 @@
     "success": "Success",
     "duration": "Duration",
     "price": "Price",
-    "benefit": "Your benefit"
+    "benefit": "Your benefit",
+    "free_consultation_cta": "Request free consultation →"
+  },
+  "cta_sections": {
+    "about": {
+      "title": "Let's get to know each other",
+      "description": "A brief conversation quickly shows if we're a good fit and how we can help you."
+    },
+    "faq": {
+      "title": "Question not answered?",
+      "description": "Let's talk personally. Free and without obligation."
+    },
+    "services": {
+      "test_phase": {
+        "title": "Become part of our test phase",
+        "exclusive_access": "Exclusive access",
+        "exclusive_description": "Early access to new AI solutions"
+      }
+    }
   }
 }

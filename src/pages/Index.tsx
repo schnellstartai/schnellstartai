@@ -283,7 +283,7 @@ const Index = () => {
           <div className="text-center mt-12">
             <Link to="/contact">
               <Button variant="consultation" className="hover-scale text-lg px-8 py-6 h-auto">
-                Kostenlose Beratung anfragen →
+                {t('common.free_consultation_cta')}
               </Button>
             </Link>
           </div>

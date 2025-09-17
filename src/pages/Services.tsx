@@ -21,8 +21,10 @@ import {
   Handshake,
   Heart
 } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const Services = () => {
+  const { t } = useTranslation();
   const services = [
     {
       icon: GraduationCap,
@@ -284,15 +286,15 @@ const Services = () => {
                   <CardHeader>
                     <CardTitle className="flex items-center text-lg">
                       <Handshake className="w-5 h-5 mr-2 text-primary" />
-                      Teil unserer Testphase werden
+                      {t('cta_sections.services.test_phase.title')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex items-start space-x-3">
                       <CheckCircle size={16} className="text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-sm">Exklusiver Zugang</div>
-                        <div className="text-xs text-muted-foreground">Früher Zugang zu neuen KI-Lösungen</div>
+                        <div className="font-medium text-sm">{t('cta_sections.services.test_phase.exclusive_access')}</div>
+                        <div className="text-xs text-muted-foreground">{t('cta_sections.services.test_phase.exclusive_description')}</div>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
