@@ -385,7 +385,66 @@
         "title": "What you can expect from us",
         "subtitle": "Comprehensive support – from the first idea to the finished solution",
         "included_title": "This is included for you",
-        "after_title": "Also there for you afterwards"
+        "after_title": "Also there for you afterwards",
+        "included_items": [
+          "Preparation and analysis",
+          "All workshop materials",
+          "Practical exercises"
+        ],
+        "after_items": [
+          "Follow-up documentation",
+          "30 days email support",
+          "Recording (for webinars)"
+        ]
+      },
+      "tech_stack": {
+        "title": "The technology behind it",
+        "subtitle": "Proven Swiss and international standards – secure and reliable",
+        "swiss_data_protection": "100% Swiss data protection",
+        "transparent_pricing": "Transparent pricing",
+        "tools": [
+          { "name": "n8n", "description": "Low-Code Automation Platform" },
+          { "name": "OpenAI/Anthropic", "description": "Enterprise-grade AI APIs" },
+          { "name": "Supabase", "description": "Modern PostgreSQL Database" },
+          { "name": "Bexio", "description": "Swiss Business Software" },
+          { "name": "Shopware", "description": "E-Commerce Integration" }
+        ]
+      },
+      "final_cta": {
+        "title": "Let's start your AI project",
+        "subtitle": "30 minutes are often enough to define concrete next steps.",
+        "steps": [
+          {
+            "title": "Initial consultation",
+            "description": "Free 30-minute conversation"
+          },
+          {
+            "title": "Workshop",
+            "description": "Hands-on AI introduction for your team"
+          },
+          {
+            "title": "Implementation",
+            "description": "Pilot project with real data"
+          }
+        ],
+        "benefits": [
+          "No hidden costs",
+          "Swiss quality standards",
+          "Personal support"
+        ],
+        "button": "Schedule free consultation"
+      },
+      "final_cta": {
+        "title": "Let's start your AI project",
+        "subtitle": "30 minutes are often enough to define concrete next steps.",
+        "step1_title": "Initial consultation",
+        "step1_desc": "Free 30-minute conversation",
+        "step2_title": "Workshop",
+        "step2_desc": "Hands-on AI introduction for your team",
+        "step3_title": "Implementation",
+        "step3_desc": "Pilot project with real data",
+        "benefits": "No hidden costs • Swiss quality standards • Personal support",
+        "button": "Schedule free consultation"
       },
       "success_story": {
         "title": "How Swiss SMEs already benefit",

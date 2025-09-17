@@ -64,22 +64,11 @@ const Services = () => {
     }
   ];
 
-  const included = [
-    "Vorbereitung und Analyse",
-    "Alle Workshop-Materialien", 
-    "Praktische Übungen",
-    "Follow-up Dokumentation",
-    "30 Tage E-Mail Support",
-    "Aufzeichnung (bei Webinaren)"
-  ];
+  const includedItems = t('pages.services.what_expect.included_items');
+  const afterItems = t('pages.services.what_expect.after_items');
 
-  const tools = [
-    { name: "n8n", description: "Low-Code Automation Platform" },
-    { name: "OpenAI/Anthropic", description: "Enterprise-grade KI APIs" },
-    { name: "Supabase", description: "Moderne PostgreSQL Datenbank" },
-    { name: "Bexio", description: "Schweizer Business Software" },
-    { name: "Shopware", description: "E-Commerce Integration" }
-  ];
+  const tools = t('pages.services.tech_stack.tools');
+  const achievements = t('pages.services.test_phase.achievements');
 
   return (
     <div className="min-h-screen subpage-bg">
@@ -249,9 +238,9 @@ const Services = () => {
                     <div className="bg-primary/5 rounded-lg p-4">
                       <h4 className="font-semibold text-sm mb-2 text-primary">{t('pages.services.test_phase.what_developed')}</h4>
                       <ul className="text-sm space-y-1">
-                        <li>• KI-Workshops für verschiedene Branchen</li>
-                        <li>• Datenschutz-konforme Automatisierungen</li>
-                        <li>• Pilotprojekte mit echten Unternehmen</li>
+                        {Array.isArray(achievements) && achievements.map((achievement, index) => (
+                          <li key={index}>• {achievement}</li>
+                        ))}
                       </ul>
                     </div>
                   </CardContent>
@@ -324,7 +313,7 @@ const Services = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {Array.isArray(included) && included.slice(0, 3).map((item, index) => (
+                    {Array.isArray(includedItems) && includedItems.map((item, index) => (
                       <li key={index} className="flex items-start space-x-3">
                         <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
                         <span className="text-sm">{item}</span>
@@ -343,7 +332,7 @@ const Services = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {Array.isArray(included) && included.slice(3).map((item, index) => (
+                    {Array.isArray(afterItems) && afterItems.map((item, index) => (
                       <li key={index} className="flex items-start space-x-3">
                         <CheckCircle size={16} className="text-accent mt-0.5 flex-shrink-0" />
                         <span className="text-sm">{item}</span>
