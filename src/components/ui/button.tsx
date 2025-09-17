@@ -5,23 +5,23 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 backdrop-blur-lg border",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary/20 backdrop-blur-lg border border-primary/30 text-primary hover:bg-primary/30 hover:border-primary/50 shadow-soft hover:shadow-glow",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive/20 backdrop-blur-lg border border-destructive/30 text-destructive hover:bg-destructive/30 hover:border-destructive/50 shadow-soft",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "bg-background/60 backdrop-blur-lg border border-input/50 hover:bg-accent/20 hover:text-accent-foreground hover:border-accent/30 shadow-soft",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        brand: "bg-brand-yellow text-brand-black hover:bg-brand-yellow/90 shadow-soft hover:shadow-glow font-semibold",
-        brandOutline: "border-2 border-brand-yellow text-brand-yellow bg-transparent hover:bg-brand-yellow hover:text-brand-black",
-        accent: "bg-accent text-accent-foreground hover:bg-accent/90",
-        consultation: "bg-brand-yellow/20 backdrop-blur-lg border border-brand-yellow/30 text-brand-yellow hover:bg-brand-yellow/30 hover:border-brand-yellow/50 shadow-soft hover:shadow-glow font-semibold transition-all duration-300",
+          "bg-secondary/60 backdrop-blur-lg border border-secondary/30 text-secondary-foreground hover:bg-secondary/80 hover:border-secondary/50 shadow-soft",
+        ghost: "bg-transparent backdrop-blur-lg border border-transparent hover:bg-accent/20 hover:text-accent-foreground hover:border-accent/30",
+        link: "text-primary underline-offset-4 hover:underline bg-transparent border-transparent backdrop-blur-none",
+        brand: "bg-brand-yellow/20 backdrop-blur-lg border border-brand-yellow/30 text-brand-yellow hover:bg-brand-yellow/30 hover:border-brand-yellow/50 shadow-soft hover:shadow-glow font-semibold",
+        brandOutline: "bg-transparent backdrop-blur-lg border-2 border-brand-yellow/50 text-brand-yellow hover:bg-brand-yellow/20 hover:text-brand-yellow hover:border-brand-yellow/70 shadow-soft",
+        accent: "bg-accent/20 backdrop-blur-lg border border-accent/30 text-accent hover:bg-accent/30 hover:border-accent/50 shadow-soft hover:shadow-glow",
+        consultation: "bg-brand-yellow/20 backdrop-blur-lg border border-brand-yellow/30 text-brand-yellow hover:bg-brand-yellow/30 hover:border-brand-yellow/50 shadow-soft hover:shadow-glow font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
