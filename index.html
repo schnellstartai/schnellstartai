@@ -47,9 +47,45 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
+    <!-- Inline critical CSS to prevent render blocking -->
+    <style>
+      :root {
+        --brand-yellow: 51 100% 50%;
+        --brand-black: 240 11% 6%;
+        --brand-blue: 221 83% 53%;
+        --background: 0 0% 100%;
+        --foreground: var(--brand-black);
+        --primary: var(--brand-yellow);
+        --radius: 1rem;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: hsl(var(--background));
+        color: hsl(var(--foreground));
+        font-family: 'Inter', system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root { min-height: 100vh; }
+      .min-h-screen { min-height: 100vh; }
+      .flex { display: flex; }
+      .items-center { align-items: center; }
+      .justify-center { justify-content: center; }
+      .animate-spin { animation: spin 1s linear infinite; }
+      .rounded-full { border-radius: 9999px; }
+      .h-32 { height: 8rem; }
+      .w-32 { width: 8rem; }
+      .border-b-2 { border-bottom-width: 2px; }
+      .border-primary { border-color: hsl(var(--primary)); }
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    </style>
+
     <!-- Performance optimizations for critical request chain -->
     <link rel="modulepreload" href="/src/main.tsx">
-    <link rel="preload" href="/src/index.css" as="style">
+    <link rel="preload" href="/src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
     
     <!-- Favicon -->
     <link rel="icon" href="/logo.png" type="image/png">
