@@ -14,7 +14,8 @@ const About = () => {
       name: "Florian",
       role: "Workflows & Umsetzung",
       description: "10+ Jahre Erfahrung in Prozessoptimierung und Automation. Spezialist für n8n, Supabase und nahtlose System-Integrationen.",
-      linkedin: "https://www.linkedin.com/in/financeai"
+      linkedin: "https://www.linkedin.com/in/florian-witschi/",
+      website: "https://www.florianwitschi.ch/"
     },
     {
       name: "David", 
@@ -112,15 +113,27 @@ const About = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     {member.description}
                   </p>
-                  <a 
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors"
-                  >
-                    <Linkedin size={16} />
-                    <span className="text-sm font-medium">LinkedIn</span>
-                  </a>
+                  <div className="flex items-center justify-center gap-4">
+                    <a 
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors"
+                    >
+                      <Linkedin size={16} />
+                      <span className="text-sm font-medium">LinkedIn</span>
+                    </a>
+                    {member.website && (
+                      <a 
+                        href={member.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors"
+                      >
+                        <span className="text-sm font-medium">Website</span>
+                      </a>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
