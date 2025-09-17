@@ -300,7 +300,7 @@
       "hero": {
         "title": "AI simply explained, concretely implemented",
         "subtitle": "We make AI understandable for your team and automate your processes – without complicated technology. Swiss quality, data protection included.",
-        "cta": "Free consultation →"
+        "cta_button": "Free consultation →"
       },
       "trust_indicators": {
         "swiss_hosting": "Swiss hosting",
@@ -372,6 +372,11 @@
         "workshops_conducted": "Workshops conducted",
         "partner_companies": "Partner companies",
         "what_developed": "What we have already accomplished",
+        "achievements": [
+          "AI workshops for various industries",
+          "Data protection-compliant automations",
+          "Pilot projects with real companies"
+        ],
         "benefits": {
           "co_creation": "Co-creation",
           "co_creation_desc": "Direct input in product development",
@@ -409,30 +414,6 @@
           { "name": "Bexio", "description": "Swiss Business Software" },
           { "name": "Shopware", "description": "E-Commerce Integration" }
         ]
-      },
-      "final_cta": {
-        "title": "Let's start your AI project",
-        "subtitle": "30 minutes are often enough to define concrete next steps.",
-        "steps": [
-          {
-            "title": "Initial consultation",
-            "description": "Free 30-minute conversation"
-          },
-          {
-            "title": "Workshop",
-            "description": "Hands-on AI introduction for your team"
-          },
-          {
-            "title": "Implementation",
-            "description": "Pilot project with real data"
-          }
-        ],
-        "benefits": [
-          "No hidden costs",
-          "Swiss quality standards",
-          "Personal support"
-        ],
-        "button": "Schedule free consultation"
       },
       "final_cta": {
         "title": "Let's start your AI project",
