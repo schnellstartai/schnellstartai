@@ -230,10 +230,5 @@
 }
 
 @layer utilities {
-  .hero-bg-loaded {
-    background-image: url('/lovable-uploads/01260b90-8d60-44bb-9796-0cd3cbce3751.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  /* Removed hero-bg-loaded class as it's been replaced with optimized images */
 }

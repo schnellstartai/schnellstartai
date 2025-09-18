@@ -9,19 +9,19 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-brand-yellow/80 backdrop-blur-lg border border-brand-yellow/60 text-brand-black hover:bg-brand-yellow/90 hover:border-brand-yellow shadow-soft hover:shadow-glow font-semibold",
+        default: "bg-brand-yellow backdrop-blur-lg border border-brand-yellow text-brand-black hover:bg-brand-yellow/90 hover:border-brand-yellow shadow-soft hover:shadow-glow font-semibold",
         destructive:
-          "bg-destructive/80 backdrop-blur-lg border border-destructive/60 text-white hover:bg-destructive/90 hover:border-destructive shadow-soft",
+          "bg-destructive backdrop-blur-lg border border-destructive text-white hover:bg-destructive/90 hover:border-destructive shadow-soft font-semibold",
         outline:
-          "bg-background/60 backdrop-blur-lg border border-input/50 hover:bg-accent/20 hover:text-accent-foreground hover:border-accent/30 shadow-soft",
+          "bg-white/90 backdrop-blur-lg border-2 border-gray-300 text-gray-900 hover:bg-gray-50 hover:text-gray-900 hover:border-gray-400 shadow-soft font-semibold",
         secondary:
-          "bg-secondary/60 backdrop-blur-lg border border-secondary/30 text-secondary-foreground hover:bg-secondary/80 hover:border-secondary/50 shadow-soft",
-        ghost: "bg-transparent backdrop-blur-lg border border-transparent hover:bg-accent/20 hover:text-accent-foreground hover:border-accent/30",
-        link: "text-primary underline-offset-4 hover:underline bg-transparent border-transparent backdrop-blur-none",
-        brand: "bg-brand-yellow/80 backdrop-blur-lg border border-brand-yellow/60 text-brand-black hover:bg-brand-yellow/90 hover:border-brand-yellow shadow-soft hover:shadow-glow font-semibold",
-        brandOutline: "bg-transparent backdrop-blur-lg border-2 border-brand-yellow/50 text-brand-yellow hover:bg-brand-yellow/20 hover:text-brand-yellow hover:border-brand-yellow/70 shadow-soft",
-        accent: "bg-accent/80 backdrop-blur-lg border border-accent/60 text-white hover:bg-accent/90 hover:border-accent shadow-soft hover:shadow-glow font-semibold",
-        consultation: "bg-brand-yellow/80 backdrop-blur-lg border border-brand-yellow/60 text-brand-black hover:bg-brand-yellow/90 hover:border-brand-yellow shadow-soft hover:shadow-glow font-semibold",
+          "bg-gray-200 backdrop-blur-lg border border-gray-300 text-gray-900 hover:bg-gray-300 hover:border-gray-400 shadow-soft font-semibold",
+        ghost: "bg-transparent backdrop-blur-lg border border-transparent text-gray-900 hover:bg-gray-100 hover:text-gray-900 hover:border-gray-300 font-semibold",
+        link: "text-brand-blue underline-offset-4 hover:underline bg-transparent border-transparent backdrop-blur-none font-semibold",
+        brand: "bg-brand-yellow backdrop-blur-lg border border-brand-yellow text-brand-black hover:bg-brand-yellow/90 hover:border-brand-yellow shadow-soft hover:shadow-glow font-semibold",
+        brandOutline: "bg-transparent backdrop-blur-lg border-2 border-brand-yellow text-brand-yellow hover:bg-brand-yellow/20 hover:text-brand-yellow hover:border-brand-yellow shadow-soft font-semibold",
+        accent: "bg-brand-blue backdrop-blur-lg border border-brand-blue text-white hover:bg-brand-blue/90 hover:border-brand-blue shadow-soft hover:shadow-glow font-semibold",
+        consultation: "bg-brand-yellow backdrop-blur-lg border border-brand-yellow text-brand-black hover:bg-brand-yellow/90 hover:border-brand-yellow shadow-soft hover:shadow-glow font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",

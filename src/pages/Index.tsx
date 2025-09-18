@@ -3,6 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { MetricChip } from '@/components/MetricChip';
+import { OptimizedHeroImage } from '@/components/OptimizedHeroImage';
+import { LazySection } from '@/components/LazySection';
 import ctaBackground from '@/assets/cta-background.png';
 
 import { Link } from 'react-router-dom';
@@ -30,12 +32,6 @@ const Index = () => {
   // Fixed: Removed AIResourceCalculator component completely
   const { t } = useTranslation();
   const [heroImageLoaded, setHeroImageLoaded] = useState(false);
-  
-  useEffect(() => {
-    const img = new Image();
-    img.src = '/lovable-uploads/01260b90-8d60-44bb-9796-0cd3cbce3751.png';
-    img.onload = () => setHeroImageLoaded(true);
-  }, []);
 
   const startSteps = [
     {
@@ -131,17 +127,11 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className={`relative min-h-screen flex items-center justify-center overflow-hidden transition-all duration-700 pt-16 ${
-        heroImageLoaded 
-          ? 'hero-bg-loaded' 
-          : 'bg-gradient-to-br from-brand-yellow/20 via-brand-black/5 to-accent/10'
-      }`}>
-        {heroImageLoaded && (
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-fade-in"
-            style={{backgroundImage: 'url(/lovable-uploads/01260b90-8d60-44bb-9796-0cd3cbce3751.png)'}}
-          />
-        )}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <OptimizedHeroImage 
+          onImageLoad={() => setHeroImageLoaded(true)}
+          className="absolute inset-0"
+        />
         <div className="absolute inset-0 bg-black/30" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">

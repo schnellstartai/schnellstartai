@@ -5,7 +5,9 @@
     "faq": "FAQ",
     "about": "Über uns",
     "contact": "Kontakt",
-    "book_appointment": "Termin buchen"
+    "book_appointment": "Termin buchen",
+    "open_menu": "Navigationsmenü öffnen",
+    "close_menu": "Navigationsmenü schließen"
   },
   "pages": {
     "index": {
