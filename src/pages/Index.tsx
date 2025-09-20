@@ -162,15 +162,15 @@ const Index = () => {
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
             {startSteps.map((step, index) => (
-              <Card key={index} className="text-center hover-scale">
+              <Card key={index} className="text-center hover-scale glass shadow-lg">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-brand-yellow/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-brand-yellow/20 rounded-xl flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
                     <step.icon className="w-8 h-8 text-brand-black" />
                   </div>
-                  <CardTitle className="text-xl">{step.title}</CardTitle>
+                  <CardTitle className="text-xl font-bold">{step.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
+                  <CardDescription className="text-base leading-relaxed text-foreground/80">
                     {step.description}
                   </CardDescription>
                 </CardContent>
