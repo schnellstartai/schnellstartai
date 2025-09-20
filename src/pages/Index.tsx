@@ -130,10 +130,10 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-4 sm:mb-6 animate-fade-in text-white leading-tight">
+             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-4 sm:mb-6 animate-fade-in text-foreground leading-tight">
                  {t('pages.index.hero.title')}
                </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 text-balance animate-fade-in leading-relaxed px-2">
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-6 sm:mb-8 text-balance animate-fade-in leading-relaxed px-2">
                 {t('pages.index.hero.subtitle')}
               </p>
              
@@ -145,7 +145,7 @@ const Index = () => {
                 </Link>
              </div>
 
-            <div className="flex items-center justify-center space-x-2 text-white/80 px-4">
+            <div className="flex items-center justify-center space-x-2 text-muted-foreground px-4">
               <CheckCircle size={14} className="text-brand-yellow sm:w-4 sm:h-4" />
               <span className="text-xs sm:text-sm font-medium text-center">{t('pages.index.hero.note')}</span>
             </div>
