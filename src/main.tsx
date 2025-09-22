@@ -1,6 +1,21 @@
-console.log('Main.tsx loading - cache cleared');
+import { createRoot, hydrateRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import { LanguageProvider } from '@/contexts/LanguageContext'
+import App from './App.tsx'
+import './index.css'
 
-const root = document.getElementById('root');
-if (root) {
-  root.innerHTML = '<h1 style="color: white; text-align: center;">React Bypassed - Pure JS</h1>';
+const root = document.getElementById("root")!;
+const app = (
+  <LanguageProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </LanguageProvider>
+);
+
+// Use hydration for SSR in production
+if (import.meta.env.PROD) {
+  hydrateRoot(root, app);
+} else {
+  createRoot(root).render(app);
 }

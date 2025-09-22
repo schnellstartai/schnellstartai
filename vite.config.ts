@@ -19,23 +19,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  optimizeDeps: {
-    exclude: ['src/contexts/LanguageContext.tsx', 'src/contexts/LanguageContext'],
-    include: [
-      "react",
-      "react-dom",
-      "react/jsx-runtime",
-      "react-dom/client"
-    ],
-    force: true,
-  },
-  define: {
-    __CACHE_BUST__: `"${Date.now()}"`,
-  },
-  esbuild: {
-    logOverride: { 'this-is-undefined-in-esm': 'silent' }
-  },
-  clearScreen: false,
   build: {
     // Ensure proper asset handling for prerendering
     assetsDir: "assets",

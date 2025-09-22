@@ -128,7 +128,13 @@ const Index = () => {
       
       {/* Hero Section */}
       <section 
-        className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-brand-black via-gray-800 to-brand-black"
+        className="relative min-h-screen flex items-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(/hero-background-new.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
           <div className="max-w-2xl text-left">

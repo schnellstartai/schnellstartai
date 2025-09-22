@@ -1,8 +1,12 @@
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export const useTranslation = () => {
+  const { t, language } = useLanguage();
+  
   return {
-    t: (key: string) => key,
-    language: 'de' as 'de' | 'en',
-    isGerman: true,
-    isEnglish: false
+    t,
+    language,
+    isGerman: language === 'de',
+    isEnglish: language === 'en'
   };
 };
