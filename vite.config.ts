@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   optimizeDeps: {
-    exclude: ['src/contexts/LanguageContext.tsx'],
+    exclude: ['src/contexts/LanguageContext.tsx', 'src/contexts/LanguageContext'],
     include: [
       "react",
       "react-dom",
@@ -32,7 +32,7 @@ export default defineConfig(({ mode }) => ({
     force: true,
   },
   define: {
-    __CACHE_BUST__: Date.now(),
+    __CACHE_BUST__: `"${Date.now()}"`,
   },
   esbuild: {
     logOverride: { 'this-is-undefined-in-esm': 'silent' }
