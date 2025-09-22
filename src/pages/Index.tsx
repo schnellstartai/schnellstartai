@@ -145,11 +145,18 @@ const Index = () => {
             <p className="text-lg sm:text-xl mb-8 leading-relaxed text-white/90">
               Transform your operations with intelligent automation and data-driven insights.
             </p>
-            <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-white text-primary hover:bg-white/90" asChild>
-              <Link to="/contact">
-                Get Started Today
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+              <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-white text-primary hover:bg-white/90" asChild>
+                <Link to="/contact">
+                  Get Started Today
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full border-white text-white hover:bg-white hover:text-primary" asChild>
+                <Link to="/services">
+                  Learn More
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
