@@ -1,17 +1,22 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import '@/index.css'
 
-function SimpleApp() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">App Loading...</h1>
-        <p className="text-white/80">React is working properly</p>
-      </div>
-    </div>
-  )
+// Completely minimal React app to break cache
+const App = () => {
+  return React.createElement('div', {
+    style: {
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #1e293b, #0f172a)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      fontFamily: 'system-ui'
+    }
+  }, React.createElement('h1', null, 'Clean React App - No Context Issues'))
 }
 
-const root = document.getElementById("root")!;
-createRoot(root).render(<SimpleApp />);
+const root = document.getElementById("root")
+if (root) {
+  createRoot(root).render(React.createElement(App))
+}
