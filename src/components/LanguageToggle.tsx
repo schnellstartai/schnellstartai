@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useState } from 'react';
 
 export const LanguageToggle = () => {
-  const { language, setLanguage } = useLanguage();
+  const [language, setLanguage] = useState<'de' | 'en'>('de');
 
   const handleLanguageChange = (newLang: 'de' | 'en') => {
     console.log('Language changing from', language, 'to', newLang);
