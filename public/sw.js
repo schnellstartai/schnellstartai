@@ -3,9 +3,6 @@ const STATIC_CACHE_URLS = [
   '/',
   '/src/index.css',
   '/src/main.tsx',
-  '/src/assets/hero-mobile.webp',
-  '/src/assets/hero-tablet.webp', 
-  '/src/assets/hero-desktop.webp',
   '/src/assets/logo.svg',
   '/logo.png'
 ];
