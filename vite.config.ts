@@ -23,8 +23,13 @@ export default defineConfig(({ mode }) => ({
     include: [
       "react",
       "react-dom",
-      "@tanstack/react-query"
+      "react/jsx-runtime",
+      "react-dom/client",
+      "react-router-dom",
+      "@tanstack/react-query",
+      "lucide-react"
     ],
+    force: true,
   },
   build: {
     // Ensure proper asset handling for prerendering
