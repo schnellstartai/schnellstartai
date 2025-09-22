@@ -136,12 +136,14 @@ const Index = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
+        {/* Dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/40 z-0" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
           <div className="max-w-2xl text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
               {t('pages.index.hero.title')}
             </h1>
-            <p className="text-lg sm:text-xl mb-8 leading-relaxed text-white/90">
+            <p className="text-lg sm:text-xl mb-8 leading-relaxed text-white drop-shadow-md">
               {t('pages.index.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
