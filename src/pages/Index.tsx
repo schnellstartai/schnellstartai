@@ -127,28 +127,29 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-balance mb-4 sm:mb-6 animate-fade-in text-foreground leading-tight">
-                 {t('pages.index.hero.title')}
-               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-6 sm:mb-8 text-balance animate-fade-in leading-relaxed px-2">
-                {t('pages.index.hero.subtitle')}
-              </p>
-             
-             <div className="flex justify-center mb-8 sm:mb-12 px-4">
-                <Link to="/contact" aria-label={t('pages.index.hero.cta')}>
-                  <Button variant="consultation" className="hover-scale text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
-                    {t('pages.index.hero.cta')}
-                  </Button>
-                </Link>
-             </div>
-
-            <div className="flex items-center justify-center space-x-2 text-muted-foreground px-4">
-              <CheckCircle size={14} className="text-brand-yellow sm:w-4 sm:h-4" />
-              <span className="text-xs sm:text-sm font-medium text-center">{t('pages.index.hero.note')}</span>
-            </div>
+      <section 
+        className="relative min-h-screen flex items-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(/hero-background-new.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/20" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
+              AI Solutions for Your Business
+            </h1>
+            <p className="text-lg sm:text-xl mb-8 leading-relaxed text-white/90">
+              Transform your operations with intelligent automation and data-driven insights.
+            </p>
+            <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-white text-primary hover:bg-white/90" asChild>
+              <Link to="/contact">
+                Get Started Today
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
