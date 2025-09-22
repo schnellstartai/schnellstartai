@@ -136,24 +136,23 @@ const Index = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-black/20" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
-              AI Solutions for Your Business
+              {t('pages.index.hero.title')}
             </h1>
             <p className="text-lg sm:text-xl mb-8 leading-relaxed text-white/90">
-              Transform your operations with intelligent automation and data-driven insights.
+              {t('pages.index.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-white text-primary hover:bg-white/90" asChild>
                 <Link to="/contact">
-                  Get Started Today
+                  {t('pages.index.hero.cta')}
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full border-white text-white hover:bg-white hover:text-primary" asChild>
                 <Link to="/services">
-                  Learn More
+                  {t('pages.index.hero.learnMore')}
                 </Link>
               </Button>
             </div>
