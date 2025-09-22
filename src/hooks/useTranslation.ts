@@ -6,7 +6,7 @@ export const useTranslation = () => {
   return {
     t,
     language,
-    isGerman: language === 'de',
-    isEnglish: language === 'en'
+    isGerman: true, // Simplified for debugging
+    isEnglish: false // Simplified for debugging
   };
 };
