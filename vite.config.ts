@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   optimizeDeps: {
+    exclude: ['src/contexts/LanguageContext.tsx'],
     include: [
       "react",
       "react-dom",
@@ -29,6 +30,9 @@ export default defineConfig(({ mode }) => ({
       "react-dom/client"
     ],
     force: true,
+  },
+  esbuild: {
+    logOverride: { 'this-is-undefined-in-esm': 'silent' }
   },
   clearScreen: false,
   build: {
