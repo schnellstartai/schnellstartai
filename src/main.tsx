@@ -1,18 +1,17 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Index from '@/pages/Index'
 import '@/index.css'
 
-function App() {
+function SimpleApp() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Index />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-white mb-4">App Loading...</h1>
+        <p className="text-white/80">React is working properly</p>
+      </div>
+    </div>
   )
 }
 
 const root = document.getElementById("root")!;
-createRoot(root).render(<App />);
+createRoot(root).render(<SimpleApp />);
