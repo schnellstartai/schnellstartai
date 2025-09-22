@@ -1,22 +1,20 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
-// Completely minimal React app to break cache
-const App = () => {
-  return React.createElement('div', {
-    style: {
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #1e293b, #0f172a)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      color: 'white',
-      fontFamily: 'system-ui'
-    }
-  }, React.createElement('h1', null, 'Clean React App - No Context Issues'))
-}
+// Completely bare minimum React app with cache buster
+const CacheBustApp = () => React.createElement('div', {
+  style: {
+    minHeight: '100vh',
+    background: '#0f172a',
+    color: '#ffffff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'system-ui, sans-serif'
+  }
+}, React.createElement('h1', null, `Clean App - ${Date.now()}`));
 
-const root = document.getElementById("root")
-if (root) {
-  createRoot(root).render(React.createElement(App))
+const rootEl = document.getElementById('root');
+if (rootEl) {
+  createRoot(rootEl).render(React.createElement(CacheBustApp));
 }

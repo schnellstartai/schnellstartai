@@ -31,6 +31,9 @@ export default defineConfig(({ mode }) => ({
     ],
     force: true,
   },
+  define: {
+    __CACHE_BUST__: Date.now(),
+  },
   esbuild: {
     logOverride: { 'this-is-undefined-in-esm': 'silent' }
   },
