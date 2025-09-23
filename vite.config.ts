@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    hmr: {
+      overlay: false
+    }
   },
   optimizeDeps: {
     force: true,
@@ -17,6 +20,7 @@ export default defineConfig(({ mode }) => ({
     target: 'esnext',
   },
   clearScreen: false,
+  cacheDir: '.vite-new-cache',
   plugins: [
     react(),
     mode === 'development' &&
