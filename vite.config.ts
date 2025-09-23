@@ -11,6 +11,10 @@ export default defineConfig(({ mode }) => ({
   },
   optimizeDeps: {
     force: true, // Force rebuild to clear cache
+    exclude: ['react', 'react-dom'],
+  },
+  esbuild: {
+    target: 'esnext',
   },
   plugins: [
     react(),
