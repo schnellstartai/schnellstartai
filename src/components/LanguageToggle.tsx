@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { useI18n } from '@/contexts/I18nContext';
+import { useSimpleI18n } from '@/hooks/useSimpleI18n';
 
 export const LanguageToggle = () => {
-  const { language, setLanguage } = useI18n();
+  const { language, setLanguage } = useSimpleI18n();
 
   const handleLanguageChange = (newLang: 'de' | 'en') => {
     console.log('Language changing from', language, 'to', newLang);

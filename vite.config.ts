@@ -10,12 +10,13 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   optimizeDeps: {
-    force: true, // Force rebuild to clear cache
+    force: true,
     exclude: ['react', 'react-dom'],
   },
   esbuild: {
     target: 'esnext',
   },
+  clearScreen: false,
   plugins: [
     react(),
     mode === 'development' &&

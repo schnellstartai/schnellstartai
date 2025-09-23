@@ -1,12 +1,5 @@
-import { useI18n } from '@/contexts/I18nContext';
+import { useSimpleI18n } from './useSimpleI18n';
 
 export const useTranslation = () => {
-  const { t, language } = useI18n();
-  
-  return {
-    t,
-    language,
-    isGerman: language === 'de',
-    isEnglish: language === 'en'
-  };
+  return useSimpleI18n();
 };
