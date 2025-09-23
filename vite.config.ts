@@ -18,12 +18,9 @@ export default defineConfig(({ mode }) => ({
   },
   esbuild: {
     target: 'esnext',
-    jsx: 'transform',
-    jsxFactory: 'React.createElement',
-    jsxFragment: 'React.Fragment',
   },
   clearScreen: false,
-  cacheDir: '.vite-cache-fresh-' + Date.now(),
+  cacheDir: '.vite-cache-final-' + Date.now(),
   plugins: [
     react(),
     mode === 'development' &&
