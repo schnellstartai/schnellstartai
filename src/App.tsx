@@ -1,3 +1,4 @@
+import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -21,31 +22,42 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <Suspense fallback={<div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary"></div>
-      </div>}>
-        <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/impressum" element={<Impressum />} />
-        <Route path="/datenschutz" element={<Datenschutz />} />
-        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-        <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
-      <BackToTop />
-    </TooltipProvider>
-  </QueryClientProvider>
+const App = () => React.createElement(
+  QueryClientProvider,
+  { client: queryClient },
+  React.createElement(
+    TooltipProvider,
+    null,
+    React.createElement(Toaster, null),
+    React.createElement(Sonner, null),
+    React.createElement(
+      Suspense,
+      {
+        fallback: React.createElement(
+          "div",
+          { className: "min-h-screen flex items-center justify-center" },
+          React.createElement("div", {
+            className: "animate-spin rounded-full h-32 w-32 border-b-2 border-primary"
+          })
+        )
+      },
+      React.createElement(
+        Routes,
+        null,
+        React.createElement(Route, { path: "/", element: React.createElement(Index, null) }),
+        React.createElement(Route, { path: "/services", element: React.createElement(Services, null) }),
+        React.createElement(Route, { path: "/faq", element: React.createElement(FAQ, null) }),
+        React.createElement(Route, { path: "/about", element: React.createElement(About, null) }),
+        React.createElement(Route, { path: "/blog", element: React.createElement(Blog, null) }),
+        React.createElement(Route, { path: "/blog/:slug", element: React.createElement(BlogPost, null) }),
+        React.createElement(Route, { path: "/contact", element: React.createElement(Contact, null) }),
+        React.createElement(Route, { path: "/impressum", element: React.createElement(Impressum, null) }),
+        React.createElement(Route, { path: "/datenschutz", element: React.createElement(Datenschutz, null) }),
+        React.createElement(Route, { path: "*", element: React.createElement(NotFound, null) })
+      )
+    ),
+    React.createElement(BackToTop, null)
+  )
 );
 
 export default App;
