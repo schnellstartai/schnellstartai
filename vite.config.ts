@@ -18,9 +18,10 @@ export default defineConfig(({ mode }) => ({
   },
   esbuild: {
     target: 'esnext',
+    jsx: 'automatic',
   },
   clearScreen: false,
-  cacheDir: '.vite-new-cache',
+  cacheDir: '.vite-cache-fresh-' + Date.now(),
   plugins: [
     react(),
     mode === 'development' &&
