@@ -1,5 +1,5 @@
-import { useSimpleI18n } from './useSimpleI18n';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const useTranslation = () => {
-  return useSimpleI18n();
+  return useLanguage();
 };
