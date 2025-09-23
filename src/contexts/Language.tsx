@@ -1,4 +1,4 @@
-import React from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import deTranslations from '@/translations/de.json';
 import enTranslations from '@/translations/en.json';
 
@@ -10,38 +10,40 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
-const LanguageContext = React.createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 const translations = {
   de: deTranslations,
   en: enTranslations
 };
 
-export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguageState] = React.useState<Language>('de');
+interface LanguageProviderProps {
+  children: ReactNode;
+}
 
-  // Detect browser language on first load
-  React.useEffect(() => {
+export function LanguageProvider({ children }: LanguageProviderProps) {
+  const [language, setLanguageState] = useState<Language>('de');
+
+  useEffect(() => {
     const savedLanguage = localStorage.getItem('preferred-language') as Language;
     if (savedLanguage && (savedLanguage === 'de' || savedLanguage === 'en')) {
       setLanguageState(savedLanguage);
     } else {
-      // Auto-detect from browser
       const browserLang = navigator.language.toLowerCase();
       if (browserLang.startsWith('en')) {
         setLanguageState('en');
       } else {
-        setLanguageState('de'); // Default to German
+        setLanguageState('de');
       }
     }
   }, []);
 
-  const setLanguage = React.useCallback((lang: Language) => {
+  const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem('preferred-language', lang);
-  }, []);
+  };
 
-  const t = React.useCallback((key: string): string => {
+  const t = (key: string): string => {
     const keys = key.split('.');
     let value: any = translations[language];
     
@@ -49,7 +51,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       value = value?.[k];
     }
     
-    // Fallback to German if English translation not found
     if (!value && language === 'en') {
       value = translations.de;
       for (const k of keys) {
@@ -58,25 +59,19 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
     
     return value || key;
-  }, [language]);
-
-  const contextValue = React.useMemo(() => ({
-    language,
-    setLanguage,
-    t
-  }), [language, setLanguage, t]);
+  };
 
   return (
-    <LanguageContext.Provider value={contextValue}>
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );
-};
+}
 
-export const useLanguage = () => {
-  const context = React.useContext(LanguageContext);
+export function useLanguage() {
+  const context = useContext(LanguageContext);
   if (context === undefined) {
     throw new Error('useLanguage must be used within a LanguageProvider');
   }
   return context;
-};
+}

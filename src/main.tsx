@@ -1,6 +1,6 @@
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-import { LanguageProvider } from '@/contexts/LanguageContext'
+import { LanguageProvider } from '@/contexts/Language'
 import App from './App.tsx'
 import './index.css'
 
