@@ -4,24 +4,24 @@ import enTranslations from '@/translations/en.json';
 
 type Language = 'de' | 'en';
 
-interface LanguageContextType {
+interface AppLanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const AppLanguageContext = createContext<AppLanguageContextType | undefined>(undefined);
 
 const translations = {
   de: deTranslations,
   en: enTranslations
 };
 
-interface LanguageProviderProps {
+interface AppLanguageProviderProps {
   children: ReactNode;
 }
 
-export function LanguageProvider({ children }: LanguageProviderProps) {
+export function AppLanguageProvider({ children }: AppLanguageProviderProps) {
   const [language, setLanguageState] = useState<Language>('de');
 
   useEffect(() => {
@@ -62,16 +62,16 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <AppLanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
-    </LanguageContext.Provider>
+    </AppLanguageContext.Provider>
   );
 }
 
-export function useLanguage() {
-  const context = useContext(LanguageContext);
+export function useAppLanguage() {
+  const context = useContext(AppLanguageContext);
   if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
+    throw new Error('useAppLanguage must be used within an AppLanguageProvider');
   }
   return context;
 }

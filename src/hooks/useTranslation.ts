@@ -1,7 +1,7 @@
-import { useLanguage } from '@/contexts/Language';
+import { useAppLanguage } from '@/contexts/AppLanguage';
 
 export const useTranslation = () => {
-  const { t, language } = useLanguage();
+  const { t, language } = useAppLanguage();
   
   return {
     t,
