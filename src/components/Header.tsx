@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useAppLanguage } from '@/contexts/AppLanguage';
+import { useI18n } from '@/contexts/I18nContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { t } = useAppLanguage();
+  const { t } = useI18n();
 
   const navItems = [
     { label: t('nav.services'), href: '/services' },

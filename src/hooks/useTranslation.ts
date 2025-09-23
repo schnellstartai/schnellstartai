@@ -1,7 +1,7 @@
-import { useAppLanguage } from '@/contexts/AppLanguage';
+import { useI18n } from '@/contexts/I18nContext';
 
 export const useTranslation = () => {
-  const { t, language } = useAppLanguage();
+  const { t, language } = useI18n();
   
   return {
     t,

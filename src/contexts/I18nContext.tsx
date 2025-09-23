@@ -1,30 +1,30 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import * as React from 'react';
 import deTranslations from '@/translations/de.json';
 import enTranslations from '@/translations/en.json';
 
 type Language = 'de' | 'en';
 
-interface AppLanguageContextType {
+interface I18nContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
 }
 
-const AppLanguageContext = createContext<AppLanguageContextType | undefined>(undefined);
+const I18nContext = React.createContext<I18nContextType | undefined>(undefined);
 
 const translations = {
   de: deTranslations,
   en: enTranslations
 };
 
-interface AppLanguageProviderProps {
-  children: ReactNode;
+interface I18nProviderProps {
+  children: React.ReactNode;
 }
 
-export function AppLanguageProvider({ children }: AppLanguageProviderProps) {
-  const [language, setLanguageState] = useState<Language>('de');
+export function I18nProvider({ children }: I18nProviderProps) {
+  const [language, setLanguageState] = React.useState<Language>('de');
 
-  useEffect(() => {
+  React.useEffect(() => {
     const savedLanguage = localStorage.getItem('preferred-language') as Language;
     if (savedLanguage && (savedLanguage === 'de' || savedLanguage === 'en')) {
       setLanguageState(savedLanguage);
@@ -62,16 +62,16 @@ export function AppLanguageProvider({ children }: AppLanguageProviderProps) {
   };
 
   return (
-    <AppLanguageContext.Provider value={{ language, setLanguage, t }}>
+    <I18nContext.Provider value={{ language, setLanguage, t }}>
       {children}
-    </AppLanguageContext.Provider>
+    </I18nContext.Provider>
   );
 }
 
-export function useAppLanguage() {
-  const context = useContext(AppLanguageContext);
+export function useI18n() {
+  const context = React.useContext(I18nContext);
   if (context === undefined) {
-    throw new Error('useAppLanguage must be used within an AppLanguageProvider');
+    throw new Error('useI18n must be used within an I18nProvider');
   }
   return context;
 }

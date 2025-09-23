@@ -1,16 +1,16 @@
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-import { AppLanguageProvider } from '@/contexts/AppLanguage'
+import { I18nProvider } from '@/contexts/I18nContext'
 import App from './App.tsx'
 import './index.css'
 
 const root = document.getElementById("root")!;
 const app = (
-  <AppLanguageProvider>
+  <I18nProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </AppLanguageProvider>
+  </I18nProvider>
 );
 
 // Use hydration for SSR in production
