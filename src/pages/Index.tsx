@@ -147,12 +147,12 @@ const Index = () => {
               {t('pages.index.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-              <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-white text-primary hover:bg-white/90" asChild>
+              <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-gray-800/80 backdrop-blur-md border border-gray-700/50 text-brand-yellow hover:bg-gray-700/90 hover:text-brand-yellow hover:border-brand-yellow/50 transition-all duration-300 shadow-lg hover:shadow-brand-yellow/20" asChild>
                 <Link to="/contact">
                   {t('pages.index.hero.cta')}
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full border-white text-white hover:bg-white hover:text-primary" asChild>
+              <Button size="lg" className="text-lg px-8 py-6 rounded-full bg-gray-900/70 backdrop-blur-md border border-gray-600/40 text-brand-yellow hover:bg-gray-800/80 hover:border-brand-yellow/60 transition-all duration-300 shadow-lg hover:shadow-brand-yellow/25" asChild>
                 <Link to="/services">
                   {t('pages.index.hero.learnMore')}
                 </Link>
