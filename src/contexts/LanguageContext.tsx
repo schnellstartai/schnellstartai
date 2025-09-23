@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { createContext, useContext, useState, useEffect } from 'react';
+import React from 'react';
 import deTranslations from '@/translations/de.json';
 import enTranslations from '@/translations/en.json';
 
@@ -11,7 +10,7 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = React.createContext<LanguageContextType | undefined>(undefined);
 
 const translations = {
   de: deTranslations,
@@ -19,10 +18,10 @@ const translations = {
 };
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguageState] = useState<Language>('de');
+  const [language, setLanguageState] = React.useState<Language>('de');
 
   // Detect browser language on first load
-  useEffect(() => {
+  React.useEffect(() => {
     const savedLanguage = localStorage.getItem('preferred-language') as Language;
     if (savedLanguage && (savedLanguage === 'de' || savedLanguage === 'en')) {
       setLanguageState(savedLanguage);
@@ -37,12 +36,12 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   }, []);
 
-  const setLanguage = (lang: Language) => {
+  const setLanguage = React.useCallback((lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem('preferred-language', lang);
-  };
+  }, []);
 
-  const t = (key: string): string => {
+  const t = React.useCallback((key: string): string => {
     const keys = key.split('.');
     let value: any = translations[language];
     
@@ -59,17 +58,23 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
     
     return value || key;
-  };
+  }, [language]);
+
+  const contextValue = React.useMemo(() => ({
+    language,
+    setLanguage,
+    t
+  }), [language, setLanguage, t]);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={contextValue}>
       {children}
     </LanguageContext.Provider>
   );
 };
 
 export const useLanguage = () => {
-  const context = useContext(LanguageContext);
+  const context = React.useContext(LanguageContext);
   if (context === undefined) {
     throw new Error('useLanguage must be used within a LanguageProvider');
   }
