@@ -1,8 +1,8 @@
-const CACHE_NAME = 'schnellstart-ai-v1.0.0';
+const CACHE_NAME = 'schnellstart-ai-v2.0.0-fresh';
 const STATIC_CACHE_URLS = [
   '/',
   '/src/index.css',
-  '/src/main.tsx',
+  '/src/main-new.tsx',
   '/src/assets/logo.svg',
   '/logo.png'
 ];
@@ -26,13 +26,16 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
-          }
+          // Delete ALL old caches to force refresh
+          return caches.delete(cacheName);
         })
       );
     }).then(() => {
       self.clients.claim();
+      // Force reload all clients
+      self.clients.matchAll().then(clients => {
+        clients.forEach(client => client.navigate(client.url));
+      });
     })
   );
 });
