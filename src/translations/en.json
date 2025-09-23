@@ -12,11 +12,11 @@
   "pages": {
     "index": {
       "hero": {
-        "title": "AI Automation for Companies at Lightspeed",
-        "subtitle": "Swiss AI workflows: quickly implemented, clearly measurable, data compliant. Ideal for SMEs that want to spend less time on admin and more on business.",
-        "cta": "Request free consultation →",
-        "learnMore": "Learn More",
-        "note": "Webinar or on-site in Switzerland – Flexible options for your team."
+        "title": "AI Automation for SMEs. In Weeks, Not Months.",
+        "subtitle": "Swiss Quality, FADP/GDPR compliant. No Vendor Locks. Code & Accounts with You. Measurable Results: −50–70% manual hours, <1% error rate.",
+        "cta": "Free Brief Consultation: Book 30-Min Call →",
+        "learnMore": "Pilot Packages from CHF 3,900",
+        "note": "Swiss Hosting: n8n self-hosted, local LLM providers. Maximum data sovereignty."
       },
       "steps": {
         "title": "How we start: Three clear steps to measurable success",
@@ -294,9 +294,9 @@
         "quote": "We learn from every company and continuously improve our approaches. This creates solutions that are truly practical."
       },
       "cta": {
-        "ready_title": "Ready for the next step?",
-        "ready_subtitle": "Let's find out in a free conversation how AI can advance your company.",
-        "ready_button": "Request free consultation"
+        "ready_title": "Issue Analysis → Problem Definition → Solution Implementation",
+        "ready_subtitle": "30-Min Call: We analyze your use case, define the problem, and show concrete solution paths.",
+        "ready_button": "Free Brief Consultation: Book 30-Min Call"
       }
     },
     "services": {

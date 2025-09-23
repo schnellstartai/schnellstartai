@@ -12,11 +12,11 @@
   "pages": {
     "index": {
       "hero": {
-        "title": "KI-Automatisierung für Unternehmen in Lichtgeschwindigkeit",
-        "subtitle": "Schweizer KI-Workflows: schnell umgesetzt, klar messbar, datenkonform. Ideal für KMU, die weniger Zeit in Admin und mehr ins Business stecken wollen.",
-        "cta": "Kostenlose Beratung anfragen →",
-        "learnMore": "Mehr erfahren",
-        "note": "Webinar oder vor Ort in der Schweiz – Flexible Optionen für Ihr Team."
+        "title": "AI-Automationen für KMU. In Wochen, nicht Monaten.",
+        "subtitle": "Swiss Quality, FADP/nDSG & GDPR konform. Keine Vendor-Locks. Code & Accounts bei Ihnen. Messbare Resultate: −50–70% manuelle Stunden, <1% Fehlerrate.",
+        "cta": "Kostenlose Kurzberatung: 30-Min-Call buchen →",
+        "learnMore": "Pilot-Pakete ab CHF 3'900",
+        "note": "Swiss Hosting: n8n self-hosted, lokale LLM-Provider. Maximale Datensouveränität."
       },
       "steps": {
         "title": "So starten wir: Drei klare Schritte zum messbaren Erfolg",
@@ -59,8 +59,8 @@
         "cta": "Alle Services ansehen"
       },
       "testphase": {
-        "title": "Aktuell in der Testphase",
-        "subtitle": "Wir arbeiten eng mit Schweizer Unternehmen zusammen und führen Workshops durch, um unsere KI-Lösungen zu perfektionieren",
+        "title": "Proven with Swiss SMEs",
+        "subtitle": "15+ Workshops, 8 Partner, messbare Erfolge. Konkrete Use Cases: Rechnung → Buchung → Reporting, Shop → ERP → Finanz",
         "card": {
           "title": "Workshops & Zusammenarbeit",
           "description": "Gemeinsam entwickeln wir praxisnahe KI-Lösungen für Schweizer KMU"
@@ -87,8 +87,8 @@
         "quote": "Wir lernen von jedem Unternehmen und verbessern kontinuierlich unsere Ansätze. So entstehen Lösungen, die wirklich praxistauglich sind."
       },
       "tech_stack": {
-        "title": "Technologie-Stack",
-        "subtitle": "Bewährte Tools und Plattformen für sichere, skalierbare KI-Automatisierung",
+        "title": "Swiss Tech-Stack: Technology follows use case",
+        "subtitle": "Swiss Hosting, FADP/nDSG & GDPR konform, n8n self-hosted, lokale LLM-Provider. Maximale Datensouveränität.",
         "technologies": {
           "azure": {
             "title": "Azure OpenAI",
@@ -115,7 +115,7 @@
             "description": "Nahtlose Integrationen"
           }
         },
-        "compliance": "100% Schweizer Datenschutz & FADP-konform"
+        "compliance": "100% Swiss: Server, Support, Source Code. Ihre Daten bleiben in der Schweiz."
       },
       "faq_teaser": {
         "title": "Häufige Fragen",
@@ -136,9 +136,9 @@
         }
       },
       "cta": {
-        "ready_title": "Bereit für den nächsten Schritt?",
-        "ready_subtitle": "Lassen Sie uns in einem kostenlosen Gespräch herausfinden, wie KI Ihr Unternehmen voranbringen kann.",
-        "ready_button": "Kostenlose Beratung anfragen"
+        "ready_title": "Issue Analysis → Problem Definition → Solution Implementation",
+        "ready_subtitle": "30-Min-Call: Wir analysieren Ihren Use Case, definieren das Problem und zeigen konkrete Lösungswege auf.",
+        "ready_button": "Kostenlose Kurzberatung: 30-Min-Call buchen"
       }
     },
     "services": {
