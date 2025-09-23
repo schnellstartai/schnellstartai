@@ -4,18 +4,11 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 
-console.log('Fresh main loading:', React.version);
-
 const root = document.getElementById("root")!;
-const app = React.createElement(
-  BrowserRouter,
-  null,
-  React.createElement(App, null)
-);
 
 // Use hydration for SSR in production
 if (import.meta.env.PROD) {
-  hydrateRoot(root, app);
+  hydrateRoot(root, <BrowserRouter><App /></BrowserRouter>);
 } else {
-  createRoot(root).render(app);
+  createRoot(root).render(<BrowserRouter><App /></BrowserRouter>);
 }
