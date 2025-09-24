@@ -134,6 +134,103 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
+
+  /* Apple-style glass boxes */
+  .glass-box {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.12),
+      0 2px 8px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      rgba(255, 255, 255, 0.3) 50%, 
+      transparent 100%);
+  }
+
+  .glass-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+      0 20px 60px rgba(0, 0, 0, 0.15),
+      0 8px 24px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-box-blue {
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 
+      0 8px 32px rgba(37, 99, 235, 0.1),
+      0 2px 8px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-box-blue:hover {
+    box-shadow: 
+      0 20px 60px rgba(37, 99, 235, 0.2),
+      0 8px 24px rgba(37, 99, 235, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-box-yellow {
+    border-color: rgba(255, 204, 0, 0.3);
+    box-shadow: 
+      0 8px 32px rgba(255, 204, 0, 0.1),
+      0 2px 8px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-box-yellow:hover {
+    box-shadow: 
+      0 20px 60px rgba(255, 204, 0, 0.2),
+      0 8px 24px rgba(255, 204, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-box-pink {
+    border-color: rgba(232, 121, 249, 0.3);
+    box-shadow: 
+      0 8px 32px rgba(232, 121, 249, 0.1),
+      0 2px 8px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-box-pink:hover {
+    box-shadow: 
+      0 20px 60px rgba(232, 121, 249, 0.2),
+      0 8px 24px rgba(232, 121, 249, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .icon-glow-blue {
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+  }
+
+  .icon-glow-yellow {
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+  }
+
+  .icon-glow-pink {
+    box-shadow: 0 0 20px rgba(232, 121, 249, 0.3);
+  }
   
   .text-balance {
     text-wrap: balance;
@@ -150,7 +247,6 @@
     border-radius: 4px;
   }
 
-
   .home-spotlight {
     background: radial-gradient(
       ellipse 1000px 500px at 50% 20%,
@@ -158,7 +254,6 @@
       transparent 65%
     );
   }
-
 
   /* Hover scale animation utility */
   .hover-scale {

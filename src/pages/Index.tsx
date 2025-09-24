@@ -169,22 +169,33 @@ const Index = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{t('pages.index.steps.title')}</h2>
           </div>
           
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
-            {startSteps.map((step, index) => (
-              <Card key={index} className="text-center hover-scale glass shadow-lg">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-brand-yellow/20 rounded-xl flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                    <step.icon className="w-8 h-8 text-brand-black" />
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 mb-8 sm:mb-12">
+            {startSteps.map((step, index) => {
+              const colorVariants = ['glass-box-blue', 'glass-box-yellow', 'glass-box-pink'];
+              const glowVariants = ['icon-glow-blue', 'icon-glow-yellow', 'icon-glow-pink'];
+              const iconBgVariants = [
+                'bg-gradient-to-br from-blue-500/20 to-blue-600/30',
+                'bg-gradient-to-br from-yellow-400/20 to-yellow-500/30', 
+                'bg-gradient-to-br from-pink-400/20 to-pink-500/30'
+              ];
+              
+              return (
+                <div 
+                  key={index} 
+                  className={`glass-box ${colorVariants[index]} rounded-3xl p-8 text-center group`}
+                >
+                  <div className={`w-20 h-20 ${iconBgVariants[index]} rounded-2xl flex items-center justify-center mx-auto mb-6 ${glowVariants[index]} group-hover:scale-110 transition-all duration-300`}>
+                    <step.icon className="w-10 h-10 text-white drop-shadow-lg" />
                   </div>
-                  <CardTitle className="text-xl font-bold">{step.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed text-foreground/80">
+                  <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-white transition-colors duration-300">
+                    {step.title}
+                  </h3>
+                  <p className="text-base leading-relaxed text-muted-foreground group-hover:text-white/90 transition-colors duration-300">
                     {step.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+                  </p>
+                </div>
+              );
+            })}
           </div>
           
         </div>
