@@ -190,7 +190,7 @@ const Index = () => {
                   <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-white transition-colors duration-300">
                     {step.title}
                   </h3>
-                  <p className="text-base leading-relaxed text-muted-foreground group-hover:text-white/90 transition-colors duration-300">
+                  <p className="text-base leading-relaxed text-foreground/80 group-hover:text-white transition-colors duration-300">
                     {step.description}
                   </p>
                 </div>
