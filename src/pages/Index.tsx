@@ -171,12 +171,12 @@ const Index = () => {
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 mb-8 sm:mb-12">
             {startSteps.map((step, index) => {
-              const colorVariants = ['glass-box-blue', 'glass-box-yellow', 'glass-box-pink'];
-              const glowVariants = ['icon-glow-blue', 'icon-glow-yellow', 'icon-glow-pink'];
+              const colorVariants = ['glass-box-red', 'glass-box-orange', 'glass-box-green'];
+              const glowVariants = ['icon-glow-red', 'icon-glow-orange', 'icon-glow-green'];
               const iconBgVariants = [
-                'bg-gradient-to-br from-blue-500/20 to-blue-600/30',
-                'bg-gradient-to-br from-yellow-400/20 to-yellow-500/30', 
-                'bg-gradient-to-br from-pink-400/20 to-pink-500/30'
+                'bg-gradient-to-br from-red-500/20 to-red-600/30',
+                'bg-gradient-to-br from-orange-400/20 to-orange-500/30', 
+                'bg-gradient-to-br from-green-400/20 to-green-500/30'
               ];
               
               return (
