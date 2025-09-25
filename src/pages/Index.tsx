@@ -178,6 +178,16 @@ const Index = () => {
                 'bg-gradient-to-br from-orange-400/20 to-orange-500/30', 
                 'bg-gradient-to-br from-green-400/20 to-green-500/30'
               ];
+              const hoverTextVariants = [
+                'group-hover:text-white', // White on red
+                'group-hover:text-slate-900', // Dark on orange
+                'group-hover:text-white' // White on green
+              ];
+              const hoverTextVariantsP = [
+                'group-hover:text-white/95', // White on red
+                'group-hover:text-slate-800', // Dark on orange
+                'group-hover:text-white/95' // White on green
+              ];
               
               return (
                 <div 
@@ -187,10 +197,10 @@ const Index = () => {
                   <div className={`w-20 h-20 ${iconBgVariants[index]} rounded-2xl flex items-center justify-center mx-auto mb-6 ${glowVariants[index]} group-hover:scale-110 transition-all duration-300`}>
                     <step.icon className="w-10 h-10 text-white drop-shadow-lg" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-slate-900 drop-shadow-sm group-hover:text-white group-hover:drop-shadow-md transition-all duration-300">
+                  <h3 className={`text-2xl font-bold mb-4 text-slate-900 drop-shadow-sm ${hoverTextVariants[index]} group-hover:drop-shadow-md transition-all duration-300`}>
                     {step.title}
                   </h3>
-                  <p className="text-lg leading-relaxed font-medium text-slate-800 drop-shadow-sm group-hover:text-white/95 group-hover:drop-shadow-md transition-all duration-300">
+                  <p className={`text-lg leading-relaxed font-medium text-slate-800 drop-shadow-sm ${hoverTextVariantsP[index]} group-hover:drop-shadow-md transition-all duration-300`}>
                     {step.description}
                   </p>
                 </div>
