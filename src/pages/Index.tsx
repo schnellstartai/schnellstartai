@@ -6,6 +6,7 @@ import { MetricChip } from '@/components/MetricChip';
 
 import { LazySection } from '@/components/LazySection';
 import ctaBackground from '@/assets/cta-background.png';
+import heroImage from '@/assets/hero-ai-automation.webp';
 
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -128,7 +129,13 @@ const Index = () => {
       
       {/* Hero Section */}
       <section 
-        className="relative min-h-screen flex items-center overflow-hidden bg-slate-900"
+        className="relative min-h-screen flex items-center overflow-hidden"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 30%',
+          backgroundRepeat: 'no-repeat'
+        }}
       >
         {/* Dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/50" />
