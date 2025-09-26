@@ -130,7 +130,7 @@ const Index = () => {
       <section 
         className="relative min-h-screen flex items-center overflow-hidden"
         style={{
-          backgroundImage: 'url(/ai_automations_swiss.webp)',
+          backgroundImage: 'url(/ai_automations_swiss_optimized.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
