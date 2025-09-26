@@ -128,13 +128,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section 
-        className="relative min-h-screen flex items-center overflow-hidden"
-        style={{
-          backgroundImage: 'url(/ai_automations_swiss_optimized.webp)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
+        className="relative min-h-screen flex items-center overflow-hidden bg-slate-900"
       >
         {/* Dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/50" />
