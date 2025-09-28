@@ -131,9 +131,9 @@ const Index = () => {
       <section 
         className="relative min-h-screen flex items-center overflow-hidden"
         style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 30%',
+          backgroundImage: `linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.05)), url(${heroImage})`,
+          backgroundSize: '80% auto',
+          backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat'
         }}
       >
