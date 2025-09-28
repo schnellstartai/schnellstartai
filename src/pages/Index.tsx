@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { MetricChip } from '@/components/MetricChip';
+import { cn } from '@/lib/utils';
 
 import { LazySection } from '@/components/LazySection';
 import ctaBackground from '@/assets/cta-background.png';
@@ -36,16 +37,19 @@ const Index = () => {
 
   const startSteps = [
     {
+      id: "workshop",
       icon: Users,
       title: t('pages.index.steps.workshop.title'),
       description: t('pages.index.steps.workshop.description')
     },
     {
+      id: "process",
       icon: Cog,
       title: t('pages.index.steps.process.title'),
       description: t('pages.index.steps.process.description')
     },
     {
+      id: "profit",
       icon: TrendingUp,
       title: t('pages.index.steps.profit.title'),
       description: t('pages.index.steps.profit.description')
@@ -193,7 +197,12 @@ const Index = () => {
               return (
                 <div 
                   key={index} 
-                  className={`glass-box ${colorVariants[index]} rounded-3xl p-8 text-center group`}
+                  className={cn(
+                    "glass-box-brand-primary p-8 text-center group",
+                    step.id === "workshop" && "glass-box-brand-accent",
+                    step.id === "process" && "glass-box-brand-primary",
+                    step.id === "profit" && "glass-box-green"
+                  )}
                 >
                   <div className={`w-20 h-20 ${iconBgVariants[index]} rounded-2xl flex items-center justify-center mx-auto mb-6 ${glowVariants[index]} group-hover:scale-110 transition-all duration-300`}>
                     <step.icon className="w-10 h-10 text-white drop-shadow-lg" />
@@ -322,17 +331,13 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              <Card key={index} className="text-center group hover-scale">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-brand-yellow/10 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-yellow/20 transition-colors">
-                    <service.icon className="w-6 h-6 text-brand-black" />
-                  </div>
-                  <CardTitle className="text-lg">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>{service.description}</CardDescription>
-                </CardContent>
-              </Card>
+              <div key={index} className="glass-box-brand-primary text-center group hover-scale p-6">
+                <div className="w-12 h-12 bg-brand-yellow/20 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-brand-yellow/30 transition-colors">
+                  <service.icon className="w-6 h-6 text-brand-black" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">{service.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{service.description}</p>
+              </div>
             ))}
           </div>
           
@@ -359,19 +364,13 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {techStack.map((tech, index) => (
-              <Card key={index} className="group hover-scale">
-                <CardHeader>
-                  <div className="w-14 h-14 bg-brand-yellow/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-yellow/20 transition-colors">
-                    <tech.icon className="w-7 h-7 text-brand-black" />
-                  </div>
-                  <CardTitle className="text-xl">{tech.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    {tech.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
+              <div key={index} className="glass-box-brand-accent group hover-scale p-6">
+                <div className="w-14 h-14 bg-brand-yellow/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-yellow/30 transition-colors">
+                  <tech.icon className="w-7 h-7 text-brand-black" />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-2">{tech.title}</h3>
+                <p className="text-gray-400 text-base leading-relaxed">{tech.description}</p>
+              </div>
             ))}
           </div>
           
@@ -394,16 +393,10 @@ const Index = () => {
             
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               {faqs.map((faq, index) => (
-                <Card key={index}>
-                  <CardHeader>
-                    <CardTitle className="text-lg">{faq.question}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base leading-relaxed">
-                      {faq.answer}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
+                <div key={index} className="glass-box-neutral p-6">
+                  <h3 className="text-lg font-semibold text-white mb-3">{faq.question}</h3>
+                  <p className="text-gray-400 text-base leading-relaxed">{faq.answer}</p>
+                </div>
               ))}
             </div>
             
