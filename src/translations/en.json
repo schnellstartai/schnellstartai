@@ -523,17 +523,12 @@
         "subtitle": "We are a small team with a clear mission: making AI practical and secure for Swiss SMEs."
       },
       "team": {
-        "subtitle": "Three experts, one vision: AI that works",
+        "subtitle": "Two experts, one vision: AI that works",
         "members": {
           "florian": {
             "name": "Florian",
             "role": "Workflows & implementation",
             "description": "10+ years experience in process optimization and automation. Specialist for n8n, Supabase and seamless system integrations."
-          },
-          "david": {
-            "name": "David",
-            "role": "LLMs & automation pipelines",
-            "description": "AI developer focused on productive LLM applications. Expert for OpenAI/Anthropic integration and secure AI workflows."
           },
           "lukas": {
             "name": "Lukas",

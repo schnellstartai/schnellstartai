@@ -18,13 +18,6 @@ const About = () => {
       website: "https://www.florianwitschi.ch/"
     },
     {
-      name: "David", 
-      role: "LLMs & Automation Pipelines",
-      description: "KI-Entwickler mit Fokus auf produktive LLM-Anwendungen. Experte für OpenAI/Anthropic Integration und sichere AI-Workflows.",
-      linkedin: "https://www.linkedin.com/in/david-intelligence/",
-      website: "https://runfish.net"
-    },
-    {
       name: "Lukas",
       role: "Strategie, Finance & Beratung", 
       description: "Business-Stratege mit Finance-Hintergrund. 15+ Jahre KMU-Beratung, spezialisiert auf ROI-orientierte KI-Implementierung.",
@@ -84,7 +77,7 @@ const About = () => {
             <div className="text-center">
               <img 
                 src="/lovable-uploads/9fb46982-914e-427a-8217-1c13109b3807.png"
-                alt="Unser Team - Florian, David und Lukas"
+                alt="Unser Team - Florian und Lukas"
                 className="mx-auto max-w-3xl w-full h-auto"
               />
             </div>
@@ -92,7 +85,7 @@ const About = () => {
           
           <div className="text-center mb-8">
             <p className="text-xl text-muted-foreground text-balance">
-              Drei Experten, eine Vision: KI die funktioniert
+              Zwei Experten, eine Vision: KI die funktioniert
             </p>
           </div>
         </div>

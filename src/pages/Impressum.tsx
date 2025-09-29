@@ -68,7 +68,6 @@ const Impressum = () => {
                     <h3 className="font-semibold mb-2">Geschäftsführung</h3>
                     <p className="text-muted-foreground">
                       Florian [Nachname] - Workflows & Umsetzung<br />
-                      David [Nachname] - LLMs & Automation Pipelines<br />
                       Lukas [Nachname] - Strategie, Finance & Beratung
                     </p>
                   </div>
