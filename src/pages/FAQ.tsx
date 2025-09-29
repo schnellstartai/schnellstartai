@@ -38,7 +38,7 @@ const FAQ = () => {
       questions: [
         {
           question: "Welche Tools nutzt ihr?",
-          answer: "Wir setzen auf bewährte Tools: n8n für Workflow-Automation, OpenAI/Anthropic für KI-Features, Supabase als Datenbank, plus Integrationen zu Bexio, Shopware und anderen Schweizer Business-Tools. Alles enterprise-ready und wartbar."
+          answer: "Wir setzen auf bewährte Tools: n8n für Workflow-Automation, OpenAI/Anthropic für KI-Features, PostgreSQL/Supabase für Datenbanken (lokal oder Cloud), plus Integrationen zu Swiss Accounting Platforms (Bexio, Swiss21, Sage, Abacus, SAP) und E-Commerce Automationen. Alles enterprise-ready und wartbar."
         },
         {
           question: "Sind die Lösungen skalierbar?",

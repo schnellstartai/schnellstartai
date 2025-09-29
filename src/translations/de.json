@@ -40,7 +40,7 @@
         },
         "automation": {
           "title": "Workflow-Automation",
-          "description": "n8n, Supabase, Bexio, Shopware"
+          "description": "n8n, Supabase, Swiss Accounting Platforms, E-Commerce"
         },
         "coaching": {
           "title": "Laufende Begleitung",
@@ -99,16 +99,16 @@
             "description": "Low-Code Automation"
           },
           "database": {
-            "title": "Supabase",
-            "description": "Moderne Datenbank"
+            "title": "PostgreSQL / Supabase",
+            "description": "Lokale Datenbanken & Cloud-Lösungen"
           },
           "erp": {
-            "title": "Bexio Integration",
-            "description": "Schweizer ERP-System"
+            "title": "Swiss Accounting Platforms",
+            "description": "Bexio, Swiss21, Sage, Abacus, SAP"
           },
           "ecommerce": {
-            "title": "Shopware",
-            "description": "E-Commerce Platform"
+            "title": "E-Commerce Automationen",
+            "description": "Plattform-übergreifende Integrationen"
           },
           "apis": {
             "title": "REST APIs",
@@ -128,7 +128,7 @@
         },
         "tools": {
           "question": "Welche Tools nutzt ihr?",
-          "answer": "Wir setzen auf bewährte Tools: n8n für Workflow-Automation, OpenAI/Anthropic für KI-Features, Supabase als Datenbank, plus Integrationen zu Bexio, Shopware und anderen Schweizer Business-Tools."
+          "answer": "Wir setzen auf bewährte Tools: n8n für Workflow-Automation, OpenAI/Anthropic für KI-Features, PostgreSQL/Supabase für Datenbanken (lokal oder Cloud), plus Integrationen zu Swiss Accounting Platforms (Bexio, Swiss21, Sage, Abacus, SAP) und E-Commerce Automationen."
         },
         "start": {
           "question": "Wie starten wir?",
@@ -224,9 +224,9 @@
         "tools": [
           {"name": "n8n", "description": "Low-Code Automation Platform"},
           {"name": "OpenAI/Anthropic", "description": "Enterprise-grade KI APIs"},
-          {"name": "Supabase", "description": "Moderne PostgreSQL Datenbank"},
-          {"name": "Bexio", "description": "Schweizer Business Software"},
-          {"name": "Shopware", "description": "E-Commerce Integration"}
+          {"name": "PostgreSQL / Supabase", "description": "Lokale PostgreSQL Datenbanken oder Supabase Cloud-Lösungen"},
+          {"name": "Swiss Accounting Platforms", "description": "Bexio, Swiss21, Sage, Abacus, SAP Integrationen"},
+          {"name": "E-Commerce Automationen", "description": "Plattform-übergreifende Shop-Integrationen"}
         ]
       },
       "final_cta": {

@@ -18,9 +18,9 @@ const Blog = () => {
       featured: true
     },
     {
-      slug: "bexio-n8n-automation",
-      title: "Bexio + n8n: Rechnungen automatisch verarbeiten",
-      excerpt: "Schritt-für-Schritt Anleitung: Wie Sie eingehende Rechnungen automatisch in Bexio erfassen und zur Freigabe weiterleiten.",
+      slug: "swiss-accounting-automation",
+      title: "Swiss Accounting Platforms + n8n: Automated Invoice Processing", 
+      excerpt: "Step-by-step guide: How to automatically capture incoming invoices in Swiss accounting systems (Bexio, Swiss21, Sage, Abacus, SAP) and forward them for approval.",
       date: "2025-01-10",
       readTime: "12 Min.",
       category: "Tutorial"

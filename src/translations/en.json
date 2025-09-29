@@ -33,11 +33,11 @@
           "description": "Deploy proven automation solutions with measurable outcomes, continuous monitoring, and iterative improvements based on real-world performance data."
         },
         "example": {
-          "title": "Example: Invoice receipt → n8n → Bexio",
+          "title": "Example: Invoice receipt → n8n → Swiss Accounting",
           "benefits": {
             "clicks": "−65% Clicks",
             "recognition": "Automatic recognition",
-            "integration": "Direct Bexio integration",
+            "integration": "Direct Swiss accounting integration",
             "audit": "Audit-proof"
           }
         }
@@ -49,7 +49,7 @@
         },
         "automation": {
           "title": "Workflow automation",
-          "description": "n8n, Supabase, Bexio, Shopware"
+          "description": "n8n, Supabase, Swiss Accounting Platforms, E-Commerce"
         },
         "coaching": {
           "title": "Coaching & training",
@@ -65,7 +65,7 @@
         "subtitle": "Example of invoice processing: From email to accounting – fully automatic",
         "process": {
           "title": "Automatic invoice processing",
-          "description": "Incoming invoices are automatically recognized, processed and entered in Bexio",
+          "description": "Incoming invoices are automatically recognized, processed and entered in Swiss accounting systems",
           "metric": "−65% Working time"
         },
         "steps": {
@@ -81,8 +81,8 @@
             "title": "n8n processes",
             "description": "Workflow checks and categorizes"
           },
-          "bexio": {
-            "title": "Bexio entry",
+          "accounting": {
+            "title": "Accounting entry",
             "description": "Invoice is automatically recorded"
           }
         },
@@ -237,8 +237,8 @@
             "description": "Bexio, Abacus, Sage and other Swiss solutions are seamlessly connected. This allows us to automate financial processes from receipt to reporting."
           },
           "ecommerce": {
-            "title": "Shop integrations",
-            "description": "Whether Shopware, Shopify or other platforms – we connect your e-commerce with accounting, ERP or CRM for seamless workflows."
+            "title": "E-Commerce integrations", 
+            "description": "Whether Shopware, Shopify, WooCommerce or other platforms – we connect your e-commerce with accounting, ERP or CRM for seamless workflows."
           },
           "apis": {
             "title": "APIs & cloud services",
@@ -253,7 +253,7 @@
         },
         "tools": {
           "question": "Which tools do you use?",
-          "answer": "Only stable solutions like n8n, OpenAI/Anthropic, Supabase, Bexio and Shopware."
+          "answer": "Only stable solutions like n8n, OpenAI/Anthropic, PostgreSQL/Supabase, Swiss Accounting Platforms and E-Commerce automations."
         },
         "start": {
           "question": "How do we start?",
@@ -415,9 +415,9 @@
         "tools": [
           { "name": "n8n", "description": "Low-Code Automation Platform" },
           { "name": "OpenAI/Anthropic", "description": "Enterprise-grade AI APIs" },
-          { "name": "Supabase", "description": "Modern PostgreSQL Database" },
-          { "name": "Bexio", "description": "Swiss Business Software" },
-          { "name": "Shopware", "description": "E-Commerce Integration" }
+          { "name": "PostgreSQL / Supabase", "description": "Local PostgreSQL databases or Supabase cloud solutions" },
+          { "name": "Swiss Accounting Platforms", "description": "Bexio, Swiss21, Sage, Abacus, SAP integrations" },
+          { "name": "E-Commerce Automations", "description": "Cross-platform shop integrations" }
         ]
       },
       "final_cta": {
@@ -452,7 +452,7 @@
           "automated": {
             "title": "Concretely automated:",
             "items": [
-              "• Scan invoices and enter in Bexio",
+              "• Scan invoices and enter in Swiss accounting systems",
               "• Automatically create monthly reports",
               "• Send client updates by email"
             ]
@@ -506,9 +506,9 @@
         "tools": [
           { "name": "n8n", "description": "Low-code automation platform" },
           { "name": "OpenAI/Anthropic", "description": "Enterprise-grade AI APIs" },
-          { "name": "Supabase", "description": "Modern PostgreSQL database" },
-          { "name": "Bexio", "description": "Swiss business software" },
-          { "name": "Shopware", "description": "E-commerce integration" }
+          { "name": "PostgreSQL / Supabase", "description": "Local PostgreSQL databases or Supabase cloud solutions" },
+          { "name": "Swiss Accounting Platforms", "description": "Bexio, Swiss21, Sage, Abacus, SAP integrations" },
+          { "name": "E-Commerce Automations", "description": "Cross-platform shop integrations" }
         ]
       },
       "cta": {
@@ -610,7 +610,7 @@
           "questions": {
             "tools": {
               "question": "Which tools do you use?",
-              "answer": "We rely on proven tools: n8n for workflow automation, OpenAI/Anthropic for AI features, Supabase as database, plus integrations to Bexio, Shopware and other Swiss business tools. Everything enterprise-ready and maintainable."
+              "answer": "We rely on proven tools: n8n for workflow automation, OpenAI/Anthropic for AI features, PostgreSQL/Supabase for databases (local or cloud), plus integrations to Swiss Accounting Platforms (Bexio, Swiss21, Sage, Abacus, SAP) and E-Commerce automations."
             },
             "scalable": {
               "question": "Are the solutions scalable?",
