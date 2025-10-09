@@ -60,7 +60,7 @@ export const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Linkedin size={16} className="text-muted-foreground" />
                 <a 
-                  href="https://www.linkedin.com/in/financeai" 
+                  href="https://www.linkedin.com/company/schnellstart-ai" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent transition-colors"

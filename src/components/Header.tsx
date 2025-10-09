@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useSimpleI18n } from '@/hooks/useSimpleI18n';
 import { LanguageToggle } from '@/components/LanguageToggle';
@@ -46,10 +46,22 @@ export const Header = () => {
             <div className="relative">
               <LanguageToggle />
             </div>
+            
+            {/* LinkedIn Badge */}
+            <a 
+              href="https://www.linkedin.com/company/schnellstart-ai" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0077B5]/10 hover:bg-[#0077B5]/20 border border-[#0077B5]/20 hover:border-[#0077B5]/40 transition-all duration-300 group"
+              title="Folgen Sie uns auf LinkedIn"
+            >
+              <Linkedin size={18} className="text-[#0077B5] group-hover:scale-110 transition-transform" />
+              <span className="text-white/90 text-sm font-medium group-hover:text-white">LinkedIn</span>
+            </a>
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center relative z-10">
+          <div className="hidden lg:flex items-center relative z-10 gap-3">
             <a 
               href="https://calendly.com/schnellstart-info/30min" 
               target="_blank" 
@@ -96,6 +108,18 @@ export const Header = () => {
               <div className="pt-2 pb-2">
                 <LanguageToggle />
               </div>
+              
+              {/* Mobile LinkedIn Button */}
+              <a 
+                href="https://www.linkedin.com/company/schnellstart-ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="flex items-center gap-3 px-4 py-3 rounded-lg bg-[#0077B5]/10 hover:bg-[#0077B5]/20 border border-[#0077B5]/30 transition-all duration-300"
+              >
+                <Linkedin size={20} className="text-[#0077B5]" />
+                <span className="text-white font-medium">Folgen Sie uns auf LinkedIn</span>
+              </a>
               
               <a 
                 href="https://calendly.com/schnellstart-info/30min" 
