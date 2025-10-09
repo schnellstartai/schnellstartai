@@ -17,12 +17,8 @@ export function useSimpleI18n() {
     if (savedLanguage && (savedLanguage === 'de' || savedLanguage === 'en')) {
       setLanguageState(savedLanguage);
     } else {
-      const browserLang = navigator.language.toLowerCase();
-      if (browserLang.startsWith('en')) {
-        setLanguageState('en');
-      } else {
-        setLanguageState('de');
-      }
+      // Always default to German for Swiss audience
+      setLanguageState('de');
     }
   }, []);
 

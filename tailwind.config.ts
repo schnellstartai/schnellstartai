@@ -22,7 +22,14 @@ export default {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {
-				// Brand Colors
+				// Swiss Professional Palette
+				'swiss-navy': 'hsl(var(--swiss-navy))',
+				'swiss-blue': 'hsl(var(--swiss-blue))',
+				'swiss-red': 'hsl(var(--swiss-red))',
+				'swiss-gray': 'hsl(var(--swiss-gray))',
+				'success-green': 'hsl(var(--success-green))',
+				
+				// Legacy Brand Colors
 				'brand-yellow': 'hsl(var(--brand-yellow))',
 				'brand-black': 'hsl(var(--brand-black))',
 				'brand-blue': 'hsl(var(--brand-blue))',

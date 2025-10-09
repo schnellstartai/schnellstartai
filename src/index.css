@@ -8,55 +8,66 @@
 
 @layer base {
   :root {
-    /* Brand Colors */
-    --brand-yellow: 51 100% 50%; /* #FFCC00 */
-    --brand-black: 240 11% 6%; /* #0E0E10 */  
-    --brand-blue: 221 83% 53%; /* #2563EB */
-    --brand-pink: 330 81% 60%; /* #E879F9 */
+    /* Swiss Professional Color Palette */
+    --swiss-navy: 215 25% 15%; /* Deep navy for trust & professionalism */
+    --swiss-blue: 214 59% 35%; /* Swiss flag blue for primary actions */
+    --swiss-red: 355 78% 56%; /* Swiss flag red for accents */
+    --swiss-gray: 220 13% 91%; /* Clean neutral gray */
+    --success-green: 142 71% 45%; /* Success states */
+    
+    /* Legacy brand colors (kept for backwards compatibility) */
+    --brand-yellow: 43 74% 49%; /* Muted gold, not bright yellow */
+    --brand-black: 215 25% 15%;
+    --brand-blue: 214 59% 35%;
+    --brand-pink: 330 81% 60%;
     
     /* Neutral Grays */
-    --gray-50: 210 20% 98%; /* #F9FAFB */
-    --gray-100: 220 14% 96%; /* #F3F4F6 */
-    --gray-500: 220 9% 46%; /* #6B7280 */
-    --gray-800: 217 19% 27%; /* #1F2937 */
+    --gray-50: 210 20% 98%;
+    --gray-100: 220 14% 96%;
+    --gray-200: 220 13% 91%;
+    --gray-500: 220 9% 46%;
+    --gray-700: 217 19% 35%;
+    --gray-800: 217 19% 27%;
+    --gray-900: 217 19% 18%;
     
-    /* Semantic Tokens */
-    --background: 0 0% 100%;
-    --foreground: var(--brand-black);
+    /* Semantic Tokens - Professional Swiss Design */
+    --background: 220 15% 97%; /* Soft off-white, not harsh white */
+    --foreground: 215 25% 15%; /* Deep navy text */
     
-    --card: 0 0% 100%;
-    --card-foreground: var(--brand-black);
+    --card: 0 0% 100%; /* White cards for contrast */
+    --card-foreground: 215 25% 15%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: var(--brand-black);
+    --popover-foreground: 215 25% 15%;
     
-    --primary: var(--brand-yellow);
-    --primary-foreground: var(--brand-black);
+    --primary: 214 59% 35%; /* Swiss blue for primary */
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: var(--gray-100);
-    --secondary-foreground: var(--brand-black);
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 215 25% 15%;
     
-    --muted: var(--gray-50);
-    --muted-foreground: var(--gray-500);
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
     
-    --accent: var(--brand-blue);
+    --accent: 355 78% 56%; /* Swiss red for CTAs */
     --accent-foreground: 0 0% 100%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: var(--gray-100);
-    --input: var(--gray-100);
-    --ring: var(--brand-blue);
+    --border: 220 13% 91%; /* Visible, professional borders */
+    --input: 220 13% 91%;
+    --ring: 214 59% 35%;
     
-    --radius: 1rem; /* 16px for rounded-xl default */
+    --radius: 0.75rem; /* Slightly more conservative radius */
     
-    /* Custom Brand Tokens */
-    --shadow-soft: 0 6px 24px rgba(0, 0, 0, 0.08);
-    --shadow-glow: 0 8px 32px rgba(255, 204, 0, 0.15);
-    --gradient-brand: linear-gradient(135deg, hsl(var(--brand-yellow)), hsl(var(--brand-yellow) / 0.8));
-    --glass-bg: rgba(255, 255, 255, 0.8);
-    --glass-border: rgba(255, 255, 255, 0.2);
+    /* Swiss Professional Design Tokens */
+    --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.06);
+    --shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    --gradient-brand: linear-gradient(135deg, hsl(214 59% 35%), hsl(214 59% 45%));
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    --glass-border: rgba(0, 0, 0, 0.08);
   }
   
   .dark {
