@@ -159,24 +159,6 @@ const Index = () => {
                 </Link>
               </Button>
             </div>
-            
-            {/* LinkedIn Badge */}
-            <div className="mt-8 pt-6 border-t border-white/20">
-              <a 
-                href="https://www.linkedin.com/company/schnellstart-ai" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-6 py-4 rounded-xl bg-[#0077B5]/20 backdrop-blur-md border border-[#0077B5]/40 hover:bg-[#0077B5]/30 hover:border-[#0077B5]/60 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 bg-[#0077B5] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <span className="text-white text-xl font-bold">in</span>
-                </div>
-                <div className="text-left">
-                  <p className="text-white font-semibold text-lg">Folgen Sie uns auf LinkedIn</p>
-                  <p className="text-white/80 text-sm">Aktuelle Insights & Updates</p>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </section>
