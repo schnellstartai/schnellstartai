@@ -283,8 +283,121 @@
         "exclusive_description": "Früher Zugang zu neuen KI-Lösungen"
       }
     }
-  }
-}
+      }
+    },
+    "leitfaden": {
+      "meta": {
+        "title": "Kostenloser Swiss AI Guide für KMU | schnellstart.ai",
+        "description": "100% praxisnahes KI-Playbook für Schweizer KMU. 9 Kapitel, n8n Workflows, DSGVO-konform. 0 Abo-Fallen."
+      },
+      "hero": {
+        "badge": "100% Kostenlos",
+        "title": "Swiss AI Guide: Build & Scale Your Company with AI",
+        "subtitle": "Das komplette Playbook für KMU-Automatisierung – geschrieben von 5+ Schweizer Experten, immer aktuell mit 2025 Research",
+        "features": [
+          "9 Kapitel Praxiswissen",
+          "n8n Workflows aus echten Projekten",
+          "DSGVO-konforme Tools",
+          "0 Abo-Fallen"
+        ],
+        "cta": "Kostenlosen Leitfaden anfordern →",
+        "trust": "🇨🇭 Swiss Quality • ✅ FADP-konform • 📘 50+ Seiten"
+      },
+      "whats_inside": {
+        "title": "Was Sie im Guide erwartet",
+        "subtitle": "9 Kapitel vollgepackt mit praxisnahem Wissen"
+      },
+      "chapters": {
+        "chapter1": {
+          "title": "KI-Grundlagen für KMU",
+          "description": "Verstehen Sie die Basics und wie KI Ihr Unternehmen transformieren kann"
+        },
+        "chapter2": {
+          "title": "Workflow-Automatisierung mit n8n",
+          "description": "Lernen Sie n8n kennen und automatisieren Sie Ihre ersten Prozesse"
+        },
+        "chapter3": {
+          "title": "Swiss Datenschutz (FADP/GDPR)",
+          "description": "Alles zu Compliance, Datenschutz und rechtlichen Anforderungen in der Schweiz"
+        },
+        "chapter4": {
+          "title": "Buchhaltungs-Automation",
+          "description": "Von der Rechnung bis zur Buchung – vollautomatisch mit Swiss Accounting Platforms"
+        },
+        "chapter5": {
+          "title": "E-Commerce Integration",
+          "description": "Verbinden Sie Ihren Online-Shop mit ERP, Finanzen und CRM"
+        },
+        "chapter6": {
+          "title": "CRM & Sales Automation",
+          "description": "Automatisieren Sie Lead-Erfassung, Follow-ups und Opportunity Scoring"
+        },
+        "chapter7": {
+          "title": "Kostenrechnung & ROI",
+          "description": "Berechnen Sie konkrete Einsparungen und Return on Investment"
+        },
+        "chapter8": {
+          "title": "Implementation Roadmap",
+          "description": "Schritt-für-Schritt Anleitung vom Pilot bis zum Rollout"
+        },
+        "chapter9": {
+          "title": "Tool-Vergleich & Empfehlungen",
+          "description": "Welche Tools für welchen Use Case? Unsere bewährten Empfehlungen"
+        }
+      },
+      "authors": {
+        "title": "Geschrieben von Schweizer Experten",
+        "subtitle": "5+ Fachleute teilen ihr Wissen aus über 15 Projekten",
+        "florian": "Finance & AI Expert • 20K+ LinkedIn Followers",
+        "lukas": "Accounting & Finance • 10+ Jahre Erfahrung",
+        "david": "n8n Workflow Specialist",
+        "dev": "Strategic Consulting • International Setups",
+        "community": "Swiss AI Community"
+      },
+      "social_proof": {
+        "title": "Vertrauen Sie auf bewährte Erfahrung",
+        "workshops": "Workshops durchgeführt",
+        "partners": "Partnerunternehmen",
+        "compliance": "FADP-konform",
+        "testimonial": "Wir lernen von jedem Unternehmen und teilen dieses Wissen im Guide – damit Sie direkt von echten Projekten profitieren."
+      },
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "q1": {
+          "question": "Ist das wirklich kostenlos?",
+          "answer": "Ja, 100% kostenlos. Keine versteckten Kosten, kein Abo, keine Kreditkarte nötig."
+        },
+        "q2": {
+          "question": "Was passiert mit meinen Daten?",
+          "answer": "Ihre E-Mail wird nur verwendet, um Ihnen den Guide zuzusenden. Wir geben Ihre Daten niemals weiter."
+        },
+        "q3": {
+          "question": "Muss ich danach etwas kaufen?",
+          "answer": "Nein. Der Guide ist komplett kostenlos und Sie gehen keine Verpflichtung ein."
+        },
+        "q4": {
+          "question": "Wie erhalte ich den Leitfaden?",
+          "answer": "Nach dem Absenden öffnet sich Ihr E-Mail-Programm. Senden Sie die vorbereitete E-Mail ab und wir schicken Ihnen den Guide als PDF zu."
+        }
+      },
+      "final_cta": {
+        "title": "Bereit, Ihr KMU mit KI zu skalieren?",
+        "subtitle": "Schließen Sie sich 100+ Schweizer Unternehmern an, die bereits profitieren",
+        "button": "Jetzt kostenlosen Leitfaden anfordern →"
+      },
+      "form": {
+        "name_label": "Ihr Name",
+        "name_placeholder": "Max Muster",
+        "email_label": "Ihre E-Mail",
+        "email_placeholder": "max@firma.ch",
+        "submit": "Guide jetzt anfordern →",
+        "privacy": "🔒 Ihre Daten sind sicher. Kein Spam, versprochen.",
+        "success_title": "E-Mail wird geöffnet",
+        "success_message": "Ihre E-Mail-App sollte sich öffnen. Bitte senden Sie die vorbereitete E-Mail ab und wir schicken Ihnen den Swiss AI Guide umgehend zu.",
+        "fallback": "Falls Ihr E-Mail-Client sich nicht öffnet, schreiben Sie uns direkt an:",
+        "email_link": "info@schnellstart.ai"
+      }
+    }
   },
   "footer": {
     "company_description": "Ihr Partner für KI-Automatisierung in der Schweiz",

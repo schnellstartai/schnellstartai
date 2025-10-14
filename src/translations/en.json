@@ -517,6 +517,119 @@
         "button": "Schedule free conversation"
       }
     },
+    "leitfaden": {
+      "meta": {
+        "title": "Free Swiss AI Guide for SMEs | schnellstart.ai",
+        "description": "100% practical AI playbook for Swiss SMEs. 9 chapters, n8n workflows, GDPR-compliant. No subscriptions."
+      },
+      "hero": {
+        "badge": "100% Free",
+        "title": "Swiss AI Guide: Build & Scale Your Company with AI",
+        "subtitle": "The complete playbook for SME automation – written by 5+ Swiss experts, always up-to-date with 2025 research",
+        "features": [
+          "9 chapters of practical knowledge",
+          "n8n workflows from real projects",
+          "GDPR-compliant tools",
+          "0 subscription traps"
+        ],
+        "cta": "Request free guide →",
+        "trust": "🇨🇭 Swiss Quality • ✅ GDPR-compliant • 📘 50+ pages"
+      },
+      "whats_inside": {
+        "title": "What's inside the guide",
+        "subtitle": "9 chapters packed with practical knowledge"
+      },
+      "chapters": {
+        "chapter1": {
+          "title": "AI Fundamentals for SMEs",
+          "description": "Understand the basics and how AI can transform your business"
+        },
+        "chapter2": {
+          "title": "Workflow Automation with n8n",
+          "description": "Learn n8n and automate your first processes"
+        },
+        "chapter3": {
+          "title": "Swiss Data Protection (FADP/GDPR)",
+          "description": "Everything about compliance, data protection and legal requirements in Switzerland"
+        },
+        "chapter4": {
+          "title": "Accounting Automation",
+          "description": "From invoice to booking – fully automatic with Swiss Accounting Platforms"
+        },
+        "chapter5": {
+          "title": "E-Commerce Integration",
+          "description": "Connect your online shop with ERP, finance and CRM"
+        },
+        "chapter6": {
+          "title": "CRM & Sales Automation",
+          "description": "Automate lead capture, follow-ups and opportunity scoring"
+        },
+        "chapter7": {
+          "title": "Cost Calculation & ROI",
+          "description": "Calculate concrete savings and return on investment"
+        },
+        "chapter8": {
+          "title": "Implementation Roadmap",
+          "description": "Step-by-step guide from pilot to rollout"
+        },
+        "chapter9": {
+          "title": "Tool Comparison & Recommendations",
+          "description": "Which tools for which use case? Our proven recommendations"
+        }
+      },
+      "authors": {
+        "title": "Written by Swiss Experts",
+        "subtitle": "5+ specialists share their knowledge from over 15 projects",
+        "florian": "Finance & AI Expert • 20K+ LinkedIn Followers",
+        "lukas": "Accounting & Finance • 10+ Years Experience",
+        "david": "n8n Workflow Specialist",
+        "dev": "Strategic Consulting • International Setups",
+        "community": "Swiss AI Community"
+      },
+      "social_proof": {
+        "title": "Trust proven experience",
+        "workshops": "Workshops conducted",
+        "partners": "Partner companies",
+        "compliance": "FADP-compliant",
+        "testimonial": "We learn from every company and share this knowledge in the guide – so you benefit directly from real projects."
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": {
+          "question": "Is this really free?",
+          "answer": "Yes, 100% free. No hidden costs, no subscription, no credit card required."
+        },
+        "q2": {
+          "question": "What happens to my data?",
+          "answer": "Your email is only used to send you the guide. We never share your data with anyone."
+        },
+        "q3": {
+          "question": "Do I have to buy something afterwards?",
+          "answer": "No. The guide is completely free and you have no obligation."
+        },
+        "q4": {
+          "question": "How do I receive the guide?",
+          "answer": "After submitting, your email program will open. Send the pre-filled email and we'll send you the guide as a PDF."
+        }
+      },
+      "final_cta": {
+        "title": "Ready to scale your SME with AI?",
+        "subtitle": "Join 100+ Swiss entrepreneurs who are already benefiting",
+        "button": "Request free guide now →"
+      },
+      "form": {
+        "name_label": "Your name",
+        "name_placeholder": "John Doe",
+        "email_label": "Your email",
+        "email_placeholder": "john@company.ch",
+        "submit": "Request guide now →",
+        "privacy": "🔒 Your data is safe. No spam, promised.",
+        "success_title": "Email is opening",
+        "success_message": "Your email app should open. Please send the pre-filled email and we'll send you the Swiss AI Guide promptly.",
+        "fallback": "If your email client doesn't open, write to us directly at:",
+        "email_link": "info@schnellstart.ai"
+      }
+    },
     "about": {
       "hero": {
         "title": "About us – Team & attitude",

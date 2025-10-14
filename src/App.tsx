@@ -16,6 +16,7 @@ const About = lazy(() => import("./pages/About"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Contact = lazy(() => import("./pages/Contact"));
+const Leitfaden = lazy(() => import("./pages/Leitfaden"));
 const Impressum = lazy(() => import("./pages/Impressum"));
 const Datenschutz = lazy(() => import("./pages/Datenschutz"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -51,6 +52,7 @@ const App = () => React.createElement(
         React.createElement(Route, { path: "/blog", element: React.createElement(Blog, null) }),
         React.createElement(Route, { path: "/blog/:slug", element: React.createElement(BlogPost, null) }),
         React.createElement(Route, { path: "/contact", element: React.createElement(Contact, null) }),
+        React.createElement(Route, { path: "/leitfaden", element: React.createElement(Leitfaden, null) }),
         React.createElement(Route, { path: "/impressum", element: React.createElement(Impressum, null) }),
         React.createElement(Route, { path: "/datenschutz", element: React.createElement(Datenschutz, null) }),
         React.createElement(Route, { path: "*", element: React.createElement(NotFound, null) })
